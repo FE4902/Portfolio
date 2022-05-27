@@ -1,0 +1,45 @@
+/*
+    COLOR
+*/
+$c-black: #000;
+$c-white: #fff;
+
+$c-primary: #009cff;
+$c-secondary: #16b9ff;
+$c-gray: #bdbdbd;
+$c-dark: #1d1d1f;
+$c-light: #f5f5f5;
+// $c-navy: #1d394d;
+$c-navy: #1c2f47;
+$c-blue: #00345b;
+$c-d-blue: #04263f;
+$c-d-green: #4f748c;
+$c-border: #326687;
+
+$c-plus: #4caf50;
+$c-minus: #d32f2f;
+
+$c-footer: $c-dark;
+$c-media: $c-dark;
+$c-header: $c-black;
+/*
+    Z-INDEX
+*/
+$z-common: 1;
+$z-alert: 10;
+$z-floating: 10;
+$z-header: 100;
+$z-menu: 100;
+$z-download: 100;
+
+/*
+    PATH
+*/
+$path-image: '../images';
+
+/*
+    FONT-WEIGHT
+*/
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;

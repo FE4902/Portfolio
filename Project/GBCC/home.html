@@ -1,0 +1,3634 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./resources/css/style.min.css" />
+        <title>MILICO</title>
+        <!-- META -->
+        <meta property="og:title" content="MILICO" />
+        <meta property="og:url" content="https://milico.joycity.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./resources/images/share.png" />
+        <meta property="og:description" content="Gunship Battle: Crypto Conflict" />
+        <meta name="description" content="The only crypto solution that connects the real world to the GUNSHIPBATTLE of choice for 100 million users worldwide." />
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" type="image/x-icon" href="./resources/images/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="./resources/images/favicon.ico" />
+        <!-- SCRIPT -->
+        <script defer src="./resources/js/jquery.min.js"></script>
+        <script defer src="./resources/js/tool-1.0.min.js"></script>
+        <script defer src="./resources/js/translate.js"></script>
+        <script defer src="./resources/js/gsap.min.js"></script>
+        <script defer src="./resources/js/scrollTrigger.min.js"></script>
+        <script defer src="./resources/js/swiper.min.js"></script>
+        <script defer src="./resources/js/common.js"></script>
+        <style></style>
+    </head>
+    <body>
+        <div class="wrap">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="header__container">
+                    <nav class="nav">
+                        <h1 class="logo">
+                            <a href="https://milico.joycity.com">
+                                <picture>
+                                    <source media="(max-width:1100px)" srcset="./resources/images/logo/mobile/logo_milico.png" />
+                                    <img src="./resources/images/logo/logo_milico.png" alt="" loading="lazy" />
+                                </picture>
+                            </a>
+                        </h1>
+                        <button class="nav__button"></button>
+                        <div class="menu">
+                            <button class="menu__button"></button>
+                            <h2 class="menu__logo">
+                                <a href="https://milico.joycity.com/"><img src="./resources/images/logo/mobile/logo_menu.png" alt="" loading="lazy" /> </a>
+                            </h2>
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link -active" href="#" data-translate="menu-1" data-translate-type="text">MILICO is</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#" data-translate="menu-2" data-translate-type="text">How to P2E</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#" onclick="alert('Coming soon')">NFT</a>
+                                </li>
+                                <li class="menu__item menu__item--go">
+                                    <a class="menu__link" href="https://cryptoconflict.joycity.com"><img class="go--gt" src="./resources/images/etc/mobile/go_gt.png" alt="" loading="lazy" /></a>
+                                    <a class="menu__link" href="https://wemixnetwork.com/"><img class="go--wemix" src="./resources/images/etc/mobile/go_wemix.png" alt="" loading="lazy" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="util">
+                        <button class="util__button" type="button"><span>PLAY NOW!</span></button>
+                        <a class="gt" href="https://cryptoconflict.joycity.com" target="_blank"></a>
+                        <div class="sns">
+                            <button class="sns__button" type="button"></button>
+                            <ul class="sns__list">
+                                <li class="sns__item">
+                                    <a class="sns__link sns__link--youtube" href="https://www.youtube.com/c/jcenest" target="_blank">
+                                        <span>Youtube</span>
+                                    </a>
+                                </li>
+                                <li class="sns__item">
+                                    <a class="sns__link sns__link--discord" href="https://discord.com/invite/yaqDbjYATU" target="_blank">
+                                        <span>Discord</span>
+                                    </a>
+                                </li>
+                                <li class="sns__item">
+                                    <a class="sns__link sns__link--telegram" href="https://t.me/cryptoconflict" target="_blank">
+                                        <span>Telegram</span>
+                                    </a>
+                                </li>
+                                <li class="sns__item">
+                                    <a class="sns__link sns__link--twitter" href="https://twitter.com/Cryptoconflict_" target="_blank">
+                                        <span>Twitter</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="wemix" href="https://wemixnetwork.com/" target="_blank">
+                            <img src="./resources/images/ico/ico_wemix.png" alt="" loading="lazy" />
+                        </a>
+                        <div class="lang">
+                            <button class="lang__button" type="button"></button>
+                            <ul class="lang__list">
+                                <li class="lang__item"><a class="lang__link" href="#">English</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">日本語</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">简体中文</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">繁體中文</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Русский</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Français</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Deutsch</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">ภาษาไทย</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Español</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Portugês</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Tiếng Việt</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Indonesian</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">العربية</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- MAIN -->
+            <main class="main home">
+                <!-- FLOATING -->
+                <div class="floating floating--nav">
+                    <ul class="floating__list">
+                        <li class="floating__item">
+                            <a href="#milico" class="floating__link">MILICO</a>
+                        </li>
+                        <li class="floating__item">
+                            <a href="#titanium" class="floating__link">TITANIUM</a>
+                        </li>
+                        <li class="floating__item">
+                            <a href="#price" class="floating__link">PRICE</a>
+                        </li>
+                        <li class="floating__item">
+                            <a href="#traits" class="floating__link" data-translate="floating-4" data-translate-type="text">MILICO traits</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- SNS-FLOATING -->
+                <div class="floating floating--sns">
+                    <ul>
+                        <li><a class="circle--youtube" href="https://www.youtube.com/c/jcenest" target="_blank"></a></li>
+                        <li><a class="circle--discord" href="https://discord.com/invite/yaqDbjYATU" target="_blank"></a></li>
+                        <li><a class="circle--telegram" href="https://t.me/cryptoconflict" target="_blank"></a></li>
+                        <li><a class="circle--twitter" href="https://twitter.com/Cryptoconflict_" target="_blank"></a></li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <!-- MILICO -->
+                    <article id="milico" class="milico">
+                        <h3 class="hidden">MILICO</h3>
+                        <div class="milico__container">
+                            <div class="coin">
+                                <div class="coin__image">
+                                    <picture>
+                                        <source media="(max-width:1100px)" srcset="./resources/images/etc/mobile/milico.png" />
+                                        <img src="./resources/images/etc/milico.png" alt="" />
+                                    </picture>
+                                </div>
+                                <h3 class="coin__title">MILICO</h3>
+                                <p class="coin__sub-title" data-translate="coin-sub-title" data-translate-type="html">
+                                    The crypto soulution that <br class="br-mo" />
+                                    connects the game chosen <br class="br-mo" />
+                                    by 100 million <br class="br-pc" />
+                                    players <br class="br-mo" />
+                                    worldwide, Gunship Battle, <br class="br-mo" />
+                                    with the real world.
+                                </p>
+                                <p class="coin__text" data-translate="coin-text" data-translate-type="html">
+                                    MILICO is a new form of asset that <br class="br-mo" />
+                                    can be exchanged for <br class="br-mo" />
+                                    the in-game resource, <br class="br-pc" />
+                                    TITANIUM. <br class="br-mo" />
+                                    The intrinsic value of MILICO is ensured <br class="br-mo" />
+                                    through the value of TITANIUM.
+                                </p>
+                            </div>
+                            <div class="exchange">
+                                <div class="exchange__image">
+                                    <picture>
+                                        <source media="(max-width:1100px)" srcset="./resources/images/exchange/mobile/guide.png" />
+                                        <img src="./resources/images/exchange/guide.png" alt="" loading="lazy" />
+                                    </picture>
+                                </div>
+                                <ul class="exchange__list">
+                                    <li class="exchange__item">
+                                        <a class="exchange__link" href="https://en.bithumb.com/trade/order/WEMIX_KRW" target="_blank">
+                                            <picture class="bithumb">
+                                                <source media="(max-width:1100px)" srcset="./resources/images/exchange/mobile/bithumb.png" />
+                                                <img src="./resources/images/exchange/bithumb.png" alt="" loading="lazy" />
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="exchange__item">
+                                        <a class="exchange__link" href="https://www.gate.io/trade/WEMIX_USDT" target="_blank">
+                                            <picture class="gateio">
+                                                <source media="(max-width:1100px)" srcset="./resources/images/exchange/mobile/gateio.png" />
+                                                <img src="./resources/images/exchange/gateio.png" alt="" loading="lazy" />
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="exchange__item">
+                                        <a class="exchange__link" href="https://www.mexc.com/ko-KR/exchange/WEMIX_USDT" target="_blank">
+                                            <picture class="mexc">
+                                                <source media="(max-width:1100px)" srcset="./resources/images/exchange/mobile/mexc.png" />
+                                                <img src="./resources/images/exchange/mexc.png" alt="" loading="lazy" />
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="exchange__item">
+                                        <a class="exchange__link" href="https://app.liquid.com/exchange/WEMIXUSDT" target="_blank">
+                                            <picture class="liquid">
+                                                <source media="(max-width:1100px)" srcset="./resources/images/exchange/mobile/liquid.png" />
+                                                <img src="./resources/images/exchange/liquid.png" alt="" loading="lazy" />
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="exchange__item">
+                                        <a class="exchange__link" href="https://exchange.korbit.co.kr/markets/?market=wemix-krw" target="_blank">
+                                            <picture class="korbit">
+                                                <source media="(max-width:1100px)" srcset="./resources/images/exchange/mobile/korbit.png" />
+                                                <img src="./resources/images/exchange/korbit.png" alt="" loading="lazy" />
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="exchange__item">
+                                        <a class="exchange__link" href="https://www.lbank.info/exchange/wemix/usdt" target="_blank">
+                                            <picture class="lbank">
+                                                <source media="(max-width:1100px)" srcset="./resources/images/exchange/mobile/lbank.png" />
+                                                <img src="./resources/images/exchange/lbank.png" alt="" loading="lazy" />
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="exchange__item">
+                                        <a class="exchange__link" href="https://www.bybit.com/en-US/trade/spot/WEMIX/USDT" target="_blank">
+                                            <picture class="bybit">
+                                                <source media="(max-width:1100px)" srcset="./resources/images/exchange/mobile/bybit.png" />
+                                                <img src="./resources/images/exchange/bybit.png" alt="" loading="lazy" />
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="exchange__item">
+                                        <a class="exchange__link" href="https://coinone.co.kr/exchange/trade/wemix/krw" target="_blank">
+                                            <picture class="coinone">
+                                                <source media="(max-width:1100px)" srcset="./resources/images/exchange/mobile/coinone.png" />
+                                                <img src="./resources/images/exchange/coinone.png" alt="" loading="lazy" />
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="exchange__item">
+                                        <a class="exchange__link" href="https://www.probit.com/app/exchange/WEMIX-USDT" target="_blank">
+                                            <picture class="probit">
+                                                <source media="(max-width:1100px)" srcset="./resources/images/exchange/mobile/probit.png" />
+                                                <img src="./resources/images/exchange/probit.png" alt="" loading="lazy" />
+                                            </picture>
+                                        </a>
+                                    </li>
+                                    <li class="exchange__item">
+                                        <a class="exchange__link" href="https://upbit.com/exchange?code=CRIX.UPBIT.KRW-WEMIX" target="_blank">
+                                            <picture class="gateio">
+                                                <source media="(max-width:1100px)" srcset="./resources/images/exchange/mobile/upbit.png" />
+                                                <img src="./resources/images/exchange/upbit.png" alt="" loading="lazy" />
+                                            </picture>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- TITANIUM -->
+                    <article id="titanium" class="titanium">
+                        <h3 class="hidden">TITANIUM</h3>
+                        <div class="titanium__container">
+                            <div class="titanium__image">
+                                <picture>
+                                    <source media="(max-width: 1100px)" srcset="./resources/images/titanium/mobile/titanium.png" />
+                                    <img src="./resources/images/titanium/titanium.png" alt="" loading="lazy" />
+                                </picture>
+                            </div>
+                            <h3 class="titanium__title">TITANIUM</h3>
+                            <p class="titanium__text" data-translate="titanium-text" data-translate-type="html">
+                                TITANIUM can be earned by anyone<br class="br-mo" />
+                                for free by playing the game. <br />
+                                TITANIUM is a core resource that is<br class="br-mo" />
+                                required for progression in <br />
+                                <b>Gunship Battle: Titanium Wars.</b>
+                            </p>
+                        </div>
+                    </article>
+                    <!-- PRICE -->
+                    <article id="price" class="price">
+                        <h3 class="hidden">PRICE</h3>
+                        <div class="price__container">
+                            <h3 class="price__main-title">PRICE</h3>
+                            <div class="price__content price__content--wallet">
+                                <!-- 로그인 전 -->
+                                <div class="price__title-wrap price__title-wrap--before">
+                                    <h4 class="price__title">My wallet</h4>
+                                    <div class="price__meta price__meta--before">
+                                        <span class="price__meta-text">Sign in to Your WEMIX WALLET.</span>
+                                        <button class="logout-button" type="button">
+                                            <picture class="logout-button__logo">
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/logo/mobile/logo_wemix.png" />
+                                                <img src="./resources/images/logo/logo_wemix.png" alt="" loading="lazy" />
+                                            </picture>
+                                            <span>LOGIN</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- 로그인 후 -->
+                                <!-- <div class="price__title-wrap price__title-wrap--after">
+                                    <h4 class="price__title">My wallet</h4>
+                                    <div class="price__meta price__meta--after">
+                                        <button class="copy-button" type="button">
+                                            <span class="copy-button__value">0x3f000ae0d22c443bbb4a1d6f12cc1cfca0ec2b9c</span>
+                                        </button>
+                                        <button class="logout-button" type="button">Log out</button>
+                                    </div>
+                                </div> -->
+                                <!-- 로그인 후 -->
+                                <!-- <div class="balance-wrap">
+                                    <dl class="balance">
+                                        <dt class="balance__title">MILICO Balance</dt>
+                                        <dd class="balance__desc">
+                                            <div class="balance__volume">
+                                                <picture class="balance__ico">
+                                                    <source media="(max-width: 1100px)" srcset="./resources/images/ico/mobile/ico_milico-balance.png" />
+                                                    <img src="./resources/images/ico/ico_milico-balance.png" alt="" loading="lazy" />
+                                                </picture>
+                                                <span>0</span>
+                                            </div>
+                                            <div class="balance__exchange-volume">
+                                                <span>USD $0</span>
+                                                <span>WEMIX 0</span>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl class="balance">
+                                        <dt class="balance__title">WEMIX CREDIT Balance</dt>
+                                        <dd class="balance__desc">
+                                            <div class="balance__volume">
+                                                <picture class="balance__ico">
+                                                    <source media="(max-width: 1100px)" srcset="./resources/images/ico/mobile/ico_credit-balance.png" />
+                                                    <img src="./resources/images/ico/ico_credit-balance.png" alt="" loading="lazy" />
+                                                </picture>
+                                                <span>0</span>
+                                            </div>
+                                            <div class="balance__exchange-volume">
+                                                <span>USD $0</span>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl class="balance">
+                                        <dt class="balance__title">WEMIX Balance</dt>
+                                        <dd class="balance__desc">
+                                            <div class="balance__volume">
+                                                <picture class="balance__ico">
+                                                    <source media="(max-width: 1100px)" srcset="./resources/images/ico/mobile/ico_wemix-balance.png" />
+                                                    <img src="./resources/images/ico/ico_wemix-balance.png" alt="" loading="lazy" />
+                                                </picture>
+                                                <span>0</span>
+                                            </div>
+                                            <div class="balance__exchange-volume">
+                                                <span>USD $0</span>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div> -->
+                            </div>
+                            <div class="price__content price__content--display">
+                                <div class="display display--price">
+                                    <div class="display__container">
+                                        <dl class="display__price">
+                                            <dt class="display__price-dt">WEMIX / MILICO</dt>
+                                            <dd class="display__price-dd">
+                                                <picture class="display__ico">
+                                                    <source media="(max-width: 1100px)" srcset="./resources/images/ico/mobile/ico_wemix-price.png" />
+                                                    <img src="./resources/images/ico/ico_wemix-price.png" alt="" loading="lazy" />
+                                                </picture>
+                                                <span class="display__value priceControll">0.0000</span>
+                                                <span class="display__change priceControll -plus">+0.00%</span>
+                                            </dd>
+                                        </dl>
+                                        <dl class="display__data">
+                                            <dt class="display__data-dt">
+                                                <span>Previous close</span>
+                                                <span>00:00(UTC+0)</span>
+                                            </dt>
+                                            <dd class="display__data-dd">
+                                                <span class="priceControll">0.0000 WEMIX</span>
+                                            </dd>
+                                        </dl>
+                                        <dl class="display__data">
+                                            <dt class="display__data-dt">
+                                                <span>voulume</span>
+                                                <span>00:00(UTC+0) ~</span>
+                                            </dt>
+                                            <dd class="display__data-dd">
+                                                <span class="priceControll">0000 MILICO</span>
+                                            </dd>
+                                        </dl>
+                                        <div class="display__date priceDate">Last updated on mm dd yyyy, TIME (UTC)</div>
+                                    </div>
+                                </div>
+                                <div class="display display--price">
+                                    <div class="display__container">
+                                        <dl class="display__price">
+                                            <dt class="display__price-dt">USD / MILICO</dt>
+                                            <dd class="display__price-dd">
+                                                <span class="display__value priceControll">$0.0000</span>
+                                                <span class="display__change priceControll -minus">-0.00%</span>
+                                            </dd>
+                                        </dl>
+                                        <dl class="display__data">
+                                            <dt class="display__data-dt">
+                                                <span>Previous close</span>
+                                                <span>00:00(UTC+0)</span>
+                                            </dt>
+                                            <dd class="display__data-dd">
+                                                <span class="priceControll">0.0000 WEMIX</span>
+                                            </dd>
+                                        </dl>
+                                        <dl class="display__data">
+                                            <dt class="display__data-dt">
+                                                <span>voulume</span>
+                                                <span>00:00(UTC+0) ~</span>
+                                            </dt>
+                                            <dd class="display__data-dd">
+                                                <span class="priceControll">0000 MILICO</span>
+                                            </dd>
+                                        </dl>
+                                        <div class="display__date priceDate">Last updated on mm dd yyyy, TIME (UTC)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price__content">
+                                <div class="price__title-wrap">
+                                    <h4 class="price__title">Price chart</h4>
+                                    <p>Last Updated on mm dd, yyyy, TIME</p>
+                                </div>
+                                <hr />
+                                <div class="price__button-wrap">
+                                    <div class="price__button-box">
+                                        <button class="price__button price__button--tab -active" type="button">USD</button>
+                                        <button class="price__button price__button--tab" type="button">WEMIX</button>
+                                    </div>
+                                    <div class="price__button-box">
+                                        <button class="price__button price__button--btn -active" type="button">1D</button>
+                                        <button class="price__button price__button--btn" type="button">1W</button>
+                                        <button class="price__button price__button--btn" type="button">1M</button>
+                                        <button class="price__button price__button--btn" type="button">MAX</button>
+                                    </div>
+                                </div>
+                                <div id="chart" class="chart"></div>
+                            </div>
+                            <div class="price__content">
+                                <div class="price__title-wrap">
+                                    <h4 class="price__title" data-translate="price-title" data-translate-type="text">Compensation Formula</h4>
+                                </div>
+                                <hr />
+                                <p class="price__text">
+                                    <span data-translate="price-text-1" data-translate-type="html">
+                                        The TITANIUM:MILICO ratio is 10,000 to 1. <br />
+                                        The number of days the server has been opened for, MILICO’s market value, the formula, and fee are all calculated.
+                                    </span>
+                                    <br />
+                                    <span data-translate="price-text-2" data-translate-type="text"
+                                        >In MILICO creation, the decimal points of the number of TITANIUM needed for 1 MILICO are rounded down to zero.
+                                    </span>
+                                    <br /><br />
+                                    <span data-translate="price-text-3" data-translate-type="text"> *The formula is updated every day at 00:00 (UTC+0). </span>
+                                </p>
+                                <picture class="price__image">
+                                    <source media="(max-width: 1100px)" srcset="./resources/images/etc/mobile/formula.png" />
+                                    <img src="./resources/images/etc/formula.png" alt="" />
+                                </picture>
+                                <ul class="price__list">
+                                    <li class="price__item" data-translate="price-item-1" data-translate-type="text">Server Day: Day of Server Creation (Days)</li>
+                                    <li class="price__item">
+                                        <span data-translate="price-item-2-1" data-translate-type="text">M(t-1): The Average MILICO Market Value of the Previous Hour</span>
+                                        <span data-translate="price-item-2-2" data-translate-type="text">(E.g: If it’s currently 12:24, the average MILICO market value of 11:00 - 11:59)</span>
+                                    </li>
+                                    <li class="price__item">
+                                        <span data-translate="price-item-3-1" data-translate-type="text">M(d-1avg): The Average MILICO Market Value of the Previous Day </span>
+                                        <span data-translate="price-item-3-2" data-translate-type="text">(E.g: If it’s currently 2/8 11:50, the average MILICO market value of 2/7) </span>
+                                    </li>
+                                    <li class="price__item" data-translate="price-item-4" data-translate-type="text">
+                                        SAVα, SAVβ: A value calculated with: the period of how long a server has been open for, number of active users, and amount of cumulated MILICO creation count
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- TRAITS -->
+                    <article id="traits" class="traits">
+                        <h3 class="hidden">TRAITS</h3>
+                        <div class="traits__container">
+                            <h3 class="traits__title" data-translate="traits-title" data-translate-type="text">MILICO Traits</h3>
+                            <ul class="accordion">
+                                <li class="accordion__item">
+                                    <h4 class="accordion__title">
+                                        <button class="accordion__button" type="button">
+                                            <span data-translate="accordion-title-1" data-translate-type="text">Utility Token</span>
+                                        </button>
+                                    </h4>
+                                    <div class="accordion__panel">
+                                        <p class="accordion__text" data-translate="accordion-text-1" data-translate-type="html">
+                                            MILICO is a utility coin that can be exchanged for TITANIUM,<br />
+                                            a core resource of GUNSHIP BATTLE: Crypto Conflict.
+                                        </p>
+                                        <picture class="accordion__image accordion__image--0">
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/traits/mobile/traits_0.png" />
+                                            <img src="./resources/images/traits/traits_0.png" alt="" />
+                                        </picture>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <h4 class="accordion__title">
+                                        <button class="accordion__button" type="button">
+                                            <span data-translate="accordion-title-2" data-translate-type="text">Liquidity</span>
+                                        </button>
+                                    </h4>
+                                    <div class="accordion__panel">
+                                        <p class="accordion__text" data-translate="accordion-text-2" data-translate-type="html">
+                                            MILICO is a blockchain based crypto currency that can be purchased or exchanged for without limitations.
+                                        </p>
+                                        <picture class="accordion__image accordion__image--1">
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/traits/mobile/traits_1.png" />
+                                            <img src="./resources/images/traits/traits_1.png" alt="" />
+                                        </picture>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <h4 class="accordion__title">
+                                        <button class="accordion__button" type="button">
+                                            <span data-translate="accordion-title-3" data-translate-type="text">Actual Value</span>
+                                        </button>
+                                    </h4>
+                                    <div class="accordion__panel">
+                                        <p class="accordion__text" data-translate="accordion-text-3" data-translate-type="text">
+                                            MILICO is a token that connects TITANIUM to the real world. It has a clear and definite intrinsic value.
+                                        </p>
+                                        <picture class="accordion__image accordion__image--2">
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/traits/mobile/traits_2.png" />
+                                            <img src="./resources/images/traits/traits_2.png" alt="" />
+                                        </picture>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <h4 class="accordion__title">
+                                        <button class="accordion__button" type="button">
+                                            <span data-translate="accordion-title-4" data-translate-type="text">Preserved Value</span>
+                                        </button>
+                                    </h4>
+                                    <div class="accordion__panel">
+                                        <p class="accordion__text" data-translate="accordion-text-4" data-translate-type="text">
+                                            The supply of TITANIUM will be carefully controlled, and exploits/abuses that threaten the game’s ecosystem will be actively sought out and restricted.
+                                            MILICO will be a form of currency for users who seek fast progression. A well-balanced environment of TITANIUM’s supply and demand is to be promoted.
+                                        </p>
+                                        <picture class="accordion__image accordion__image--3">
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/traits/mobile/traits_3.png" />
+                                            <img src="./resources/images/traits/traits_3.png" alt="" />
+                                        </picture>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </main>
+            <!-- FOOTER -->
+            <footer class="footer">ⓒ WEMADE TREE PTE. LTD & JOYCITY. All Rights Reserved.</footer>
+            <!-- FOOT ALERT -->
+            <div class="display-alert">
+                <div class="display-wrap">
+                    <div class="display display--alert">
+                        <div class="display__container">
+                            <dl class="display__price">
+                                <dt class="display__price-dt">WEMIX / MILICO</dt>
+                                <dd class="display__price-dd">
+                                    <picture class="display__ico">
+                                        <source media="(max-width: 1100px)" srcset="./resources/images/ico/mobile/ico_wemix-alert.png" />
+                                        <img src="./resources/images/ico/ico_wemix-alert.png" alt="" loading="lazy" />
+                                    </picture>
+                                    <span class="display__value priceControll">0.0000</span>
+                                    <span class="display__change priceControll -plus">+0.00%</span>
+                                </dd>
+                            </dl>
+                            <div class="display__date priceDate">Last updated on mm dd yyyy, TIME (UTC)</div>
+                        </div>
+                    </div>
+                    <div class="display display--alert">
+                        <div class="display__container">
+                            <dl class="display__price">
+                                <dt class="display__price-dt">USD / MILICO</dt>
+                                <dd class="display__price-dd">
+                                    <span class="display__value priceControll">$0.0000</span>
+                                    <span class="display__change priceControll -minus">-0.00%</span>
+                                </dd>
+                            </dl>
+                            <div class="display__date priceDate">Last updated on mm dd yyyy, TIME (UTC)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- POPUP -->
+            <div class="download">
+                <div class="download__container">
+                    <div class="download__content">
+                        <div class="download__header">
+                            <h4 class="download__title">Gunship Battle: Crypto Conflict PLAY NOW!</h4>
+                            <button class="download__button" type="button"></button>
+                        </div>
+                        <div class="download__body">
+                            <h3 class="download__logo">
+                                <a href="#">
+                                    <img src="./resources/images/logo/mobile/logo_download-body.png" alt="" loading="lazy" />
+                                </a>
+                            </h3>
+                            <div class="download__pc">
+                                <h5 class="download__sub-title">PC Download</h5>
+                                <ul class="download__list">
+                                    <li class="download__item">
+                                        <a class="download__link" href="https://gt-client.global.joycityglobal.com/public/PC/Installer/GTLauncherInstall.exe" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/download/mobile/download_window.png" />
+                                                <img src="./resources/images/download/download_window.png" alt="" loading="lazy" />
+                                            </picture>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="download__mobile">
+                                <h5 class="download__sub-title">Mobile Download</h5>
+                                <ul class="download__list">
+                                    <li class="download__item">
+                                        <a class="download__link" href="https://gc-and.onelink.me/7k3a?pid=WW_And_OfficialSite_PreBrandpage&c=WW_And_OfficialSite_PreBrandpage" target="_blank">
+                                            <picture data-translate="download-image-1" data-translate-type="html">
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/download/mobile/download_google-en.png" />
+                                                <img src="./resources/images/download/download_google.png" alt="" loading="lazy" />
+                                            </picture>
+                                            <p class="download__text">Google Play</p>
+                                        </a>
+                                    </li>
+                                    <li class="download__item">
+                                        <a class="download__link" href="https://gc-ios.onelink.me/CAoB?pid=WW_IOS_OfficialSite_PreBrandpage&c=WW_IOS_OfficialSite_PreBrandpage" target="_blank">
+                                            <picture data-translate="download-image-2" data-translate-type="html">
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/download/mobile/download_apple-en.png" />
+                                                <img src="./resources/images/download/download_apple.png" alt="" loading="lazy" />
+                                            </picture>
+                                            <p class="download__text">App Store</p>
+                                        </a>
+                                    </li>
+                                    <li class="download__item">
+                                        <a class="download__link" href="#" onclick="alert('Coming soon')" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/download/mobile/download_joycity.png" />
+                                                <img src="./resources/images/download/download_joycity.png" alt="" loading="lazy" />
+                                            </picture>
+                                            <p class="download__text">Joy Store</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.Promise || document.write('<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>');
+            window.Promise || document.write('<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>');
+            window.Promise || document.write('<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>');
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script>
+            // Replace Math.random() with a pseudo-random number generator to get reproducible results in e2e tests
+            // Based on https://gist.github.com/blixt/f17b47c62508be59987b
+            var _seed = 42;
+            Math.random = function () {
+                _seed = (_seed * 16807) % 2147483647;
+                return (_seed - 1) / 2147483646;
+            };
+        </script>
+        <script>
+            var aaa = {
+                Code: 200,
+                Data: [
+                    {
+                        CreatedDT: '2022-02-21 07:10:00',
+                        DracoPrice: '0.1215',
+                        DracoAmount: '60046',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3692115143931547',
+                        USDKLAYRate: '1.304130162703419',
+                        USDDracoRate: '0.6523591989987683'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 07:15:00',
+                        DracoPrice: '0.12139999999999999',
+                        DracoAmount: '60966',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3692115143931547',
+                        USDKLAYRate: '1.304130162703419',
+                        USDDracoRate: '0.6518222778473289'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 07:20:00',
+                        DracoPrice: '0.1215',
+                        DracoAmount: '63606',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3692115143931547',
+                        USDKLAYRate: '1.304130162703419',
+                        USDDracoRate: '0.6523591989987683'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 07:25:00',
+                        DracoPrice: '0.1212',
+                        DracoAmount: '64303',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3692115143931547',
+                        USDKLAYRate: '1.304130162703419',
+                        USDDracoRate: '0.6507484355444504'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 07:30:00',
+                        DracoPrice: '0.122',
+                        DracoAmount: '66043',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3692115143931547',
+                        USDKLAYRate: '1.304130162703419',
+                        USDDracoRate: '0.6550438047559649'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 07:35:00',
+                        DracoPrice: '0.1215',
+                        DracoAmount: '67299',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3692115143931547',
+                        USDKLAYRate: '1.304130162703419',
+                        USDDracoRate: '0.6523591989987683'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 07:40:00',
+                        DracoPrice: '0.12139999999999999',
+                        DracoAmount: '77056',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3692115143931547',
+                        USDKLAYRate: '1.304130162703419',
+                        USDDracoRate: '0.6518222778473289'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 07:45:00',
+                        DracoPrice: '0.1212',
+                        DracoAmount: '77973',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3692115143931547',
+                        USDKLAYRate: '1.304130162703419',
+                        USDDracoRate: '0.6507484355444504'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 07:50:00',
+                        DracoPrice: '0.12130000000000001',
+                        DracoAmount: '79234',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3692115143931547',
+                        USDKLAYRate: '1.304130162703419',
+                        USDDracoRate: '0.6512853566958897'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 07:55:00',
+                        DracoPrice: '0.12130000000000001',
+                        DracoAmount: '80615',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3692115143931547',
+                        USDKLAYRate: '1.304130162703419',
+                        USDDracoRate: '0.6512853566958897'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 08:00:00',
+                        DracoPrice: '0.1215',
+                        DracoAmount: '81707',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3692115143931547',
+                        USDKLAYRate: '1.304130162703419',
+                        USDDracoRate: '0.6523591989987683'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 08:05:00',
+                        DracoPrice: '0.1221',
+                        DracoAmount: '83738',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3733833959117199',
+                        USDKLAYRate: '1.3032957863997061',
+                        USDDracoRate: '0.6560901126408210'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 08:10:00',
+                        DracoPrice: '0.12189999999999999',
+                        DracoAmount: '85051',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3733833959117199',
+                        USDKLAYRate: '1.3032957863997061',
+                        USDDracoRate: '0.6550154359616386'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 08:15:00',
+                        DracoPrice: '0.122',
+                        DracoAmount: '86867',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3733833959117199',
+                        USDKLAYRate: '1.3032957863997061',
+                        USDDracoRate: '0.6555527743012298'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 08:20:00',
+                        DracoPrice: '0.1221',
+                        DracoAmount: '88197',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3733833959117199',
+                        USDKLAYRate: '1.3032957863997061',
+                        USDDracoRate: '0.6560901126408210'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 08:25:00',
+                        DracoPrice: '0.1222',
+                        DracoAmount: '89994',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3733833959117199',
+                        USDKLAYRate: '1.3032957863997061',
+                        USDDracoRate: '0.6566274509804122'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 08:30:00',
+                        DracoPrice: '0.12230000000000001',
+                        DracoAmount: '91169',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3733833959117199',
+                        USDKLAYRate: '1.3032957863997061',
+                        USDDracoRate: '0.6571647893200033'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 08:35:00',
+                        DracoPrice: '0.1222',
+                        DracoAmount: '95869',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3733833959117199',
+                        USDKLAYRate: '1.3032957863997061',
+                        USDDracoRate: '0.6566274509804122'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 08:40:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '96978',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3733833959117199',
+                        USDKLAYRate: '1.3032957863997061',
+                        USDDracoRate: '0.6598514810179592'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 08:45:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '98917',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3733833959117199',
+                        USDKLAYRate: '1.3032957863997061',
+                        USDDracoRate: '0.6598514810179592'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 08:50:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '100430',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3733833959117199',
+                        USDKLAYRate: '1.3032957863997061',
+                        USDDracoRate: '0.6593141426783681'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 08:55:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '102433',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3733833959117199',
+                        USDKLAYRate: '1.3032957863997061',
+                        USDDracoRate: '0.6603888193575503'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 09:00:00',
+                        DracoPrice: '0.1234',
+                        DracoAmount: '110636',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3733833959117199',
+                        USDKLAYRate: '1.3032957863997061',
+                        USDDracoRate: '0.6630755110555062'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 09:05:00',
+                        DracoPrice: '0.1236',
+                        DracoAmount: '111945',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3441802252817654',
+                        USDKLAYRate: '1.2991239048811409',
+                        USDDracoRate: '0.6605406758448262'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 09:10:00',
+                        DracoPrice: '0.12379999999999999',
+                        DracoAmount: '112813',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3441802252817654',
+                        USDKLAYRate: '1.2991239048811409',
+                        USDDracoRate: '0.6616095118898825'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 09:15:00',
+                        DracoPrice: '0.124',
+                        DracoAmount: '114052',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3441802252817654',
+                        USDKLAYRate: '1.2991239048811409',
+                        USDDracoRate: '0.6626783479349388'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 09:20:00',
+                        DracoPrice: '0.1239',
+                        DracoAmount: '114905',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3441802252817654',
+                        USDKLAYRate: '1.2991239048811409',
+                        USDDracoRate: '0.6621439299124107'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 09:25:00',
+                        DracoPrice: '0.1237',
+                        DracoAmount: '115857',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3441802252817654',
+                        USDKLAYRate: '1.2991239048811409',
+                        USDDracoRate: '0.6610750938673544'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 09:30:00',
+                        DracoPrice: '0.12379999999999999',
+                        DracoAmount: '117132',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3441802252817654',
+                        USDKLAYRate: '1.2991239048811409',
+                        USDDracoRate: '0.6616095118898825'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 09:35:00',
+                        DracoPrice: '0.1235',
+                        DracoAmount: '118385',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3441802252817654',
+                        USDKLAYRate: '1.2991239048811409',
+                        USDDracoRate: '0.6600062578222980'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 09:40:00',
+                        DracoPrice: '0.1234',
+                        DracoAmount: '119486',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3441802252817654',
+                        USDKLAYRate: '1.2991239048811409',
+                        USDDracoRate: '0.6594718397997699'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 09:45:00',
+                        DracoPrice: '0.1234',
+                        DracoAmount: '121245',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3441802252817654',
+                        USDKLAYRate: '1.2991239048811409',
+                        USDDracoRate: '0.6594718397997699'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 09:50:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '122817',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3441802252817654',
+                        USDKLAYRate: '1.2991239048811409',
+                        USDDracoRate: '0.6573341677096571'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 09:55:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '123927',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3441802252817654',
+                        USDKLAYRate: '1.2991239048811409',
+                        USDDracoRate: '0.6562653316646008'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 10:00:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '125315',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3441802252817654',
+                        USDKLAYRate: '1.2991239048811409',
+                        USDDracoRate: '0.6562653316646008'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 10:05:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '127480',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3024614100961154',
+                        USDKLAYRate: '1.29328327075515',
+                        USDDracoRate: '0.6495515227367741'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 10:10:00',
+                        DracoPrice: '0.12239999999999999',
+                        DracoAmount: '129182',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3024614100961154',
+                        USDKLAYRate: '1.29328327075515',
+                        USDDracoRate: '0.6490212765957645'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 10:15:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '130296',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3024614100961154',
+                        USDKLAYRate: '1.29328327075515',
+                        USDDracoRate: '0.6495515227367741'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 10:20:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '131093',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3024614100961154',
+                        USDKLAYRate: '1.29328327075515',
+                        USDDracoRate: '0.6506120150187934'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 10:25:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '131805',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3024614100961154',
+                        USDKLAYRate: '1.29328327075515',
+                        USDDracoRate: '0.6506120150187934'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 10:30:00',
+                        DracoPrice: '0.1231',
+                        DracoAmount: '132518',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3024614100961154',
+                        USDKLAYRate: '1.29328327075515',
+                        USDDracoRate: '0.6527329995828318'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 10:35:00',
+                        DracoPrice: '0.1231',
+                        DracoAmount: '133934',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3024614100961154',
+                        USDKLAYRate: '1.29328327075515',
+                        USDDracoRate: '0.6527329995828318'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 10:40:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '135842',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3024614100961154',
+                        USDKLAYRate: '1.29328327075515',
+                        USDDracoRate: '0.6516725073008126'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 10:45:00',
+                        DracoPrice: '0.1231',
+                        DracoAmount: '138397',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3024614100961154',
+                        USDKLAYRate: '1.29328327075515',
+                        USDDracoRate: '0.6527329995828318'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 10:50:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '140901',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3024614100961154',
+                        USDKLAYRate: '1.29328327075515',
+                        USDDracoRate: '0.6522027534418222'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 10:55:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '142237',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3024614100961154',
+                        USDKLAYRate: '1.29328327075515',
+                        USDDracoRate: '0.6516725073008126'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 11:00:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '144131',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.3024614100961154',
+                        USDKLAYRate: '1.29328327075515',
+                        USDDracoRate: '0.6516725073008126'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 11:05:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '146013',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2273675427619448',
+                        USDKLAYRate: '1.288277012932872',
+                        USDDracoRate: '0.6424434710054430'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 11:10:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '148193',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2273675427619448',
+                        USDKLAYRate: '1.288277012932872',
+                        USDDracoRate: '0.6419207342511668'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 11:15:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '148984',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2273675427619448',
+                        USDKLAYRate: '1.288277012932872',
+                        USDDracoRate: '0.6419207342511668'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 11:20:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '150596',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2273675427619448',
+                        USDKLAYRate: '1.288277012932872',
+                        USDDracoRate: '0.6424434710054430'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 11:25:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '151994',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2273675427619448',
+                        USDKLAYRate: '1.288277012932872',
+                        USDDracoRate: '0.6424434710054430'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 11:30:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '153376',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2273675427619448',
+                        USDKLAYRate: '1.288277012932872',
+                        USDDracoRate: '0.6424434710054430'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 11:35:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '154282',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2273675427619448',
+                        USDKLAYRate: '1.288277012932872',
+                        USDDracoRate: '0.6419207342511668'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 11:40:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '155395',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2273675427619448',
+                        USDKLAYRate: '1.288277012932872',
+                        USDDracoRate: '0.6424434710054430'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 11:45:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '156676',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2273675427619448',
+                        USDKLAYRate: '1.288277012932872',
+                        USDDracoRate: '0.6424434710054430'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 11:50:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '158047',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2273675427619448',
+                        USDKLAYRate: '1.288277012932872',
+                        USDDracoRate: '0.6429662077597192'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 11:55:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '159710',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2273675427619448',
+                        USDKLAYRate: '1.288277012932872',
+                        USDDracoRate: '0.6419207342511668'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 12:00:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '160611',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1314142678349501',
+                        USDKLAYRate: '1.279098873592029',
+                        USDDracoRate: '0.6306508135169153'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 12:05:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '161549',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1314142678349501',
+                        USDKLAYRate: '1.279098873592029',
+                        USDDracoRate: '0.6306508135169153'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 12:10:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '162900',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1314142678349501',
+                        USDKLAYRate: '1.279098873592029',
+                        USDDracoRate: '0.6301376720901319'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 12:15:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '164183',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1314142678349501',
+                        USDKLAYRate: '1.279098873592029',
+                        USDDracoRate: '0.6306508135169153'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 12:20:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '165365',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1314142678349501',
+                        USDKLAYRate: '1.279098873592029',
+                        USDDracoRate: '0.6311639549436988'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 12:25:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '166779',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1314142678349501',
+                        USDKLAYRate: '1.279098873592029',
+                        USDDracoRate: '0.6306508135169153'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 12:30:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '168300',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1314142678349501',
+                        USDKLAYRate: '1.279098873592029',
+                        USDDracoRate: '0.6301376720901319'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 12:35:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '170527',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1314142678349501',
+                        USDKLAYRate: '1.279098873592029',
+                        USDDracoRate: '0.6306508135169153'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 12:40:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '172114',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1314142678349501',
+                        USDKLAYRate: '1.279098873592029',
+                        USDDracoRate: '0.6306508135169153'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 12:45:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '174686',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1314142678349501',
+                        USDKLAYRate: '1.279098873592029',
+                        USDDracoRate: '0.6296245306633484'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 12:50:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '176470',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1314142678349501',
+                        USDKLAYRate: '1.279098873592029',
+                        USDDracoRate: '0.6296245306633484'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 12:55:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '178650',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1314142678349501',
+                        USDKLAYRate: '1.279098873592029',
+                        USDDracoRate: '0.6301376720901319'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 13:00:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '179903',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1105548602421251',
+                        USDKLAYRate: '1.2774301209846031',
+                        USDDracoRate: '0.6285982478097814'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 13:05:00',
+                        DracoPrice: '0.1231',
+                        DracoAmount: '181268',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1105548602421251',
+                        USDKLAYRate: '1.2774301209846031',
+                        USDDracoRate: '0.6291093032958056'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 13:10:00',
+                        DracoPrice: '0.1231',
+                        DracoAmount: '192049',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1105548602421251',
+                        USDKLAYRate: '1.2774301209846031',
+                        USDDracoRate: '0.6291093032958056'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 13:15:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '195386',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1105548602421251',
+                        USDKLAYRate: '1.2774301209846031',
+                        USDDracoRate: '0.6280871923237572'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 13:20:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '197113',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1105548602421251',
+                        USDKLAYRate: '1.2774301209846031',
+                        USDDracoRate: '0.6280871923237572'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 13:25:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '198716',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1105548602421251',
+                        USDKLAYRate: '1.2774301209846031',
+                        USDDracoRate: '0.6285982478097814'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 13:30:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '200358',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1105548602421251',
+                        USDKLAYRate: '1.2774301209846031',
+                        USDDracoRate: '0.6280871923237572'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 13:35:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '202056',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1105548602421251',
+                        USDKLAYRate: '1.2774301209846031',
+                        USDDracoRate: '0.6280871923237572'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 13:40:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '203308',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1105548602421251',
+                        USDKLAYRate: '1.2774301209846031',
+                        USDDracoRate: '0.6280871923237572'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 13:45:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '205399',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1105548602421251',
+                        USDKLAYRate: '1.2774301209846031',
+                        USDDracoRate: '0.6280871923237572'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 13:50:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '207455',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1105548602421251',
+                        USDKLAYRate: '1.2774301209846031',
+                        USDDracoRate: '0.6280871923237572'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 13:55:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '208500',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1105548602421251',
+                        USDKLAYRate: '1.2774301209846031',
+                        USDDracoRate: '0.6275761368377329'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 14:00:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '209853',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1105548602421251',
+                        USDKLAYRate: '1.2774301209846031',
+                        USDDracoRate: '0.6285982478097814'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 14:05:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '211862',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.0563204005007805',
+                        USDKLAYRate: '1.2690863579474729',
+                        USDDracoRate: '0.6219274092615960'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 14:10:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '213865',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.0563204005007805',
+                        USDKLAYRate: '1.2690863579474729',
+                        USDDracoRate: '0.6219274092615960'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 14:15:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '215129',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.0563204005007805',
+                        USDKLAYRate: '1.2690863579474729',
+                        USDDracoRate: '0.6219274092615960'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 14:20:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '216204',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.0563204005007805',
+                        USDKLAYRate: '1.2690863579474729',
+                        USDDracoRate: '0.6219274092615960'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 14:25:00',
+                        DracoPrice: '0.1234',
+                        DracoAmount: '217923',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.0563204005007805',
+                        USDKLAYRate: '1.2690863579474729',
+                        USDDracoRate: '0.6239499374217963'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 14:30:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '219864',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.0563204005007805',
+                        USDKLAYRate: '1.2690863579474729',
+                        USDDracoRate: '0.6219274092615960'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 14:35:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '221748',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.0563204005007805',
+                        USDKLAYRate: '1.2690863579474729',
+                        USDDracoRate: '0.6219274092615960'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 14:40:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '223353',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.0563204005007805',
+                        USDKLAYRate: '1.2690863579474729',
+                        USDDracoRate: '0.6219274092615960'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 14:45:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '225708',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.0563204005007805',
+                        USDKLAYRate: '1.2690863579474729',
+                        USDDracoRate: '0.6214217772215459'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 14:50:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '227351',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.0563204005007805',
+                        USDKLAYRate: '1.2690863579474729',
+                        USDDracoRate: '0.6219274092615960'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 14:55:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '228717',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.0563204005007805',
+                        USDKLAYRate: '1.2690863579474729',
+                        USDDracoRate: '0.6214217772215459'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 15:00:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '231021',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.0563204005007805',
+                        USDKLAYRate: '1.2690863579474729',
+                        USDDracoRate: '0.6209161451814958'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 15:05:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '232634',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2281845536607552',
+                        USDKLAYRate: '1.2930458040788471',
+                        USDDracoRate: '0.6420210631895408'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 15:10:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '236778',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2281845536607552',
+                        USDKLAYRate: '1.2930458040788471',
+                        USDDracoRate: '0.6420210631895408'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 15:15:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '238490',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2281845536607552',
+                        USDKLAYRate: '1.2930458040788471',
+                        USDDracoRate: '0.6420210631895408'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 15:20:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '239259',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2281845536607552',
+                        USDKLAYRate: '1.2930458040788471',
+                        USDDracoRate: '0.6425438816449068'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 15:25:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '240910',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2281845536607552',
+                        USDKLAYRate: '1.2930458040788471',
+                        USDDracoRate: '0.6420210631895408'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 15:30:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '242023',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2281845536607552',
+                        USDKLAYRate: '1.2930458040788471',
+                        USDDracoRate: '0.6420210631895408'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 15:35:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '243461',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2281845536607552',
+                        USDKLAYRate: '1.2930458040788471',
+                        USDDracoRate: '0.6420210631895408'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 15:40:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '245422',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2281845536607552',
+                        USDKLAYRate: '1.2930458040788471',
+                        USDDracoRate: '0.6420210631895408'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 15:45:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '247042',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2281845536607552',
+                        USDKLAYRate: '1.2930458040788471',
+                        USDDracoRate: '0.6409754262788085'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 15:50:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '248258',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2281845536607552',
+                        USDKLAYRate: '1.2930458040788471',
+                        USDDracoRate: '0.6420210631895408'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 15:55:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '250273',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2281845536607552',
+                        USDKLAYRate: '1.2930458040788471',
+                        USDDracoRate: '0.6420210631895408'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 16:00:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '252153',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2281845536607552',
+                        USDKLAYRate: '1.2930458040788471',
+                        USDDracoRate: '0.6420210631895408'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 16:05:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '253470',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2616181878967954',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6456005516549368'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 16:10:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '256120',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2616181878967954',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6450743898361471'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 16:15:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '257650',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2616181878967954',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6450743898361471'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 16:20:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '258238',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2616181878967954',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6461267134737265'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 16:25:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '259378',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2616181878967954',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6461267134737265'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 16:30:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '260364',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2616181878967954',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6466528752925161'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 16:35:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '261968',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2616181878967954',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6466528752925161'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 16:40:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '264401',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2616181878967954',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6466528752925161'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 16:45:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '267605',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2616181878967954',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6471790371113059'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 16:50:00',
+                        DracoPrice: '0.1232',
+                        DracoAmount: '268868',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2616181878967954',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6482313607488852'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 16:55:00',
+                        DracoPrice: '0.1232',
+                        DracoAmount: '270788',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2616181878967954',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6482313607488852'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 17:00:00',
+                        DracoPrice: '0.12330000000000001',
+                        DracoAmount: '272359',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2198261451017451',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6436045636910452'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 17:05:00',
+                        DracoPrice: '0.12330000000000001',
+                        DracoAmount: '277805',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2198261451017451',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6436045636910452'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 17:10:00',
+                        DracoPrice: '0.12330000000000001',
+                        DracoAmount: '279595',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2198261451017451',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6436045636910452'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 17:15:00',
+                        DracoPrice: '0.12330000000000001',
+                        DracoAmount: '281663',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2198261451017451',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6436045636910452'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 17:20:00',
+                        DracoPrice: '0.12330000000000001',
+                        DracoAmount: '284555',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2198261451017451',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6436045636910452'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 17:25:00',
+                        DracoPrice: '0.12330000000000001',
+                        DracoAmount: '286588',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2198261451017451',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6436045636910452'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 17:30:00',
+                        DracoPrice: '0.1232',
+                        DracoAmount: '289826',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2198261451017451',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6430825810765350'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 17:35:00',
+                        DracoPrice: '0.1234',
+                        DracoAmount: '291123',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2198261451017451',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6441265463055553'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 17:40:00',
+                        DracoPrice: '0.1241',
+                        DracoAmount: '292111',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2198261451017451',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6477804246071266'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 17:45:00',
+                        DracoPrice: '0.1241',
+                        DracoAmount: '294306',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2198261451017451',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6477804246071266'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 17:50:00',
+                        DracoPrice: '0.12429999999999999',
+                        DracoAmount: '296570',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2198261451017451',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6488243898361469'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 17:55:00',
+                        DracoPrice: '0.1242',
+                        DracoAmount: '298703',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.2198261451017451',
+                        USDKLAYRate: '1.2905382815111441',
+                        USDDracoRate: '0.6483024072216368'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 18:00:00',
+                        DracoPrice: '0.1244',
+                        DracoAmount: '299965',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19893012370422',
+                        USDKLAYRate: '1.280508191240332',
+                        USDDracoRate: '0.6467469073888049'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 18:05:00',
+                        DracoPrice: '0.1241',
+                        DracoAmount: '301256',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19893012370422',
+                        USDKLAYRate: '1.280508191240332',
+                        USDDracoRate: '0.6451872283516937'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 18:10:00',
+                        DracoPrice: '0.1236',
+                        DracoAmount: '302597',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19893012370422',
+                        USDKLAYRate: '1.280508191240332',
+                        USDDracoRate: '0.6425877632898416'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 18:15:00',
+                        DracoPrice: '0.1235',
+                        DracoAmount: '302782',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19893012370422',
+                        USDKLAYRate: '1.280508191240332',
+                        USDDracoRate: '0.6420678702774711'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 18:20:00',
+                        DracoPrice: '0.1235',
+                        DracoAmount: '303918',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19893012370422',
+                        USDKLAYRate: '1.280508191240332',
+                        USDDracoRate: '0.6420678702774711'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 18:25:00',
+                        DracoPrice: '0.12330000000000001',
+                        DracoAmount: '304250',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19893012370422',
+                        USDKLAYRate: '1.280508191240332',
+                        USDDracoRate: '0.6410280842527304'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 18:30:00',
+                        DracoPrice: '0.1231',
+                        DracoAmount: '304417',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19893012370422',
+                        USDKLAYRate: '1.280508191240332',
+                        USDDracoRate: '0.6399882982279895'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 18:35:00',
+                        DracoPrice: '0.1231',
+                        DracoAmount: '304685',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19893012370422',
+                        USDKLAYRate: '1.280508191240332',
+                        USDDracoRate: '0.6399882982279895'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 18:40:00',
+                        DracoPrice: '0.1232',
+                        DracoAmount: '304805',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19893012370422',
+                        USDKLAYRate: '1.280508191240332',
+                        USDDracoRate: '0.6405081912403600'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 18:45:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '304919',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19893012370422',
+                        USDKLAYRate: '1.280508191240332',
+                        USDDracoRate: '0.6394684052156191'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 18:50:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '305140',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19893012370422',
+                        USDKLAYRate: '1.280508191240332',
+                        USDDracoRate: '0.6384286191908782'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 18:55:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '305359',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19893012370422',
+                        USDKLAYRate: '1.280508191240332',
+                        USDDracoRate: '0.6389485122032487'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 19:00:00',
+                        DracoPrice: '0.1231',
+                        DracoAmount: '305667',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19893012370422',
+                        USDKLAYRate: '1.280508191240332',
+                        USDDracoRate: '0.6399882982279895'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 19:05:00',
+                        DracoPrice: '0.1231',
+                        DracoAmount: '305788',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1738548980271899',
+                        USDKLAYRate: '1.273821464393124',
+                        USDDracoRate: '0.6369015379471471'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 19:10:00',
+                        DracoPrice: '0.1235',
+                        DracoAmount: '306085',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1738548980271899',
+                        USDKLAYRate: '1.273821464393124',
+                        USDDracoRate: '0.6389710799063579'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 19:35:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '307116',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1738548980271899',
+                        USDKLAYRate: '1.273821464393124',
+                        USDDracoRate: '0.6348319959879363'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 19:40:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '307351',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1738548980271899',
+                        USDKLAYRate: '1.273821464393124',
+                        USDDracoRate: '0.6343146104981335'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 19:45:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '307427',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1738548980271899',
+                        USDKLAYRate: '1.273821464393124',
+                        USDDracoRate: '0.6343146104981335'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 19:50:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '307722',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1738548980271899',
+                        USDKLAYRate: '1.273821464393124',
+                        USDDracoRate: '0.6337972250083308'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 19:55:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '307880',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.1738548980271899',
+                        USDKLAYRate: '1.273821464393124',
+                        USDDracoRate: '0.6343146104981335'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 20:00:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '307973',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.186392510865705',
+                        USDKLAYRate: '1.2796723503844312',
+                        USDDracoRate: '0.6363703610832220'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 20:05:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '308036',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.186392510865705',
+                        USDKLAYRate: '1.2796723503844312',
+                        USDDracoRate: '0.6358517218321355'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 20:10:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '308205',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.186392510865705',
+                        USDKLAYRate: '1.2796723503844312',
+                        USDDracoRate: '0.6358517218321355'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 20:15:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '308320',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.186392510865705',
+                        USDKLAYRate: '1.2796723503844312',
+                        USDDracoRate: '0.6363703610832220'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 20:20:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '308624',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.186392510865705',
+                        USDKLAYRate: '1.2796723503844312',
+                        USDDracoRate: '0.6374076395853951'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 20:25:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '308809',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.186392510865705',
+                        USDKLAYRate: '1.2796723503844312',
+                        USDDracoRate: '0.6358517218321355'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 20:30:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '308853',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.186392510865705',
+                        USDKLAYRate: '1.2796723503844312',
+                        USDDracoRate: '0.6353330825810488'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 20:35:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '308941',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.186392510865705',
+                        USDKLAYRate: '1.2796723503844312',
+                        USDDracoRate: '0.6353330825810488'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 20:40:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '309013',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.186392510865705',
+                        USDKLAYRate: '1.2796723503844312',
+                        USDDracoRate: '0.6374076395853951'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 20:45:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '309063',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.186392510865705',
+                        USDKLAYRate: '1.2796723503844312',
+                        USDDracoRate: '0.6363703610832220'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 20:50:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '309227',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.186392510865705',
+                        USDKLAYRate: '1.2796723503844312',
+                        USDDracoRate: '0.6353330825810488'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 20:55:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '309259',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.186392510865705',
+                        USDKLAYRate: '1.2796723503844312',
+                        USDDracoRate: '0.6353330825810488'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 21:00:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '309385',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19057171514521',
+                        USDKLAYRate: '1.2788365095285301',
+                        USDDracoRate: '0.6368831494483173'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 21:05:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '309469',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19057171514521',
+                        USDKLAYRate: '1.2788365095285301',
+                        USDDracoRate: '0.6374022066198318'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 21:10:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '309593',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19057171514521',
+                        USDKLAYRate: '1.2788365095285301',
+                        USDDracoRate: '0.6368831494483173'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 21:15:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '309886',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19057171514521',
+                        USDKLAYRate: '1.2788365095285301',
+                        USDDracoRate: '0.6363640922768028'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 21:20:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '310026',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19057171514521',
+                        USDKLAYRate: '1.2788365095285301',
+                        USDDracoRate: '0.6368831494483173'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 21:25:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '310153',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19057171514521',
+                        USDKLAYRate: '1.2788365095285301',
+                        USDDracoRate: '0.6358450351052882'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 21:30:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '310316',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19057171514521',
+                        USDKLAYRate: '1.2788365095285301',
+                        USDDracoRate: '0.6363640922768028'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 21:35:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '310450',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19057171514521',
+                        USDKLAYRate: '1.2788365095285301',
+                        USDDracoRate: '0.6363640922768028'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 21:40:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '310559',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19057171514521',
+                        USDKLAYRate: '1.2788365095285301',
+                        USDDracoRate: '0.6363640922768028'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 21:45:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '310629',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19057171514521',
+                        USDKLAYRate: '1.2788365095285301',
+                        USDDracoRate: '0.6363640922768028'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 21:50:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '310638',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19057171514521',
+                        USDKLAYRate: '1.2788365095285301',
+                        USDDracoRate: '0.6363640922768028'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 21:55:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '311052',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19057171514521',
+                        USDKLAYRate: '1.2788365095285301',
+                        USDDracoRate: '0.6363640922768028'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 22:00:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '311108',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '5.19057171514521',
+                        USDKLAYRate: '1.2788365095285301',
+                        USDDracoRate: '0.6363640922768028'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 22:05:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '311206',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9983283182879807',
+                        USDKLAYRate: '1.2587763289869061',
+                        USDDracoRate: '0.6127950518221065'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 22:10:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '311426',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9983283182879807',
+                        USDKLAYRate: '1.2587763289869061',
+                        USDDracoRate: '0.6132948846539352'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 22:15:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '311598',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9983283182879807',
+                        USDKLAYRate: '1.2587763289869061',
+                        USDDracoRate: '0.6127950518221065'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 22:20:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '311644',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9983283182879807',
+                        USDKLAYRate: '1.2587763289869061',
+                        USDDracoRate: '0.6137947174857641'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 22:25:00',
+                        DracoPrice: '0.1229',
+                        DracoAmount: '312812',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9983283182879807',
+                        USDKLAYRate: '1.2587763289869061',
+                        USDDracoRate: '0.6142945503175928'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 22:30:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '313068',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9983283182879807',
+                        USDKLAYRate: '1.2587763289869061',
+                        USDDracoRate: '0.6132948846539352'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 22:35:00',
+                        DracoPrice: '0.12239999999999999',
+                        DracoAmount: '313691',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9983283182879807',
+                        USDKLAYRate: '1.2587763289869061',
+                        USDDracoRate: '0.6117953861584489'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 22:40:00',
+                        DracoPrice: '0.12239999999999999',
+                        DracoAmount: '313809',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9983283182879807',
+                        USDKLAYRate: '1.2587763289869061',
+                        USDDracoRate: '0.6117953861584489'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 22:45:00',
+                        DracoPrice: '0.12239999999999999',
+                        DracoAmount: '313948',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9983283182879807',
+                        USDKLAYRate: '1.2587763289869061',
+                        USDDracoRate: '0.6117953861584489'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 22:50:00',
+                        DracoPrice: '0.12239999999999999',
+                        DracoAmount: '314041',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9983283182879807',
+                        USDKLAYRate: '1.2587763289869061',
+                        USDDracoRate: '0.6117953861584489'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 22:55:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '314063',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9983283182879807',
+                        USDKLAYRate: '1.2587763289869061',
+                        USDDracoRate: '0.6122952189902776'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 23:00:00',
+                        DracoPrice: '0.12239999999999999',
+                        DracoAmount: '314174',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9983283182879807',
+                        USDKLAYRate: '1.2587763289869061',
+                        USDDracoRate: '0.6117953861584489'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 23:05:00',
+                        DracoPrice: '0.12239999999999999',
+                        DracoAmount: '314337',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9565362754929305',
+                        USDKLAYRate: '1.2378803075893812',
+                        USDDracoRate: '0.6066800401203347'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 23:10:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '314400',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9565362754929305',
+                        USDKLAYRate: '1.2378803075893812',
+                        USDDracoRate: '0.6071756937478839'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 23:15:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '314541',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9565362754929305',
+                        USDKLAYRate: '1.2378803075893812',
+                        USDDracoRate: '0.6071756937478839'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 23:20:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '314756',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9565362754929305',
+                        USDKLAYRate: '1.2378803075893812',
+                        USDDracoRate: '0.6071756937478839'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 23:25:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '315142',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9565362754929305',
+                        USDKLAYRate: '1.2378803075893812',
+                        USDDracoRate: '0.6071756937478839'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 23:30:00',
+                        DracoPrice: '0.12239999999999999',
+                        DracoAmount: '315512',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9565362754929305',
+                        USDKLAYRate: '1.2378803075893812',
+                        USDDracoRate: '0.6066800401203347'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 23:35:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '315545',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9565362754929305',
+                        USDKLAYRate: '1.2378803075893812',
+                        USDDracoRate: '0.6071756937478839'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 23:40:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '315745',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9565362754929305',
+                        USDKLAYRate: '1.2378803075893812',
+                        USDDracoRate: '0.6076713473754333'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 23:45:00',
+                        DracoPrice: '0.1232',
+                        DracoAmount: '315997',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9565362754929305',
+                        USDKLAYRate: '1.2378803075893812',
+                        USDDracoRate: '0.6106452691407290'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 23:50:00',
+                        DracoPrice: '0.1232',
+                        DracoAmount: '316136',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9565362754929305',
+                        USDKLAYRate: '1.2378803075893812',
+                        USDDracoRate: '0.6106452691407290'
+                    },
+                    {
+                        CreatedDT: '2022-02-21 23:55:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '316524',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9565362754929305',
+                        USDKLAYRate: '1.2378803075893812',
+                        USDDracoRate: '0.6076713473754333'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 00:00:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '3',
+                        DracoPricePrev: '0.1242',
+                        DracoAmountPrev: '205836',
+                        USDWemixRate: '4.9565362754929305',
+                        USDKLAYRate: '1.2378803075893812',
+                        USDDracoRate: '0.6076713473754333'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 00:05:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '161',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.7099632230021351',
+                        USDKLAYRate: '1.201103309929737',
+                        USDDracoRate: '0.5769704948177615'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 00:10:00',
+                        DracoPrice: '0.1235',
+                        DracoAmount: '373',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.7099632230021351',
+                        USDKLAYRate: '1.201103309929737',
+                        USDDracoRate: '0.5816804580407636'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 00:15:00',
+                        DracoPrice: '0.1235',
+                        DracoAmount: '445',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.7099632230021351',
+                        USDKLAYRate: '1.201103309929737',
+                        USDDracoRate: '0.5816804580407636'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 00:20:00',
+                        DracoPrice: '0.1236',
+                        DracoAmount: '575',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.7099632230021351',
+                        USDKLAYRate: '1.201103309929737',
+                        USDDracoRate: '0.5821514543630639'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 00:25:00',
+                        DracoPrice: '0.1236',
+                        DracoAmount: '672',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.7099632230021351',
+                        USDKLAYRate: '1.201103309929737',
+                        USDDracoRate: '0.5821514543630639'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 00:30:00',
+                        DracoPrice: '0.1239',
+                        DracoAmount: '891',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.7099632230021351',
+                        USDKLAYRate: '1.201103309929737',
+                        USDDracoRate: '0.5835644433299645'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 00:35:00',
+                        DracoPrice: '0.124',
+                        DracoAmount: '1030',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.7099632230021351',
+                        USDKLAYRate: '1.201103309929737',
+                        USDDracoRate: '0.5840354396522648'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 00:40:00',
+                        DracoPrice: '0.124',
+                        DracoAmount: '1319',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.7099632230021351',
+                        USDKLAYRate: '1.201103309929737',
+                        USDDracoRate: '0.5840354396522648'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 00:45:00',
+                        DracoPrice: '0.1239',
+                        DracoAmount: '6257',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.7099632230021351',
+                        USDKLAYRate: '1.201103309929737',
+                        USDDracoRate: '0.5835644433299645'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 00:50:00',
+                        DracoPrice: '0.1246',
+                        DracoAmount: '6508',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.7099632230021351',
+                        USDKLAYRate: '1.201103309929737',
+                        USDDracoRate: '0.5868614175860660'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 00:55:00',
+                        DracoPrice: '0.12479999999999999',
+                        DracoAmount: '6679',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.7099632230021351',
+                        USDKLAYRate: '1.201103309929737',
+                        USDDracoRate: '0.5878034102306664'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 01:00:00',
+                        DracoPrice: '0.12470000000000001',
+                        DracoAmount: '7001',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8938482113003552',
+                        USDKLAYRate: '1.2286860581744701',
+                        USDDracoRate: '0.6102628719491543'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 01:05:00',
+                        DracoPrice: '0.124',
+                        DracoAmount: '7486',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8938482113003552',
+                        USDKLAYRate: '1.2286860581744701',
+                        USDDracoRate: '0.6068371782012441'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 01:10:00',
+                        DracoPrice: '0.1241',
+                        DracoAmount: '7919',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8938482113003552',
+                        USDKLAYRate: '1.2286860581744701',
+                        USDDracoRate: '0.6073265630223741'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 01:15:00',
+                        DracoPrice: '0.12429999999999999',
+                        DracoAmount: '8193',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8938482113003552',
+                        USDKLAYRate: '1.2286860581744701',
+                        USDDracoRate: '0.6083053326646342'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 01:20:00',
+                        DracoPrice: '0.12470000000000001',
+                        DracoAmount: '8737',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8938482113003552',
+                        USDKLAYRate: '1.2286860581744701',
+                        USDDracoRate: '0.6102628719491543'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 01:25:00',
+                        DracoPrice: '0.12479999999999999',
+                        DracoAmount: '9260',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8938482113003552',
+                        USDKLAYRate: '1.2286860581744701',
+                        USDDracoRate: '0.6107522567702843'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 01:30:00',
+                        DracoPrice: '0.12479999999999999',
+                        DracoAmount: '10697',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8938482113003552',
+                        USDKLAYRate: '1.2286860581744701',
+                        USDDracoRate: '0.6107522567702843'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 01:35:00',
+                        DracoPrice: '0.12479999999999999',
+                        DracoAmount: '16321',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8938482113003552',
+                        USDKLAYRate: '1.2286860581744701',
+                        USDDracoRate: '0.6107522567702843'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 01:40:00',
+                        DracoPrice: '0.1249',
+                        DracoAmount: '16546',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8938482113003552',
+                        USDKLAYRate: '1.2286860581744701',
+                        USDDracoRate: '0.6112416415914144'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 01:45:00',
+                        DracoPrice: '0.125',
+                        DracoAmount: '17139',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8938482113003552',
+                        USDKLAYRate: '1.2286860581744701',
+                        USDDracoRate: '0.6117310264125444'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 01:50:00',
+                        DracoPrice: '0.1249',
+                        DracoAmount: '18691',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8938482113003552',
+                        USDKLAYRate: '1.2286860581744701',
+                        USDDracoRate: '0.6112416415914144'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 01:55:00',
+                        DracoPrice: '0.1249',
+                        DracoAmount: '19260',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8938482113003552',
+                        USDKLAYRate: '1.2286860581744701',
+                        USDDracoRate: '0.6112416415914144'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 02:00:00',
+                        DracoPrice: '0.12479999999999999',
+                        DracoAmount: '20287',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8102641257102556',
+                        USDKLAYRate: '1.2245068538949651',
+                        USDDracoRate: '0.6003209628886399'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 02:05:00',
+                        DracoPrice: '0.12470000000000001',
+                        DracoAmount: '20715',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8102641257102556',
+                        USDKLAYRate: '1.2245068538949651',
+                        USDDracoRate: '0.5998399364760689'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 02:10:00',
+                        DracoPrice: '0.12479999999999999',
+                        DracoAmount: '21313',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8102641257102556',
+                        USDKLAYRate: '1.2245068538949651',
+                        USDDracoRate: '0.6003209628886399'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 02:15:00',
+                        DracoPrice: '0.12479999999999999',
+                        DracoAmount: '22493',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8102641257102556',
+                        USDKLAYRate: '1.2245068538949651',
+                        USDDracoRate: '0.6003209628886399'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 02:20:00',
+                        DracoPrice: '0.12479999999999999',
+                        DracoAmount: '23007',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8102641257102556',
+                        USDKLAYRate: '1.2245068538949651',
+                        USDDracoRate: '0.6003209628886399'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 02:25:00',
+                        DracoPrice: '0.1249',
+                        DracoAmount: '23603',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8102641257102556',
+                        USDKLAYRate: '1.2245068538949651',
+                        USDDracoRate: '0.6008019893012109'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 02:30:00',
+                        DracoPrice: '0.12479999999999999',
+                        DracoAmount: '24223',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8102641257102556',
+                        USDKLAYRate: '1.2245068538949651',
+                        USDDracoRate: '0.6003209628886399'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 02:35:00',
+                        DracoPrice: '0.12479999999999999',
+                        DracoAmount: '24720',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8102641257102556',
+                        USDKLAYRate: '1.2245068538949651',
+                        USDDracoRate: '0.6003209628886399'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 02:40:00',
+                        DracoPrice: '0.12479999999999999',
+                        DracoAmount: '26270',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8102641257102556',
+                        USDKLAYRate: '1.2245068538949651',
+                        USDDracoRate: '0.6003209628886399'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 02:45:00',
+                        DracoPrice: '0.12479999999999999',
+                        DracoAmount: '26800',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8102641257102556',
+                        USDKLAYRate: '1.2245068538949651',
+                        USDDracoRate: '0.6003209628886399'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 02:50:00',
+                        DracoPrice: '0.12429999999999999',
+                        DracoAmount: '27407',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8102641257102556',
+                        USDKLAYRate: '1.2245068538949651',
+                        USDDracoRate: '0.5979158308257847'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 02:55:00',
+                        DracoPrice: '0.1242',
+                        DracoAmount: '27858',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8102641257102556',
+                        USDKLAYRate: '1.2245068538949651',
+                        USDDracoRate: '0.5974348044132137'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 03:00:00',
+                        DracoPrice: '0.1242',
+                        DracoAmount: '28324',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.8102641257102556',
+                        USDKLAYRate: '1.2245068538949651',
+                        USDDracoRate: '0.5974348044132137'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 03:05:00',
+                        DracoPrice: '0.1242',
+                        DracoAmount: '28742',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.852056168505305',
+                        USDKLAYRate: '1.22032764961546',
+                        USDDracoRate: '0.6026253761283589'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 03:10:00',
+                        DracoPrice: '0.1242',
+                        DracoAmount: '29285',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.852056168505305',
+                        USDKLAYRate: '1.22032764961546',
+                        USDDracoRate: '0.6026253761283589'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 03:15:00',
+                        DracoPrice: '0.12429999999999999',
+                        DracoAmount: '29769',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.852056168505305',
+                        USDKLAYRate: '1.22032764961546',
+                        USDDracoRate: '0.6031105817452094'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 03:20:00',
+                        DracoPrice: '0.1241',
+                        DracoAmount: '30240',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.852056168505305',
+                        USDKLAYRate: '1.22032764961546',
+                        USDDracoRate: '0.6021401705115084'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 03:25:00',
+                        DracoPrice: '0.1241',
+                        DracoAmount: '31297',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.852056168505305',
+                        USDKLAYRate: '1.22032764961546',
+                        USDDracoRate: '0.6021401705115084'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 03:30:00',
+                        DracoPrice: '0.12429999999999999',
+                        DracoAmount: '32797',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.852056168505305',
+                        USDKLAYRate: '1.22032764961546',
+                        USDDracoRate: '0.6031105817452094'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 03:35:00',
+                        DracoPrice: '0.12509999999999999',
+                        DracoAmount: '35654',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.852056168505305',
+                        USDKLAYRate: '1.22032764961546',
+                        USDDracoRate: '0.6069922266800136'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 03:40:00',
+                        DracoPrice: '0.1255',
+                        DracoAmount: '36142',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.852056168505305',
+                        USDKLAYRate: '1.22032764961546',
+                        USDDracoRate: '0.6089330491474158'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 03:45:00',
+                        DracoPrice: '0.12520000000000001',
+                        DracoAmount: '36818',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.852056168505305',
+                        USDKLAYRate: '1.22032764961546',
+                        USDDracoRate: '0.6074774322968642'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 03:50:00',
+                        DracoPrice: '0.12520000000000001',
+                        DracoAmount: '37813',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.852056168505305',
+                        USDKLAYRate: '1.22032764961546',
+                        USDDracoRate: '0.6074774322968642'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 03:55:00',
+                        DracoPrice: '0.12520000000000001',
+                        DracoAmount: '38189',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.852056168505305',
+                        USDKLAYRate: '1.22032764961546',
+                        USDDracoRate: '0.6074774322968642'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 04:00:00',
+                        DracoPrice: '0.1242',
+                        DracoAmount: '38454',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.852056168505305',
+                        USDKLAYRate: '1.22032764961546',
+                        USDDracoRate: '0.6026253761283589'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 04:05:00',
+                        DracoPrice: '0.1241',
+                        DracoAmount: '38931',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9231026412568903',
+                        USDKLAYRate: '1.212805081912351',
+                        USDDracoRate: '0.6109570377799801'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 04:10:00',
+                        DracoPrice: '0.1241',
+                        DracoAmount: '39247',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9231026412568903',
+                        USDKLAYRate: '1.212805081912351',
+                        USDDracoRate: '0.6109570377799801'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 04:15:00',
+                        DracoPrice: '0.1241',
+                        DracoAmount: '42603',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9231026412568903',
+                        USDKLAYRate: '1.212805081912351',
+                        USDDracoRate: '0.6109570377799801'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 04:20:00',
+                        DracoPrice: '0.124',
+                        DracoAmount: '43125',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9231026412568903',
+                        USDKLAYRate: '1.212805081912351',
+                        USDDracoRate: '0.6104647275158543'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 04:25:00',
+                        DracoPrice: '0.124',
+                        DracoAmount: '43357',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9231026412568903',
+                        USDKLAYRate: '1.212805081912351',
+                        USDDracoRate: '0.6104647275158543'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 04:30:00',
+                        DracoPrice: '0.1241',
+                        DracoAmount: '44186',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9231026412568903',
+                        USDKLAYRate: '1.212805081912351',
+                        USDDracoRate: '0.6109570377799801'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 04:35:00',
+                        DracoPrice: '0.1241',
+                        DracoAmount: '44866',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9231026412568903',
+                        USDKLAYRate: '1.212805081912351',
+                        USDDracoRate: '0.6109570377799801'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 04:40:00',
+                        DracoPrice: '0.1241',
+                        DracoAmount: '45096',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9231026412568903',
+                        USDKLAYRate: '1.212805081912351',
+                        USDDracoRate: '0.6109570377799801'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 04:45:00',
+                        DracoPrice: '0.12429999999999999',
+                        DracoAmount: '45473',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9231026412568903',
+                        USDKLAYRate: '1.212805081912351',
+                        USDDracoRate: '0.6119416583082314'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 04:50:00',
+                        DracoPrice: '0.1235',
+                        DracoAmount: '46452',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9231026412568903',
+                        USDKLAYRate: '1.212805081912351',
+                        USDDracoRate: '0.6080031761952259'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 04:55:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '47231',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9231026412568903',
+                        USDKLAYRate: '1.212805081912351',
+                        USDDracoRate: '0.6055416248745975'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 05:00:00',
+                        DracoPrice: '0.1225',
+                        DracoAmount: '51515',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9231026412568903',
+                        USDKLAYRate: '1.212805081912351',
+                        USDDracoRate: '0.6030800735539691'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 05:05:00',
+                        DracoPrice: '0.12239999999999999',
+                        DracoAmount: '52461',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9147442326978803',
+                        USDKLAYRate: '1.2019391507856381',
+                        USDDracoRate: '0.6015646940822206'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 05:10:00',
+                        DracoPrice: '0.12230000000000001',
+                        DracoAmount: '54208',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9147442326978803',
+                        USDKLAYRate: '1.2019391507856381',
+                        USDDracoRate: '0.6010732196589508'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 05:15:00',
+                        DracoPrice: '0.122',
+                        DracoAmount: '56656',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9147442326978803',
+                        USDKLAYRate: '1.2019391507856381',
+                        USDDracoRate: '0.5995987963891414'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 05:20:00',
+                        DracoPrice: '0.12189999999999999',
+                        DracoAmount: '57775',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9147442326978803',
+                        USDKLAYRate: '1.2019391507856381',
+                        USDDracoRate: '0.5991073219658716'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 05:25:00',
+                        DracoPrice: '0.1221',
+                        DracoAmount: '58395',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9147442326978803',
+                        USDKLAYRate: '1.2019391507856381',
+                        USDDracoRate: '0.6000902708124112'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 05:30:00',
+                        DracoPrice: '0.122',
+                        DracoAmount: '59165',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9147442326978803',
+                        USDKLAYRate: '1.2019391507856381',
+                        USDDracoRate: '0.5995987963891414'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 05:35:00',
+                        DracoPrice: '0.1221',
+                        DracoAmount: '60151',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9147442326978803',
+                        USDKLAYRate: '1.2019391507856381',
+                        USDDracoRate: '0.6000902708124112'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 05:40:00',
+                        DracoPrice: '0.1222',
+                        DracoAmount: '61061',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9147442326978803',
+                        USDKLAYRate: '1.2019391507856381',
+                        USDDracoRate: '0.6005817452356810'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 05:45:00',
+                        DracoPrice: '0.1226',
+                        DracoAmount: '61423',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9147442326978803',
+                        USDKLAYRate: '1.2019391507856381',
+                        USDDracoRate: '0.6025476429287602'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 05:50:00',
+                        DracoPrice: '0.12230000000000001',
+                        DracoAmount: '61946',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9147442326978803',
+                        USDKLAYRate: '1.2019391507856381',
+                        USDDracoRate: '0.6010732196589508'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 05:55:00',
+                        DracoPrice: '0.12239999999999999',
+                        DracoAmount: '63093',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9147442326978803',
+                        USDKLAYRate: '1.2019391507856381',
+                        USDDracoRate: '0.6015646940822206'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 06:00:00',
+                        DracoPrice: '0.12230000000000001',
+                        DracoAmount: '63856',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9147442326978803',
+                        USDKLAYRate: '1.2019391507856381',
+                        USDDracoRate: '0.6010732196589508'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 06:05:00',
+                        DracoPrice: '0.1227',
+                        DracoAmount: '64743',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9314610498159004',
+                        USDKLAYRate: '1.2061183550651431',
+                        USDDracoRate: '0.6050902708124110'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 06:10:00',
+                        DracoPrice: '0.12280000000000001',
+                        DracoAmount: '66048',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9314610498159004',
+                        USDKLAYRate: '1.2061183550651431',
+                        USDDracoRate: '0.6055834169173926'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 06:15:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '66862',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9314610498159004',
+                        USDKLAYRate: '1.2061183550651431',
+                        USDDracoRate: '0.6065697091273557'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 06:20:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '68269',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9314610498159004',
+                        USDKLAYRate: '1.2061183550651431',
+                        USDDracoRate: '0.6065697091273557'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 06:25:00',
+                        DracoPrice: '0.1235',
+                        DracoAmount: '69195',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9314610498159004',
+                        USDKLAYRate: '1.2061183550651431',
+                        USDDracoRate: '0.6090354396522637'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 06:30:00',
+                        DracoPrice: '0.12379999999999999',
+                        DracoAmount: '69593',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9314610498159004',
+                        USDKLAYRate: '1.2061183550651431',
+                        USDDracoRate: '0.6105148779672084'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 06:35:00',
+                        DracoPrice: '0.1235',
+                        DracoAmount: '70184',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9314610498159004',
+                        USDKLAYRate: '1.2061183550651431',
+                        USDDracoRate: '0.6090354396522637'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 06:40:00',
+                        DracoPrice: '0.1237',
+                        DracoAmount: '71306',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9314610498159004',
+                        USDKLAYRate: '1.2061183550651431',
+                        USDDracoRate: '0.6100217318622269'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 06:45:00',
+                        DracoPrice: '0.1237',
+                        DracoAmount: '71753',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9314610498159004',
+                        USDKLAYRate: '1.2061183550651431',
+                        USDDracoRate: '0.6100217318622269'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 06:50:00',
+                        DracoPrice: '0.1236',
+                        DracoAmount: '77852',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9314610498159004',
+                        USDKLAYRate: '1.2061183550651431',
+                        USDDracoRate: '0.6095285857572453'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 06:55:00',
+                        DracoPrice: '0.1235',
+                        DracoAmount: '78383',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9314610498159004',
+                        USDKLAYRate: '1.2061183550651431',
+                        USDDracoRate: '0.6090354396522637'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 07:00:00',
+                        DracoPrice: '0.1232',
+                        DracoAmount: '79182',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9314610498159004',
+                        USDKLAYRate: '1.2061183550651431',
+                        USDDracoRate: '0.6075560013373189'
+                    },
+                    {
+                        CreatedDT: '2022-02-22 07:05:00',
+                        DracoPrice: '0.123',
+                        DracoAmount: '80475',
+                        DracoPricePrev: '0.1226',
+                        DracoAmountPrev: '316704',
+                        USDWemixRate: '4.9398194583749104',
+                        USDKLAYRate: '1.2094617184887471',
+                        USDDracoRate: '0.6075977933801140'
+                    }
+                ]
+            };
+            var temp = [];
+            var datetemp = [];
+            aaa.Data.forEach(function (item, index, arr2) {
+                temp.push(item.DracoPrice);
+                datetemp.push(item.CreatedDT);
+            });
+
+            var options = {
+                series: [
+                    {
+                        name: 'USD',
+                        data: temp2
+                    },
+                    {
+                        name: 'MILICO',
+                        data: temp
+                    }
+                ],
+                tooltip: {
+                    theme: 'dark'
+                },
+                chart: {
+                    height: innerHeigth,
+                    width: innerWidth,
+                    type: 'line',
+                    zoom: {
+                        enabled: false
+                    },
+                    toolbar: {
+                        show: false
+                    }
+                },
+                dataLabels: {
+                    enabled: false,
+                    style: {
+                        colors: ['#16b9ff']
+                    }
+                },
+                stroke: {
+                    curve: 'straight'
+                },
+                grid: {
+                    borderColor: 'transparent',
+                    row: {
+                        colors: ['#1c2f47'],
+                        opacity: 1
+                    }
+                },
+                xaxis: {
+                    categories: datetemp,
+                    labels: {
+                        show: false
+                    },
+                    axisBorder: {
+                        show: false
+                    },
+                    axisTicks: {
+                        show: false
+                    }
+                },
+                yaxis: [
+                    {
+                        labels: {
+                            align: 'right',
+                            style: {
+                                colors: ['#16b9ff'],
+                                fontSize: '12px',
+                                fontFamily: 'Helvetica, Arial, sans-serif',
+                                fontWeight: 400,
+                                cssClass: 'apexcharts-yaxis-label'
+                            }
+                        },
+                        min: Number((Math.min.apply(Math, temp2) - 0.006).toFixed(3))
+                    },
+                    {
+                        opposite: true,
+                        labels: {
+                            align: 'right',
+                            style: {
+                                colors: ['#8B00FF'],
+                                fontSize: '12px',
+                                fontFamily: 'Helvetica, Arial, sans-serif',
+                                fontWeight: 400,
+                                cssClass: 'apexcharts-yaxis-label'
+                            }
+                        },
+                        min: Number((Math.min.apply(Math, temp) - 0.0007).toFixed(3))
+                    }
+                ],
+                colors: ['#16b9ff', '#8B00FF'], // 그래프
+                stroke: {
+                    show: true,
+                    curve: 'smooth',
+                    lineCap: 'butt',
+                    colors: undefined,
+                    width: 3,
+                    dashArray: 0
+                }
+            };
+            //그래프 문서
+            //https://apexcharts.com/docs/options/stroke/
+            var chart = new ApexCharts(document.querySelector('#chart'), options);
+            chart.render();
+        </script>
+    </body>
+</html>

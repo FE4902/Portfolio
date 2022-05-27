@@ -1,0 +1,416 @@
+@use '../helpers' as *;
+
+.header {
+    z-index: $z-header;
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: $c-black;
+    width: 100%;
+    height: 52px;
+    @include desktop {
+        height: 80px;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        padding: 0 16px;
+        @include retina {
+            padding: 0 105px;
+        }
+    }
+}
+
+.logo {
+    order: 1;
+    margin-left: 13px;
+    width: 86px;
+    @include desktop {
+        width: auto;
+        order: 0;
+        // margin: 0;
+        margin: 0 20px 0 0;
+    }
+    @include retina {
+        margin: 0 110px 0 0;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+    &__button {
+        width: 24px;
+        height: 24px;
+        background-image: icon(hamburger, bdbdbd);
+        @include desktop {
+            display: none;
+        }
+    }
+}
+
+.menu {
+    z-index: $z-menu;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $c-dark;
+    padding: 14px 16px;
+    overflow-y: auto;
+    // visibility: hidden;
+    // opacity: 0;
+    display: none;
+    transition: 0.5s opacity 0.1s;
+    @include desktop {
+        position: static;
+        width: auto;
+        padding: 0;
+        background-color: transparent;
+        display: block;
+        // visibility: visible;
+        // opacity: 1;
+    }
+
+    &.-is-active {
+        // visibility: visible;
+        // opacity: 1;
+        display: block;
+    }
+
+    &__button {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: icon(close, bdbdbd);
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__logo {
+        width: 144px;
+        margin: 48px 0 48px 16px;
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__list {
+        left: 50%;
+        top: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        @include desktop {
+            flex-direction: row;
+            gap: 0;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        // padding: 8px 14px;
+        padding: 8px 10px;
+        font-size: 18px;
+        font-weight: 500;
+        @include hover {
+            color: $c-primary;
+        }
+        @include retina {
+            padding: 8px 24px;
+        }
+        &.-active {
+            color: $c-primary;
+        }
+    }
+
+    &__item--go {
+        display: flex;
+        flex-direction: column;
+        @include desktop {
+            display: none;
+        }
+    }
+}
+
+.go--gt {
+    width: 142px;
+}
+.go--wemix {
+    width: 94px;
+}
+
+.util {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 16px;
+    @include desktop {
+        gap: 10px;
+    }
+    @include retina {
+        gap: 24px;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        padding: 5px 8px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #f5f5f5;
+        border: 1px solid #f5f5f5;
+        border-radius: 2px;
+        // @include retina {
+        //     padding: 5px 14px;
+        //     font-size: 14px;
+        //     border-width: 2px;
+        //     line-height: 24px;
+        // }
+        // @include desktop {
+        //     padding: 6px 16px;
+        //     font-size: 18px;
+        //     border-width: 2px;
+        //     line-height: 24px;
+        // }
+        @include retina {
+            padding: 6px 16px;
+            font-size: 18px;
+            border-width: 2px;
+            line-height: 24px;
+        }
+
+        &::after {
+            @include desktop {
+                content: '';
+                display: block;
+                width: 24px;
+                height: 24px;
+                margin-left: 4px;
+                background-image: icon(download, f5f5f5);
+                @include background-cover;
+            }
+        }
+
+        @include hover {
+            color: $c-primary;
+            border-color: $c-primary;
+
+            &::after {
+                background-image: icon(download, '009cff');
+            }
+        }
+    }
+}
+
+.gt {
+    display: none;
+    width: 216px;
+    height: 36px;
+    background-image: url('#{$path-image}/etc/go_gt.png');
+    @include background-cover;
+    @include desktop {
+        display: block;
+    }
+    @include retina {
+        // display: block;
+        width: 240px;
+        height: 40px;
+    }
+}
+
+.wemix {
+    display: none;
+    @include desktop {
+        display: block;
+    }
+}
+
+.sns {
+    position: relative;
+    display: flex;
+    align-items: center;
+    @include desktop {
+        display: none;
+    }
+
+    &__button {
+        width: 24px;
+        height: 24px;
+        background-image: icon(sns, 'bdbdbd');
+    }
+
+    &__list {
+        position: absolute;
+        right: 50%;
+        top: calc(100% + 15px);
+        transform: translateX(50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 12px;
+        background-color: $c-black;
+        visibility: hidden;
+        opacity: 0;
+
+        .-is-active & {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .ar & {
+            right: initial;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        width: 112px;
+        height: 24px;
+        gap: 12px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 32px;
+            height: 32px;
+            @include background-cover;
+        }
+
+        span {
+            color: $c-gray;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        @include hover {
+            span {
+                color: $c-light;
+            }
+        }
+    }
+}
+
+$sns: (youtube, discord, telegram, twitter);
+@each $value in $sns {
+    .sns__link--#{$value} {
+        &::before {
+            background-image: icon($value, 'bdbdbd');
+        }
+
+        @include hover {
+            &::before {
+                background-image: icon($value, 'f5f5f5');
+            }
+        }
+    }
+}
+
+.lang {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &__button {
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-image: icon(lang, 'bdbdbd');
+            @include desktop {
+                width: 32px;
+                height: 32px;
+            }
+
+            .-is-active & {
+                background-image: icon(close, 'bdbdbd');
+                @include desktop {
+                    background-image: icon(lang, 'bdbdbd');
+                }
+            }
+        }
+
+        &::after {
+            @include desktop {
+                content: '';
+                display: block;
+                width: 24px;
+                height: 24px;
+                background-image: icon(arr, 'bdbdbd');
+            }
+
+            .-is-active & {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__list {
+        position: fixed;
+        right: 0;
+        top: 52px;
+        display: none;
+        width: 100%;
+        height: calc(100% - 52px);
+        overflow-y: auto;
+        background-color: $c-header;
+        @include desktop {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 156px;
+            height: auto;
+            padding: 12px 24px;
+        }
+        @include retina {
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        .-is-active & {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ar & {
+            @include desktop {
+                right: initial;
+                left: 0;
+            }
+            @include retina {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    &__link {
+        padding: 24px;
+        color: $c-gray;
+        font-size: 18px;
+        font-weight: $fw-medium;
+        @include flex-center;
+        @include hover {
+            color: $c-light;
+        }
+        @include desktop {
+            padding: 12px;
+            font-size: 18px;
+        }
+    }
+}

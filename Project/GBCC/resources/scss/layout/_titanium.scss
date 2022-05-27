@@ -1,0 +1,51 @@
+@use '../helpers/' as *;
+
+.home .titanium {
+    background-color: $c-black;
+    background-image: url('#{$path-image}/background/mobile/bg_titanium.png');
+    @include background-cover;
+    @include desktop {
+        background-image: url('#{$path-image}/background/bg_titanium.png');
+    }
+
+    &__container {
+        padding-top: 48px;
+        padding-bottom: 32px;
+        @include desktop {
+            min-height: 1080px;
+        }
+    }
+
+    &__image {
+        width: 180px;
+        padding-bottom: 32px;
+        @include desktop {
+            width: auto;
+            padding-bottom: 48px;
+        }
+    }
+
+    &__title {
+        padding-bottom: 16px;
+        // color: $c-secondary;
+        color: $c-primary;
+        // font-size: 20px;
+        font-size: 48px;
+        font-weight: $fw-bold;
+        @include desktop {
+            padding-bottom: 40px;
+            // font-size: 40px;
+        }
+    }
+
+    &__text {
+        // 타언어
+        max-width: 700px;
+        color: $c-light;
+        line-height: 1.5;
+        text-align: center;
+        @include desktop {
+            font-size: 24px;
+        }
+    }
+}

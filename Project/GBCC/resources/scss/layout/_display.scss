@@ -1,0 +1,227 @@
+@use '../helpers/' as *;
+
+.display {
+    flex: 1;
+    background-color: $c-blue;
+    @include flex-center;
+
+    &__price-dt {
+        color: $c-white;
+        font-weight: $fw-bold;
+        text-align: center;
+    }
+
+    &__price-dd {
+        @include flex-center;
+    }
+
+    &__ico {
+        width: 32px;
+        margin-right: 8px;
+        @extend %widthAuto;
+
+        .ar & {
+            margin: 0 0 0 8px;
+        }
+    }
+
+    &__value {
+        font-weight: $fw-bold;
+    }
+
+    &__change {
+        font-weight: $fw-bold;
+
+        &.-plus {
+            background-color: $c-plus;
+        }
+
+        &.-minus {
+            background-color: $c-minus;
+        }
+    }
+
+    &__data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        border-top: 1px solid #1e4765;
+        @include desktop {
+            padding: 16px 0;
+        }
+
+        & + & {
+            border-bottom: 1px solid #1e4765;
+        }
+    }
+
+    &__data-dt {
+        span {
+            display: block;
+            font-weight: $fw-medium;
+        }
+        span:nth-child(1) {
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+        span:nth-child(2) {
+            font-size: 10px;
+        }
+    }
+
+    &__data-dd {
+        color: $c-white;
+        font-weight: $fw-bold;
+    }
+
+    &__date {
+        padding-top: 16px;
+        color: $c-gray;
+        font-size: 12px;
+        font-weight: $fw-medium;
+        text-align: center;
+    }
+}
+
+// Price
+.display--price {
+    padding: 48px 0;
+    @include desktop {
+        height: 400px;
+        padding: 0;
+    }
+}
+
+.display--price .display {
+    &__container {
+        width: 100%;
+        // background-color: $c-navy;
+        @include desktop {
+            width: 415px;
+        }
+    }
+
+    &__price-dt {
+        padding-bottom: 48px;
+    }
+
+    &__price-dd {
+        padding-bottom: 48px;
+    }
+
+    &__value {
+        font-size: 32px;
+    }
+
+    &__change {
+        padding: 8px 14px;
+        margin-left: 16px;
+        font-size: 16px;
+
+        .ar & {
+            margin: 0 16px 0 0;
+        }
+    }
+}
+
+// Alert
+.display-alert {
+    z-index: $z-alert;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    overflow: hidden;
+    @include desktop {
+        height: 120px;
+        background-color: $c-dark;
+    }
+}
+
+.display-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: alertAni 5s linear 1s infinite alternate;
+    will-change: transform;
+    @include desktop {
+        position: static;
+        display: flex;
+        gap: 2px;
+        animation: none;
+    }
+}
+
+.display--alert {
+    width: 100%;
+    height: 100%;
+}
+
+.display--alert .display {
+    &__price {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__price-dt {
+        font-size: 14px;
+        margin-right: 8px;
+        @include desktop {
+            font-size: 16px;
+            margin-right: 18px;
+        }
+
+        .ar & {
+            margin: 0 0 0 8px;
+            @include desktop {
+                margin: 0 0 0 18px;
+            }
+        }
+    }
+
+    &__ico {
+        width: 24px;
+        @extend %widthAuto;
+    }
+
+    &__value {
+        font-size: 28px;
+        @include desktop {
+            font-size: 40px;
+        }
+    }
+
+    &__change {
+        padding: 4px 8px;
+        margin-left: 8px;
+        font-size: 14px;
+        @include desktop {
+            margin: 0 0 0 8px;
+            font-size: 18px;
+        }
+
+        .ar & {
+            margin: 0 8px 0 0;
+        }
+    }
+}
+
+@keyframes alertAni {
+    from {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}

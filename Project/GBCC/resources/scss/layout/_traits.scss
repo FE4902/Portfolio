@@ -1,0 +1,138 @@
+@use '../helpers/' as *;
+
+.home .traits {
+    min-height: 702px;
+    background-color: $c-dark;
+    overflow-x: hidden;
+    background-image: url('#{$path-image}/background/mobile/bg_traits.png');
+    // @include background-cover(1);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    @include desktop {
+        // min-height: 1248px;
+        min-height: 1140px;
+        flex-direction: column;
+        background-image: url('#{$path-image}/background/bg_traits.png');
+        background-size: 1920px auto;
+    }
+
+    &__container {
+        @include container(1);
+    }
+
+    &__title {
+        padding-bottom: 32px;
+        // color: $c-secondary;
+        color: $c-primary;
+        // font-size: 20px;
+        font-size: 48px;
+        font-weight: $fw-bold;
+        text-align: center;
+        @include desktop {
+            width: 100%;
+            padding-bottom: 48px;
+            // font-size: 40px;
+        }
+    }
+}
+
+.accordion {
+    display: grid;
+    width: 100%;
+    gap: 8px;
+    @include desktop {
+        gap: 20px;
+    }
+
+    &__item {
+        color: $c-light;
+        background-color: $c-navy;
+        overflow: hidden;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 14px 8px 14px 16px;
+        font-weight: $fw-bold;
+        @include desktop {
+            padding: 21px 16px 21px 32px;
+        }
+
+        span {
+            flex-shrink: 1;
+            text-align: left;
+
+            .ar & {
+                text-align: right;
+            }
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 32px;
+            height: 32px;
+            background-image: icon(arr);
+            transform-origin: center;
+        }
+
+        .-active &::after {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__panel {
+        display: flex;
+        flex-direction: column;
+        max-height: 0;
+        gap: 24px;
+        overflow: hidden;
+        @include desktop {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .-active & {
+            max-height: 1000px;
+            padding: 16px 16px 32px 16px;
+            @include desktop {
+                padding: 24px 32px 40px 32px;
+            }
+        }
+    }
+
+    &__text {
+        line-height: 1.5;
+        @include desktop {
+            flex-basis: 547px;
+        }
+    }
+
+    &__image {
+        align-self: flex-end;
+        @include desktop {
+            align-self: center;
+        }
+    }
+}
+
+// ACCORDION IMAGE
+.accordion__image--0 {
+    width: 159px;
+    @extend %widthAuto;
+}
+.accordion__image--1 {
+    width: 159px;
+    @extend %widthAuto;
+}
+.accordion__image--2 {
+    width: 178px;
+    @extend %widthAuto;
+}
+.accordion__image--3 {
+    width: 74px;
+    @extend %widthAuto;
+}

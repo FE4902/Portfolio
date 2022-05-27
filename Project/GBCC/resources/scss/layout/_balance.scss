@@ -1,0 +1,99 @@
+@use '../helpers/' as *;
+
+.home .balance {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding: 16px;
+    // background-color: $c-navy;
+    background-color: #00345b;
+    @include desktop {
+        align-items: flex-start;
+        width: 440px;
+        padding: 33px 24px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+        @include desktop {
+            margin: 0 20px 0 0;
+
+            .ar & {
+                margin: 0 0 0 20px;
+            }
+        }
+    }
+
+    &-wrap {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 32px;
+        @include desktop {
+            padding: 48px 0 0;
+            flex-direction: row;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $c-light;
+        font-size: 14px;
+        font-weight: $fw-medium;
+        @include desktop {
+            position: static;
+            transform: translateY(0);
+            padding-bottom: 16px;
+        }
+
+        .ar & {
+            right: 16px;
+        }
+    }
+
+    &__volume {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 8px;
+        color: $c-white;
+        font-size: 24px;
+        font-weight: $fw-medium;
+        @include desktop {
+            justify-content: flex-start;
+            padding-bottom: 16px;
+        }
+    }
+
+    &__ico {
+        width: 20px;
+        margin-right: 4px;
+        @extend %widthAuto;
+        @include desktop {
+            margin-right: 8px;
+        }
+
+        .ar & {
+            margin-right: 0;
+            margin-left: 4px;
+            @include desktop {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    &__exchange-volume {
+        color: $c-gray;
+        font-size: 12px;
+        font-weight: $fw-medium;
+
+        span + span {
+            margin-left: 16px;
+        }
+    }
+}

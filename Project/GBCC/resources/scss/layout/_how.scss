@@ -1,0 +1,291 @@
+@use '../helpers' as *;
+
+@mixin title {
+    padding-bottom: 48px;
+    // color: $c-secondary;
+    color: $c-primary;
+    // font-size: 20px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    // @include desktop {
+    // font-size: 40px;
+    // font-weight: 700;
+    // }
+}
+
+.sub .p2e {
+    padding: 48px 0;
+    @include desktop {
+        padding: 80px 0;
+    }
+
+    &__container {
+        @include container;
+    }
+
+    &__title {
+        @include title;
+    }
+
+    &__image {
+        width: 247px;
+        padding-bottom: 26px;
+        @include desktop {
+            width: auto;
+            padding-bottom: 52px;
+        }
+    }
+
+    &__text {
+        // 타언어
+        max-width: 700px;
+        line-height: 1.5;
+        font-weight: 500;
+        text-align: center;
+        @include desktop {
+            font-size: 24px;
+        }
+    }
+}
+
+.sub .get,
+.sub .usage {
+    padding: 48px 0;
+    @include desktop {
+        padding: 80px 0;
+    }
+
+    &__container {
+        @include container;
+    }
+
+    &__title {
+        @include title;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 160px);
+        // grid-template-rows: repeat(3, 170px);
+        grid-template-rows: repeat(3, 200px);
+        gap: 8px;
+        @include desktop {
+            grid-template-columns: repeat(3, 248px);
+            grid-template-rows: repeat(2, 280px);
+            gap: 40px;
+        }
+    }
+
+    &__item {
+        flex-direction: column;
+        color: $c-light;
+        background-color: $c-navy;
+        text-align: center;
+        @include flex-center;
+        @include desktop {
+            gap: 6px;
+        }
+    }
+
+    &__image {
+        width: 120px;
+        height: 120px;
+        @include flex-center;
+        @include desktop {
+            width: 160px;
+            height: 160px;
+        }
+    }
+
+    &__text {
+        min-height: 3em;
+        line-height: 1.5;
+        font-weight: 500;
+        @include desktop {
+            min-height: 2.5em;
+            line-height: 1.25;
+            font-size: 24px;
+        }
+    }
+}
+
+.sub .how {
+    padding: 48px 0;
+    @include desktop {
+        padding: 80px 0;
+    }
+
+    &__container {
+        @include container;
+    }
+
+    &__title {
+        @include title;
+    }
+
+    &__content {
+        position: relative;
+        width: 100%;
+        @include desktop {
+            width: 1086px;
+            padding: 0 68px;
+        }
+    }
+
+    &__swiper {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        @include desktop {
+            flex-direction: row;
+        }
+
+        // .ar & {
+        //     direction: rtl;
+        // }
+    }
+
+    &__swiper-wrapper {
+        padding-bottom: 32px;
+    }
+
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        @include desktop {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__image {
+        align-self: baseline;
+        max-width: 100%;
+        padding-bottom: 84px;
+        @extend %widthAuto;
+        @include desktop {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.sub .how__desc {
+    width: 100%;
+    @include desktop {
+        width: 534px;
+    }
+
+    &-title {
+        padding-bottom: 24px;
+        color: $c-light;
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: $fw-bold;
+        @include desktop {
+            font-size: 24px;
+        }
+    }
+
+    &-text {
+        line-height: 22px;
+        font-size: 14px;
+        font-weight: $fw-medium;
+        color: #bdbdbd;
+        @include desktop {
+            line-height: 28px;
+            font-size: 18px;
+        }
+
+        &:not(:nth-child(2)) {
+            padding-top: 32px;
+        }
+    }
+}
+
+// Swiper-button
+.sub .how__swiper-button {
+    z-index: $z-common;
+    position: absolute;
+    top: 318px;
+    width: 32px;
+    height: 32px;
+    @include desktop {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 48px;
+        height: 48px;
+        margin-top: -40px;
+    }
+
+    &-left {
+        left: -16px;
+        @include desktop {
+            left: 0;
+        }
+
+        &::after {
+            transform: rotate(90deg);
+        }
+    }
+
+    &-right {
+        right: -16px;
+        @include desktop {
+            right: 0;
+        }
+
+        &::after {
+            transform: rotate(-90deg);
+        }
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: icon('arr', fff);
+        @include background-cover;
+    }
+
+    &.swiper-button-disabled {
+        opacity: 0.5;
+    }
+}
+
+// pagination
+.sub .how__swiper-pagination {
+    position: absolute;
+    top: 722px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include flex-center;
+    @include desktop {
+        position: static;
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+    }
+}
+
+// pagination-bullet
+.swiper-pagination-bullet {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid $c-light;
+    border-radius: 50%;
+    margin: 0 6px;
+    cursor: pointer;
+    @include desktop {
+        width: 18px;
+        height: 18px;
+        margin: 0 12px;
+    }
+
+    &-active {
+        background-color: $c-light;
+    }
+}

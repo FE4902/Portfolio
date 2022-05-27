@@ -1,0 +1,985 @@
+@use '../helpers' as *;
+
+.staking {
+    &__container {
+        height: 100%;
+    }
+    &__wrap {
+        padding: 38px 0;
+        @include desktop {
+            width: 100%;
+            padding: 95px 0;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        @include desktop {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__info-item {
+        position: relative;
+        background-color: $c-blue;
+        width: 100%;
+        padding: 20px;
+
+        @include desktop {
+            width: calc(50% - 1em);
+            padding: 35px;
+        }
+
+        & + & {
+            margin-top: 10px;
+            @include desktop {
+                margin-top: 0;
+            }
+        }
+    }
+    &__more {
+        display: inline-block;
+        border: 1px solid #585858;
+        padding: 8px 22px;
+        margin-top: 14px;
+        font-size: 12px;
+        font-weight: $fw-bold;
+        @include desktop {
+            font-size: 20px;
+            padding: 22px 78px;
+            margin-top: 42px;
+        }
+    }
+    &__title-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 0 0 0;
+        @include desktop {
+            flex-direction: row;
+            padding: 100px 0 0 0;
+        }
+    }
+    &__title {
+        color: $c-secondary;
+        font-size: 21px;
+        font-weight: $fw-bold;
+        @include desktop {
+            font-size: 40px;
+        }
+    }
+    &__sub-title {
+        font-size: 18px;
+        font-weight: $fw-bold;
+        padding-top: 24px;
+        @include desktop {
+            font-size: 32px;
+            padding-top: 45px;
+        }
+    }
+    &__sub-desc {
+        color: $c-gray;
+        font-size: 12px;
+        font-weight: $fw-medium;
+        line-height: 20px;
+        padding-top: 16px;
+        letter-spacing: -0.02em;
+        @include desktop {
+            font-size: 20px;
+            line-height: 30px;
+            padding-top: 32px;
+        }
+    }
+    &__sub-text {
+        display: inline-block;
+        font-size: 12px;
+        padding: 5px;
+        margin-top: 16px;
+        background-color: $c-blue;
+        @include desktop {
+            font-size: 20px;
+            margin-top: 32px;
+        }
+    }
+    &__desc-text {
+        font-size: 12px;
+        font-weight: $fw-bold;
+        line-height: 20px;
+        padding-top: 24px;
+        @include desktop {
+            font-size: 20px;
+            line-height: 28px;
+            padding-top: 28px;
+        }
+    }
+    &__sub-list {
+        color: $c-gray;
+        font-size: 12px;
+        font-weight: $fw-medium;
+        padding-left: 15px;
+        line-height: 20px;
+        @include desktop {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        &--1 {
+            padding-top: 24px;
+            @include desktop {
+                padding-top: 28px;
+            }
+        }
+    }
+    &__disc {
+        @include desktop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 92px;
+        }
+    }
+    &__disc-image {
+        @include desktop {
+            width: 31%;
+            min-width: 320px;
+        }
+    }
+    &__disc-text {
+        @include desktop {
+            width: 63%;
+        }
+    }
+    &__playbook {
+        padding-top: 35px;
+        @include desktop {
+            padding-top: 0;
+        }
+    }
+    &__play-wrap {
+        @include desktop {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__play-desc {
+        @include desktop {
+            width: 54%;
+        }
+    }
+    &__play-image {
+        @include desktop {
+            width: 36%;
+            min-width: 430px;
+            order: 1;
+        }
+    }
+}
+
+.staking__visual {
+    width: 100%;
+    height: 260px;
+    background-image: url('#{$path-image}/background/mobile/bg_staking.png');
+    @include background-cover;
+    @include desktop {
+        position: relative;
+        height: 600px;
+        background-image: url('#{$path-image}/background/bg_staking.png');
+    }
+
+    &-wrap {
+        width: 100%;
+    }
+    &-sub-title {
+        color: $c-primary;
+        font-size: 12px;
+        font-weight: $fw-bold;
+        @include desktop {
+            font-size: 30px;
+        }
+    }
+    &-title {
+        font-size: 26px;
+        font-weight: $fw-bold;
+        padding-top: 6px;
+        @include desktop {
+            font-size: 66px;
+            padding-top: 15px;
+        }
+    }
+    &-desc {
+        font-size: 12px;
+        font-weight: $fw-medium;
+        color: $c-gray;
+        padding-top: 12px;
+        line-height: 1.5em;
+        @include desktop {
+            font-size: 18px;
+            padding-top: 30px;
+        }
+    }
+
+    & .staking__container {
+        @include desktop {
+            height: 100%;
+        }
+    }
+}
+
+.staking__rewards {
+    flex-direction: column;
+    @include flex-center;
+
+    &-title,
+    &-item,
+    &-milico,
+    &-list {
+        @include flex-center;
+    }
+
+    &-milico,
+    &-list {
+        margin-top: 18px;
+        @include desktop {
+            margin-top: 30px;
+        }
+    }
+
+    &-title {
+        color: $c-gray;
+        font-size: 14px;
+        font-weight: $fw-bold;
+        @include desktop {
+            font-size: 22px;
+        }
+    }
+    &-item--1 {
+        font-weight: $fw-bold;
+        @include desktop {
+            font-size: 32px;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin-right: 9px;
+            background-image: icon(milico);
+            @include background-cover;
+            @include desktop {
+            }
+        }
+    }
+    &-list {
+        justify-content: space-between;
+        border-top: 1px solid $c-border;
+        border-bottom: 1px solid $c-border;
+        width: 270px;
+        @include desktop {
+            width: 450px;
+        }
+    }
+    &-item--2 {
+        flex-direction: column;
+        align-items: flex-start;
+        @include desktop {
+        }
+    }
+    &-icon {
+        display: block;
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        margin-left: 8px;
+        background-image: icon(info);
+        @include background-cover;
+
+        &:hover + .staking__tooltip {
+            display: block;
+        }
+    }
+    &-refresh {
+        width: 21px;
+        height: 21px;
+        margin-left: 5px;
+        cursor: pointer;
+        background-image: icon(refresh);
+        @include background-cover;
+        @include desktop {
+            width: 24px;
+            height: 24px;
+            margin-left: 9px;
+        }
+    }
+    &-wemix,
+    &-dollor {
+        display: flex;
+        align-items: center;
+        padding: 7px 0;
+        color: $c-gray;
+        @include desktop {
+            padding: 11px 0;
+        }
+    }
+    &-dollor {
+        border-top: 1px solid $c-border;
+    }
+    &-wemix-icon,
+    &-dollor-icon {
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+        @include background-cover;
+    }
+    &-wemix-icon {
+        background-image: icon(wemix-c, ff0000);
+    }
+    &-dollor-icon {
+        background-image: icon(dollor, bdbdbd);
+    }
+    &-wemix-integer,
+    &-dollor-integer {
+        font-size: 12px;
+        font-weight: $fw-bold;
+
+        @include desktop {
+            font-size: 16px;
+        }
+    }
+    &-wemix-point,
+    &-dollor-point {
+        font-size: 12px;
+
+        @include desktop {
+            font-size: 14px;
+        }
+    }
+    &-per {
+        font-size: 16px;
+        font-weight: $fw-bold;
+        @include desktop {
+            font-size: 32px;
+        }
+    }
+}
+
+.staking__wallet {
+    position: relative;
+    height: 248px;
+    margin-top: 10px;
+    background-image: url('#{$path-image}/background/mobile/bg_wemix.png');
+    @include background-cover;
+    @include desktop {
+        height: 600px;
+        margin-top: 24px;
+        background-image: url('#{$path-image}/background/bg_wemix.png');
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #04263f, #04263f 40%, rgba(255, 255, 255, 0));
+    }
+
+    &.hidden {
+        position: absolute;
+    }
+}
+
+.staking__wemix {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    @include flex-center;
+
+    &-icon {
+        width: 60px;
+        height: 60px;
+        background-image: icon(wemix);
+        @include background-cover;
+        @include desktop {
+            width: 104px;
+            height: 104px;
+        }
+    }
+    &-text {
+        font-weight: $fw-bold;
+        padding-top: 12px;
+        @include desktop {
+            font-size: 22px;
+            padding-top: 30px;
+        }
+    }
+    &-btn {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: $fw-bold;
+        padding: 8px 70px;
+        margin-top: 40px;
+        background-color: $c-primary;
+        @include flex-center;
+        @include desktop {
+            font-size: 40px;
+            padding: 20px 170px;
+            margin-top: 80px;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin-right: 4px;
+            background-image: icon(wemix-c);
+            @include background-cover;
+            @include desktop {
+                width: 52px;
+                height: 52px;
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+.staking__service {
+    &-wrap {
+        @include desktop {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &-item-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &-item {
+        padding: 20px;
+        margin-top: 10px;
+        background-color: $c-blue;
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            width: calc(50% - 1em);
+            padding: 35px 68px;
+            margin-top: 24px;
+        }
+    }
+    &-title {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: $fw-bold;
+        @include desktop {
+            font-size: 32px;
+        }
+
+        span {
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-left: 4px;
+            background-image: icon(refresh);
+            cursor: pointer;
+            @include background-cover;
+            @include desktop {
+                width: 32px;
+                height: 32px;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+.staking__mystake {
+    padding: 12px 0;
+    @include desktop {
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid $c-border;
+        border-bottom: 1px solid $c-border;
+        margin-top: 18px;
+    }
+
+    &-total-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-weight: $fw-bold;
+        @include desktop {
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 15px;
+            margin-top: 18px;
+            background-color: #002a49;
+        }
+    }
+    &-total-text {
+        font-size: 12px;
+        @include desktop {
+            font-size: 22px;
+        }
+    }
+    &-total-num {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        padding-top: 4px;
+        @include desktop {
+            padding-top: 0;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            width: 12px;
+            height: 12px;
+            margin-right: 10px;
+            background-image: icon(milico);
+            @include background-cover;
+            @include desktop {
+                width: 24px;
+                height: 24px;
+                margin-right: 20px;
+            }
+        }
+        @include desktop {
+            font-size: 24px;
+        }
+    }
+    &-milico {
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        font-weight: $fw-bold;
+        @include desktop {
+            font-size: 60px;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            width: 28px;
+            height: 28px;
+            margin-right: 4px;
+            background-image: icon(milico);
+            @include background-cover;
+            @include desktop {
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+            }
+        }
+    }
+    &-item {
+        display: none;
+        font-weight: $fw-bold;
+        color: $c-gray;
+        @include desktop {
+            display: block;
+        }
+    }
+    &-mo-item {
+        display: block;
+        color: $c-gray;
+        font-size: 12px;
+        font-weight: $fw-bold;
+        @include desktop {
+            display: none;
+        }
+    }
+    &-text {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid $c-border;
+        border-bottom: 1px solid $c-border;
+        padding: 8px 0;
+        @include desktop {
+            border: none;
+            padding: 0;
+        }
+    }
+    &-credit,
+    &-dollor {
+        display: flex;
+        align-items: center;
+        @include desktop {
+            justify-content: space-between;
+        }
+
+        em {
+            @include desktop {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                max-width: 135px;
+            }
+        }
+    }
+    &-credit {
+        span {
+            display: block;
+            width: 12px;
+            height: 12px;
+            margin-right: 5px;
+            background-image: icon(wemix-c, ff0000);
+            @include background-cover;
+            @include desktop {
+                width: 16px;
+                height: 16px;
+                margin-right: 0;
+            }
+        }
+    }
+    &-dollor {
+        padding-top: 4px;
+        @include desktop {
+            padding-top: 12px;
+        }
+        span {
+            display: block;
+            width: 14px;
+            height: 14px;
+            margin-right: 5px;
+            background-image: icon(dollor, bdbdbd);
+            @include background-cover;
+            @include desktop {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    &-apr {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: $fw-bold;
+        @include desktop {
+            width: 100%;
+            font-size: 22px;
+            padding: 8px 15px;
+            margin-top: 18px;
+            background-color: #002a49;
+            justify-content: flex-end;
+        }
+    }
+    &-btn-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            width: 49%;
+        }
+    }
+    &-btn {
+        width: 100%;
+        height: 32px;
+        margin-top: 13px;
+        font-size: 14px;
+        font-weight: $fw-bold;
+        background-color: #4f4f4f;
+        pointer-events: none;
+        touch-action: none;
+        @include flex-center;
+        @include desktop {
+            height: 68px;
+            margin-top: 18px;
+            font-size: 40px;
+        }
+
+        &.-active {
+            background-color: $c-primary;
+            pointer-events: all;
+
+            span {
+                display: none;
+            }
+        }
+
+        span {
+            font-size: 10px;
+            @include desktop {
+                font-size: 20px;
+            }
+        }
+    }
+    // &-btn--stake,
+    // &-btn--unstake {
+
+    //     // @include desktop {
+    //     //     font-size: 32px;
+    //     // }
+    // }
+    &-btn--column {
+        flex-direction: column;
+        @include desktop {
+            font-size: 32px;
+        }
+    }
+    &-btn--reward {
+        @include desktop {
+            font-size: 32px;
+        }
+        span {
+            padding-left: 5px;
+        }
+    }
+}
+
+.staking__mywallet {
+    padding-top: 40px;
+
+    &-title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-title {
+        font-size: 20px;
+        font-weight: $fw-bold;
+        @include desktop {
+            font-size: 32px;
+        }
+    }
+}
+
+.staking__history {
+    display: none;
+    @include desktop {
+        display: block;
+    }
+    &-link {
+        color: $c-d-green;
+        font-size: 12px;
+        @include desktop {
+            font-size: 16px;
+        }
+    }
+    &-btn {
+        font-size: 12px;
+        font-weight: $fw-medium;
+        padding: 2px 5px;
+        background-color: $c-blue;
+        @include desktop {
+            font-size: 20px;
+            padding: 2px 8px;
+            margin-left: 15px;
+        }
+    }
+    &-mo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 16px;
+        @include desktop {
+            display: none;
+        }
+    }
+}
+
+.staking__balance {
+    margin-top: 16px;
+    @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba($c-black, 0.25);
+        padding: 12px;
+        margin-top: 24px;
+    }
+
+    &-list {
+        @include desktop {
+            display: flex;
+            width: 82%;
+        }
+    }
+    &-item {
+        background-color: $c-blue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 16px;
+        @include desktop {
+            flex-direction: column;
+            align-items: flex-start;
+            width: 33%;
+            padding: 12px;
+        }
+
+        & + & {
+            margin-top: 8px;
+            @include desktop {
+                margin: 0 0 0 10px;
+            }
+        }
+    }
+    &-title {
+        font-size: 16px;
+        font-weight: $fw-medium;
+        @include desktop {
+            font-size: 24px;
+            font-weight: $fw-bold;
+        }
+    }
+
+    &-num {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: $fw-bold;
+        @include desktop {
+            font-size: 32px;
+            padding-top: 12px;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            @include background-cover;
+            @include desktop {
+                width: 32px;
+                height: 32px;
+                margin-right: 12px;
+            }
+        }
+    }
+    &-num--milico {
+        &::before {
+            background-image: icon(milico);
+        }
+    }
+    &-num--credit {
+        &::before {
+            background-image: icon(wemix-c, ff0000);
+        }
+    }
+    &-num--wemix {
+        &::before {
+            background-image: icon(wemix);
+        }
+    }
+    &-btn {
+        display: none;
+        @include desktop {
+            display: block;
+            font-size: 24px;
+            font-weight: $fw-bold;
+            padding: 8px 24px;
+            // margin-left: auto;
+            margin-right: 20px;
+            border: 2px solid $c-gray;
+        }
+    }
+    &-mo-btn {
+        font-size: 12px;
+        font-weight: $fw-medium;
+        padding: 6px 10px;
+        border: 2px solid $c-gray;
+        @include desktop {
+            display: none;
+        }
+    }
+}
+
+.contract {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: $c-d-green;
+    font-size: 12px;
+    padding-top: 10px;
+    @include desktop {
+        font-size: 16px;
+        padding-top: 0;
+    }
+
+    &__code {
+        display: flex;
+        align-items: center;
+        @include desktop {
+            padding-left: 10px;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 14px;
+            height: 14px;
+            margin-left: 5px;
+            background-image: icon(link);
+            @include background-cover;
+            @include desktop {
+                width: 24px;
+                height: 24px;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.staking__tooltip {
+    position: absolute;
+    display: none;
+    background-color: #0e263b;
+    right: 0;
+    top: -194px;
+    padding: 12px;
+    @include desktop {
+        top: -235px;
+        padding: 24px;
+    }
+
+    &-title {
+        color: $c-light;
+        font-size: 14px;
+        font-weight: $fw-bold;
+        @include desktop {
+            font-size: 16px;
+        }
+    }
+    &-list {
+        padding-left: 18px;
+    }
+    &-item {
+        font-size: 12px;
+        padding-top: 10px;
+        line-height: 18px;
+        color: $c-gray;
+        @include desktop {
+            font-size: 14px;
+            padding-top: 15px;
+        }
+    }
+
+    &--2 {
+        top: -38px;
+        @include desktop {
+            top: -64px;
+        }
+    }
+
+    &.-active {
+        display: block;
+    }
+}

@@ -1,0 +1,144 @@
+@use '../helpers' as *;
+
+.home article {
+    @include desktop {
+        min-height: 1080px;
+    }
+}
+
+.milico__container,
+.titanium__container,
+.staking__container {
+    @include container;
+}
+
+.footer {
+    height: 80px;
+    color: $c-gray;
+    background-color: $c-dark;
+    font-size: 12px;
+    font-weight: $fw-medium;
+    text-align: center;
+    @include flex-center;
+    @include desktop {
+        height: 120px;
+        font-size: 16px;
+        // background-color: $c-dark;
+    }
+}
+
+.alert {
+    // z-index: $z-alert;
+    // position: sticky;
+    // left: 0;
+    // bottom: 0;
+    // height: 96px;
+
+    // @include desktop {
+    //     height: 120px;
+    // }
+
+    z-index: $z-alert;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    height: 96px;
+    color: $c-light;
+    background-color: #2c343a;
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: $fw-bold;
+    @include flex-center;
+    @include desktop {
+        height: 120px;
+    }
+}
+
+.floating {
+    z-index: $z-floating;
+    position: fixed;
+    display: none;
+    @include desktop {
+        display: block;
+    }
+
+    &--nav {
+        left: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-left: 2px solid $c-gray;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+    }
+
+    &__item {
+        position: relative;
+        color: $c-light;
+        font-weight: $fw-bold;
+        text-align: left;
+    }
+
+    &__link {
+        padding-left: 16px;
+    }
+
+    &__item::before {
+        content: '';
+        position: absolute;
+        left: -8px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 18px;
+        // background-image: icon(flo, bdbdbd);
+        background-image: url('#{$path-image}/etc/floating.png');
+        @include background-cover;
+    }
+
+    &__item--active {
+        color: $c-primary;
+
+        &::before {
+            left: -10px;
+            width: 18px;
+            background-image: url('#{$path-image}/etc/floating-on.png');
+        }
+    }
+
+    &--sns {
+        display: none;
+        @include desktop {
+            display: block;
+            right: 96px;
+            top: 224px;
+            // transform: translateY(-50%);
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        a {
+            display: block;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+$floating-sns: (youtube, discord, telegram, twitter);
+@each $value in $floating-sns {
+    .circle--#{$value} {
+        background-image: icon('circle-#{$value}', 'bdbdbd');
+
+        @include hover {
+            background-image: icon('circle-#{$value}', 'f5f5f5');
+        }
+    }
+}

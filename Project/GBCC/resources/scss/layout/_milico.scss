@@ -1,0 +1,155 @@
+@use '../helpers/' as *;
+
+.home .milico {
+    background-color: $c-dark;
+    overflow: hidden;
+
+    &__container {
+        padding-bottom: 64px;
+        @include desktop {
+            padding-bottom: 96px;
+        }
+    }
+}
+
+.home .coin {
+    position: relative;
+    text-align: center;
+
+    &__image {
+        height: 304px;
+        @include desktop {
+            height: auto;
+            padding: 59px 0 0;
+        }
+
+        picture {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%);
+            max-width: none;
+            width: 398px;
+            @include desktop {
+                position: static;
+                transform: translate(0);
+                max-width: 100%;
+                width: auto;
+            }
+        }
+    }
+
+    &__title {
+        padding-bottom: 48px;
+        color: $c-primary;
+        font-size: 48px;
+        font-weight: $fw-bold;
+    }
+
+    &__sub-title {
+        // 타언어
+        max-width: 1000px;
+        padding-bottom: 32px;
+        color: $c-light;
+        line-height: 1.5;
+        font-size: 24px;
+        font-weight: $fw-bold;
+        @include desktop {
+            padding-bottom: 48px;
+            font-size: 32px;
+        }
+    }
+
+    &__text {
+        // 타언어
+        max-width: 1000px;
+        padding-bottom: 68px;
+        color: $c-gray;
+        line-height: 1.5;
+        font-size: 16px;
+        @include desktop {
+            padding-bottom: 80px;
+            font-size: 24px;
+        }
+    }
+}
+
+.home .exchange {
+    width: 100%;
+
+    &__image {
+        width: 264px;
+        padding-bottom: 64px;
+        margin: 0 auto;
+        @include desktop {
+            width: auto;
+            padding-bottom: 80px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        @include desktop {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    }
+
+    &__item {
+        height: 80px;
+        @include desktop {
+            height: 96px;
+        }
+    }
+
+    &__link {
+        width: 100%;
+        height: 100%;
+        background-color: #26292e;
+        @include flex-center;
+    }
+}
+
+// EXCHANGE IMAGE
+.bithumb {
+    width: 112px;
+    @extend %widthAuto;
+}
+.gateio {
+    width: 92px;
+    @extend %widthAuto;
+}
+.mexc {
+    width: 136px;
+    @extend %widthAuto;
+}
+.liquid {
+    width: 112px;
+    @extend %widthAuto;
+}
+.korbit {
+    width: 100px;
+    @extend %widthAuto;
+}
+.lbank {
+    width: 116px;
+    @extend %widthAuto;
+}
+.bybit {
+    width: 92px;
+    @extend %widthAuto;
+}
+.coinone {
+    width: 136px;
+    @extend %widthAuto;
+}
+.probit {
+    width: 122px;
+    @extend %widthAuto;
+}
+.upbit {
+    width: 102px;
+    @extend %widthAuto;
+}

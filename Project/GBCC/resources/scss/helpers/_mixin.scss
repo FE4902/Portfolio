@@ -1,0 +1,137 @@
+@use './variables' as *;
+@use './mediaQueries' as *;
+
+%widthAuto {
+    @include desktop {
+        width: auto !important;
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin background-cover($value: 0) {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @if ($value == 1) {
+        background-position: bottom center;
+    }
+}
+
+@mixin container($value: 0) {
+    flex-direction: column;
+    max-width: 360px;
+    padding: 0 16px;
+    margin: 0 auto;
+    @include flex-center;
+    @include desktop {
+        max-width: 1440px;
+        padding: 0 40px;
+    }
+
+    @if ($value == 1) {
+        // position: relative;
+        padding: 64px 0 0;
+        @include desktop {
+            max-width: 980px;
+            padding: 166px 40px 0;
+        }
+    }
+    @if ($value == 2) {
+        padding: 64px 0 0;
+        @include desktop {
+            max-width: 100%;
+            padding: 100px 40px 0;
+        }
+        @include retina {
+            max-width: 1440px;
+        }
+    }
+}
+
+@mixin custom-scroll($color: $c-gray) {
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        border-radius: 30px;
+    }
+
+    &::-webkit-scrollbar-track {
+        margin-top: 0.5em;
+        background: linear-gradient(90deg, transparent 30%, $color 50%, transparent 70%);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        width: 4px;
+        background-color: $color;
+        border-radius: 30px;
+    }
+}
+
+// POPUP
+@mixin popup {
+    z-index: $z-download;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s opacity 0.1s;
+    background-color: rgba($c-black, 0.5);
+    @include flex-center;
+
+    &.-is-active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@mixin stakepop($width: 716px) {
+    position: relative;
+    display: none;
+    width: 320px;
+    padding: 24px;
+    border: 2px solid $c-primary;
+    background-image: url('#{$path-image}/background/mobile/bg_popup.png');
+    @include background-cover(1);
+    @include desktop {
+        width: $width;
+        padding: 40px;
+        background-image: url('#{$path-image}/background/bg_popup.png');
+    }
+
+    &.-is-active {
+        display: block;
+    }
+}
+@mixin popup-btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: $fw-bold;
+    padding: 8px 45px;
+    background-color: $c-primary;
+    @include desktop {
+        font-size: 40px;
+        padding: 20px 100px;
+    }
+}
+@mixin popup-back {
+    border: 2px solid $c-d-green;
+    background-color: rgba($c-d-green, 40%);
+}
+@mixin arrow {
+    width: 18px;
+    height: 18px;
+    @include background-cover;
+    @include desktop {
+        width: 24px;
+        height: 24px;
+    }
+}

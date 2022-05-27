@@ -1,0 +1,789 @@
+@import "_reset.scss";
+
+$whiteColor: rgba(255, 255, 255, 1);
+$mainColor: rgba(198, 0, 45, 1);
+
+$whiteColorOpa: rgba(255, 255, 255, 0.9);
+$mainColorOpa: rgba(198, 0, 45, 0.9);
+
+$footerColor: rgba(32, 35, 43, 1);
+
+@mixin max {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin hover {
+    .arrow {
+        left: 228px;
+        animation: none;
+    }
+}
+
+.wrap {
+    position: relative;
+    max-width: 1920px;
+    min-width: 1350px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+.header {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 154px;
+}
+
+// 로고
+.logo {
+    position: absolute;
+    left: 44px;
+    top: 36px;
+    width: 207px;
+    height: 118px;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    & > a {
+        @include max;
+    }
+}
+
+// 우측 상단 버튼
+.menu-wrap {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    width: 353px;
+    height: 95px;
+}
+
+.menu {
+    @include max;
+    &__button {
+        background-image: url("../images/menu.png");
+        background-repeat: no-repeat;
+        float: left;
+        &--1 {
+            width: 232px;
+            height: 54px;
+        }
+        &--2 {
+            width: 54px;
+            height: 54px;
+            margin-left: 6px;
+            background-position: -238px -1px;
+        }
+        &--3 {
+            width: 54px;
+            height: 54px;
+            margin-left: 6px;
+            background-position: -298px -1px;
+        }
+        &--4 {
+            width: 100%;
+            height: 22px;
+            padding-left: 188px;
+            margin-top: 19px;
+            background-position: 0px -75px;
+            clear: both;
+        }
+        & > a {
+            @include max;
+        }
+    }
+}
+
+.install {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 232px;
+    height: 146px;
+    background-image: url("../images/install.jpg");
+    background-repeat: no-repeat;
+    & > a {
+        position: absolute;
+        display: block;
+    }
+    &__button {
+        left: 2px;
+        bottom: 2px;
+        width: 228px;
+        height: 50px;
+    }
+    &__close-button {
+        right: 2px;
+        top: 2px;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* 메인 */
+.main {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    background-image: url("../images/background_00.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    &__area {
+        position: relative;
+        width: 1165px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        &__button-wrap {
+            z-index: 5;
+            position: absolute;
+            left: 0;
+            bottom: 50px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 200px;
+        }
+    }
+}
+
+.frame {
+    width: 100%;
+    height: 100%;
+    padding: 0 70px 70px;
+    background-image: url("../images/frame.png");
+}
+
+.sub-title {
+    position: relative;
+    top: -10px;
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-image: url("../images/title_00.png");
+    background-repeat: no-repeat;
+    background-position: center -18px;
+}
+
+.title {
+    display: block;
+    width: 100%;
+    height: 99px;
+    margin-bottom: 24px;
+    background-image: url("../images/title_01.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    &--1 {
+        background-position-y: top;
+    }
+    &--2 {
+        background-position-y: center;
+    }
+    &--3 {
+        background-position-y: bottom;
+    }
+}
+
+.notice-button {
+    z-index: 100;
+    position: absolute;
+    right: 115px;
+    top: 105px;
+    display: block;
+    width: 200px;
+    height: 46px;
+}
+
+.char {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background-repeat: no-repeat;
+    &--1 {
+        right: 0px;
+        width: 463px;
+        height: 788px;
+        background-image: url("../images/char_00.png");
+    }
+    &--2 {
+        right: 0px;
+        width: 533px;
+        height: 792px;
+        background-image: url("../images/char_01.png");
+    }
+    &--3 {
+        right: 0px;
+        width: 446px;
+        height: 770px;
+        background-image: url("../images/char_02.png");
+    }
+    &--4 {
+        right: -32px;
+        width: 608px;
+        height: 797px;
+        background-image: url("../images/char_03.png");
+    }
+}
+
+.main__area__button {
+    width: 280px;
+    height: 100%;
+    // 버튼 공통
+    & > a {
+        @include max;
+    }
+    // 1번 버튼
+    &--1 > a {
+        & > .background {
+            background-color: $mainColorOpa;
+        }
+        & > .text {
+            background-image: url("../images/button_00.png");
+        }
+        &:hover,
+        &:focus {
+            @include hover;
+            /*
+      .text {
+        background-image: url('../images/button_00_on.png');
+      }
+      */
+        }
+    }
+    // 2번 버튼
+    &--2 > a {
+        & > .background {
+            background-color: $whiteColorOpa;
+        }
+        & > .text {
+            background-image: url("../images/button_01.png");
+        }
+        &:hover,
+        &:focus {
+            @include hover;
+            /*
+      .text {
+        background-image: url('../images/button_01_on.png');
+      }
+      */
+        }
+    }
+    // 3번 버튼
+    &--3 > a {
+        & > .background {
+            background-color: $mainColorOpa;
+        }
+        & > .text {
+            background-image: url("../images/button_02.png");
+        }
+        &:hover,
+        &:focus {
+            @include hover;
+            /*
+      .text {
+        background-image: url('../images/button_02_on.png');
+      }
+      */
+        }
+    }
+    // 4번 버튼
+    &--4 > a {
+        & > .background {
+            background-color: $whiteColorOpa;
+        }
+        & > .text {
+            background-image: url("../images/button_03.png");
+        }
+        &:hover,
+        &:focus {
+            @include hover;
+            /*
+      .text {
+        background-image: url('../images/button_03_on.png');
+      }
+      */
+        }
+    }
+}
+
+.background,
+.text {
+    @include max;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.text {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 260px 180px;
+}
+
+@keyframes arrowAnime {
+    from {
+        left: 223px;
+    }
+    to {
+        left: 238px;
+    }
+}
+
+// 화살표 원래 위치 228px
+.arrow {
+    position: absolute;
+    left: 223px;
+    top: 57px;
+    display: block;
+    width: 12px;
+    height: 17px;
+    animation: arrowAnime 0.5s ease-out infinite alternate;
+    &--1 {
+        background-image: url("../images/arrow_00.png");
+    }
+    &--2 {
+        background-image: url("../images/arrow_01.png");
+    }
+}
+
+/* 푸터 */
+.footer {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    overflow: hidden;
+    border-top: 8px solid black;
+    background-color: $footerColor;
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 암막효과 */
+.dim {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 팝업 */
+.popup {
+    z-index: 200;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    display: none;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    width: 1920px;
+    height: 800px;
+    background-repeat: no-repeat;
+    &__close-button {
+        position: absolute;
+        left: 50%;
+        top: -60px;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 120px;
+        background-image: url("../images/close_button.png");
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        & > a {
+            @include max;
+        }
+    }
+    &__area {
+        position: relative;
+        display: flex;
+        width: 1200px;
+        height: 570px;
+        &--desc {
+            width: 50%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+        &--reward {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+            height: 100%;
+            & > li {
+                display: flex;
+                width: 100%;
+                height: 170px;
+                padding: 20px;
+                background-color: white;
+            }
+        }
+    }
+    &--1 {
+        background-image: url("../images/background_01.jpg");
+        .popup__close-button {
+            background-color: rgba(202, 18, 60, 1);
+        }
+        .able {
+            background-color: rgba(110, 0, 25, 1);
+        }
+        .popup__area--desc {
+            background-image: url("../images/text_00.png");
+        }
+    }
+    &--2 {
+        background-image: url("../images/background_02.jpg");
+        .popup__close-button {
+            background-color: rgba(202, 18, 60, 1);
+        }
+        .able {
+            background-color: rgba(110, 0, 25, 1);
+        }
+        .popup__area--desc {
+            background-image: url("../images/text_01.png");
+        }
+        .popup__area--reward > li {
+            background-color: $mainColor;
+        }
+    }
+    &--3 {
+        background-image: url("../images/background_03.jpg");
+        .popup__close-button {
+            background-color: rgba(202, 18, 60, 1);
+        }
+        .able {
+            background-color: rgba(110, 0, 25, 1);
+        }
+        .popup__area--desc {
+            background-image: url("../images/text_02.png");
+        }
+    }
+    &--4 {
+        background-image: url("../images/background_04.jpg");
+        .popup__close-button {
+            background-color: rgba(202, 18, 60, 1);
+        }
+        .able {
+            background-color: rgba(110, 0, 25, 1);
+        }
+    }
+    &--notice {
+        width: 1000px;
+        height: auto;
+        padding-top: 120px;
+        background-image: url("../images/notice.jpg");
+        background-repeat: no-repeat;
+        .popup__close-button {
+            background-image: url("../images/notice_close_button.png");
+        }
+        .popup__txt {
+            width: 100%;
+            padding: 20px;
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            font-weight: bold;
+            li {
+                padding: 3px 0 3px 19px;
+                text-indent: -17px;
+            }
+        }
+    }
+}
+
+.chk {
+    position: relative;
+    width: 1200px;
+    height: 670px;
+    transform: scale(0.95);
+    &__desc {
+        width: 100%;
+        height: 143px;
+        background: url("../images/text_03.png") no-repeat center bottom;
+        transform: scale(0.9);
+    }
+    &__area {
+        width: 100%;
+        height: 520px;
+        margin-top: 30px;
+        background-color: $mainColor;
+        &__view {
+            width: 100%;
+            height: 370px;
+            & > span {
+                display: block;
+                background-repeat: no-repeat;
+            }
+        }
+        &__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 150px;
+            background-color: rgba(240, 240, 240, 1);
+        }
+    }
+    &-title {
+        width: 100%;
+        height: 87px;
+        background-image: url("../images/text_04.png");
+        background-position: 44px 36px;
+    }
+    &-bar {
+        position: relative;
+        width: 100%;
+        height: 283px;
+        & > a {
+            z-index: 1;
+            position: absolute;
+            animation: chkAnime 0.5s ease-out infinite alternate;
+            &.on {
+                animation: none;
+            }
+            &.on:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                cursor: default;
+            }
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url("../images/bar.png");
+            background-position: 35px top;
+            background-repeat: no-repeat;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            height: 100%;
+            background-image: url("../images/bar_on.png");
+            background-position: 35px top;
+            background-repeat: no-repeat;
+        }
+    }
+    &-button {
+        width: 340px;
+        height: 90px;
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        &.able {
+            background-image: url("../images/button_05_on.png");
+        }
+        &.disable {
+            cursor: default;
+            background-image: url("../images/button_05.png");
+        }
+    }
+}
+
+.reward {
+    width: 439px;
+    height: 100%;
+    background-repeat: no-repeat;
+    &--1 {
+        background-image: url("../images/reward_00.jpg");
+    }
+    &--2 {
+        background-image: url("../images/reward_01.jpg");
+    }
+    &--3 {
+        background-image: url("../images/reward_02.jpg");
+    }
+    &--4 {
+        background-image: url("../images/reward_03.jpg");
+    }
+    &--5 {
+        background-image: url("../images/reward_04.jpg");
+    }
+    &--6 {
+        background-image: url("../images/reward_05.jpg");
+    }
+    &--7 {
+        background-image: url("../images/reward_06.jpg");
+    }
+    &--8 {
+        background-image: url("../images/reward_07.jpg");
+    }
+    &--9 {
+        background-image: url("../images/reward_08.jpg");
+    }
+}
+
+.button {
+    width: 120px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    &.able {
+        background-image: url("../images/receive.png");
+    }
+    &.disable {
+        cursor: default;
+        background-image: url("../images/receive.png");
+        background-color: rgba(173, 173, 173, 1);
+    }
+    &.com {
+        cursor: default;
+        background-image: url("../images/complete.png");
+        background-color: rgba(98, 98, 98, 1);
+    }
+}
+
+.gift {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 596px;
+    height: 245px;
+    background-repeat: no-repeat;
+    &--1 {
+        background-image: url("../images/gift_00.png");
+    }
+    &--2 {
+        background-image: url("../images/gift_01.png");
+    }
+    &--3 {
+        background-image: url("../images/gift_02.png");
+    }
+    &--4 {
+        background-image: url("../images/gift_03.png");
+    }
+}
+
+.day {
+    &-0:after {
+        width: 49px;
+    }
+    &-1:after {
+        width: 115px;
+    }
+    &-2:after {
+        width: 184px;
+    }
+    &-3:after {
+        width: 251px;
+    }
+    &-4:after {
+        width: 321px;
+    }
+    &-5:after {
+        width: 388px;
+    }
+    &-6:after {
+        width: 457px;
+    }
+    &-7:after {
+        width: 620px;
+        background-image: url("../images/bar_seven.png");
+    }
+    &-8:after {
+        width: 635.5px;
+    }
+    &-9:after {
+        width: 699.5px;
+    }
+    &-10:after {
+        width: 770.5px;
+    }
+    &-11:after {
+        width: 833.5px;
+    }
+    &-12:after {
+        width: 897.5px;
+    }
+    &-13:after {
+        width: 963px;
+    }
+    &-14:after {
+        width: 100%;
+    }
+    &-0,
+    &-1,
+    &-2,
+    &-3,
+    &-4,
+    &-5,
+    &-6 {
+        .seven {
+            display: none;
+        }
+    }
+    &-14 {
+        .fourteen {
+            display: block;
+        }
+    }
+}
+
+@keyframes chkAnime {
+    to {
+        transform: scale(1);
+    }
+    from {
+        transform: scale(1.1);
+    }
+}
+
+.seven {
+    left: 38.3%;
+    top: 7.5%;
+    width: 160px;
+    height: 160px;
+    background-image: url("../images/seven_ani.png");
+    &.on:after {
+        background-image: url("../images/seven.png");
+    }
+}
+
+.fourteen {
+    left: 80%;
+    top: 0;
+    display: none;
+    width: 202px;
+    height: 202px;
+    background-image: url("../images/fourteen_ani.png");
+    &.on:after {
+        background-image: url("../images/fourteen.png");
+    }
+}

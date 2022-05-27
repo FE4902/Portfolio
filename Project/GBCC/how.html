@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./resources/css/style.min.css" />
+        <title>MILICO</title>
+        <!-- META -->
+        <meta property="og:title" content="MILICO" />
+        <meta property="og:url" content="https://milico.joycity.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./resources/images/share.png" />
+        <meta property="og:description" content="Gunship Battle: Crypto Conflict" />
+        <meta name="description" content="The only crypto solution that connects the real world to the GUNSHIPBATTLE of choice for 100 million users worldwide." />
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" type="image/x-icon" href="./resources/images/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="./resources/images/favicon.ico" />
+        <!-- SCRIPT -->
+        <script defer src="./resources/js/jquery.min.js"></script>
+        <script defer src="./resources/js/tool-1.0.min.js"></script>
+        <script defer src="./resources/js/translate.js"></script>
+        <script defer src="./resources/js/gsap.min.js"></script>
+        <script defer src="./resources/js/scrollTrigger.min.js"></script>
+        <script defer src="./resources/js/swiper.min.js"></script>
+        <script defer src="./resources/js/common.js"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="header__container">
+                    <nav class="nav">
+                        <h1 class="logo">
+                            <a href="https://milico.joycity.com">
+                                <picture>
+                                    <source media="(max-width:1100px)" srcset="./resources/images/logo/mobile/logo_milico.png" />
+                                    <img src="./resources/images/logo/logo_milico.png" alt="" loading="lazy" />
+                                </picture>
+                            </a>
+                        </h1>
+                        <button class="nav__button"></button>
+                        <div class="menu">
+                            <button class="menu__button"></button>
+                            <h2 class="menu__logo">
+                                <a href="https://milico.joycity.com/"><img src="./resources/images/logo/mobile/logo_menu.png" alt="" loading="lazy" /> </a>
+                            </h2>
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#" data-translate="menu-1" data-translate-type="text">MILICO is</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link -active" href="#" data-translate="menu-2" data-translate-type="text">How to P2E</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#" onclick="alert('Coming soon')">NFT</a>
+                                </li>
+                                <li class="menu__item menu__item--go">
+                                    <a class="menu__link" href="https://cryptoconflict.joycity.com"><img class="go--gt" src="./resources/images/etc/mobile/go_gt.png" alt="" loading="lazy" /></a>
+                                    <a class="menu__link" href="https://wemixnetwork.com/"><img class="go--wemix" src="./resources/images/etc/mobile/go_wemix.png" alt="" loading="lazy" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="util">
+                        <button class="util__button" type="button"><span>PLAY NOW!</span></button>
+                        <a class="gt" href="https://cryptoconflict.joycity.com" target="_blank"></a>
+                        <div class="sns">
+                            <button class="sns__button" type="button"></button>
+                            <ul class="sns__list">
+                                <li class="sns__item">
+                                    <a class="sns__link sns__link--youtube" href="https://www.youtube.com/c/jcenest" target="_blank">
+                                        <span>Youtube</span>
+                                    </a>
+                                </li>
+                                <li class="sns__item">
+                                    <a class="sns__link sns__link--discord" href="https://discord.com/invite/yaqDbjYATU" target="_blank">
+                                        <span>Discord</span>
+                                    </a>
+                                </li>
+                                <li class="sns__item">
+                                    <a class="sns__link sns__link--telegram" href="https://t.me/cryptoconflict" target="_blank">
+                                        <span>Telegram</span>
+                                    </a>
+                                </li>
+                                <li class="sns__item">
+                                    <a class="sns__link sns__link--twitter" href="https://twitter.com/Cryptoconflict_" target="_blank">
+                                        <span>Twitter</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="wemix" href="https://wemixnetwork.com/" target="_blank">
+                            <img src="./resources/images/ico/ico_wemix.png" alt="" loading="lazy" />
+                        </a>
+                        <div class="lang">
+                            <button class="lang__button" type="button"></button>
+                            <ul class="lang__list">
+                                <li class="lang__item"><a class="lang__link" href="#">English</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">日本語</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">简体中文</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">繁體中文</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Русский</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Français</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Deutsch</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">ภาษาไทย</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Español</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Portugês</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Tiếng Việt</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Indonesian</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">العربية</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- MAIN -->
+            <main class="main sub">
+                <!-- FLOATING -->
+                <div class="floating floating--nav">
+                    <ul class="floating__list">
+                        <li class="floating__item">
+                            <a href="#p2e" class="floating__link" data-translate="how-floating-1" data-translate-type="text">P2E Flow</a>
+                        </li>
+                        <li class="floating__item">
+                            <a href="#get" class="floating__link" data-translate="how-floating-2" data-translate-type="text">Get TITANIUM</a>
+                        </li>
+                        <li class="floating__item">
+                            <a href="#usage" class="floating__link" data-translate="how-floating-3" data-translate-type="text">Usage TITANIUM</a>
+                        </li>
+                        <li class="floating__item">
+                            <a href="#how" class="floating__link" data-translate="how-floating-4" data-translate-type="text">How to Earn</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- SNS-FLOATING -->
+                <div class="floating floating--sns">
+                    <ul>
+                        <li><a class="circle--youtube" href="https://www.youtube.com/c/jcenest" target="_blank"></a></li>
+                        <li><a class="circle--discord" href="https://discord.com/invite/yaqDbjYATU" target="_blank"></a></li>
+                        <li><a class="circle--telegram" href="https://t.me/cryptoconflict" target="_blank"></a></li>
+                        <li><a class="circle--twitter" href="https://twitter.com/Cryptoconflict_" target="_blank"></a></li>
+                    </ul>
+                </div>
+                <!-- CONTAINER -->
+                <div class="container">
+                    <!-- P2E Flow -->
+                    <article id="p2e" class="p2e">
+                        <h3 class="hidden">P2E Flow</h3>
+                        <div class="p2e__container">
+                            <h3 class="p2e__title" data-translate="p2e-title" data-translate-type="text">Combat Power Progression</h3>
+                            <div class="p2e__image">
+                                <picture>
+                                    <source media="(max-width: 1100px)" srcset="./resources/images/etc/mobile/p2e.png" />
+                                    <img src="./resources/images/etc/p2e.png" alt="" />
+                                </picture>
+                            </div>
+                            <p class="p2e__text" data-translate="p2e-text" data-translate-type="html">
+                                TITANIUM can be earned by anyone for free by playing the game. <br class="br-pc" />
+                                TITANIUM is a core resource that is required for progression in <br class="br-pc" />
+                                <b>Gunship Battle: Crypto Conflict.</b>
+                            </p>
+                        </div>
+                    </article>
+                    <!-- Get TITANIUM -->
+                    <article id="get" class="get">
+                        <h3 class="hidden">Get TITANIUM</h3>
+                        <div class="get__container">
+                            <h3 class="get__title" data-translate="get-title" data-translate-type="text">Get TITANIUM</h3>
+                            <ul class="get__list">
+                                <li class="get__item">
+                                    <div class="get__image">
+                                        <picture>
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/get/mobile/get_0.png" />
+                                            <img src="./resources/images/get/get_0.png" alt="" loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <p class="get__text" data-translate="get-1" data-translate-type="text">Main Mission</p>
+                                </li>
+                                <li class="get__item">
+                                    <div class="get__image">
+                                        <picture>
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/get/mobile/get_1.png" />
+                                            <img src="./resources/images/get/get_1.png" alt="" loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <p class="get__text" data-translate="get-2" data-translate-type="text">Daily Mission</p>
+                                </li>
+                                <li class="get__item">
+                                    <div class="get__image">
+                                        <picture>
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/get/mobile/get_2.png" />
+                                            <img src="./resources/images/get/get_2.png" alt="" loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <p class="get__text" data-translate="get-3" data-translate-type="html">
+                                        Titanium Island <br />
+                                        Collecting
+                                    </p>
+                                </li>
+                                <li class="get__item">
+                                    <div class="get__image">
+                                        <picture>
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/get/mobile/get_3.png" />
+                                            <img src="./resources/images/get/get_3.png" alt="" loading="lazy" />
+                                        </picture>
+                                    </div>
+
+                                    <p class="get__text" data-translate="get-4" data-translate-type="text">Game Event</p>
+                                </li>
+                                <li class="get__item">
+                                    <div class="get__image">
+                                        <picture>
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/get/mobile/get_4.png" />
+                                            <img src="./resources/images/get/get_4.png" alt="" loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <p class="get__text" data-translate="get-5" data-translate-type="html">Aliance vs. Aliance<br />Conquest</p>
+                                </li>
+                                <li class="get__item">
+                                    <div class="get__image">
+                                        <picture>
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/get/mobile/get_5.png" />
+                                            <img src="./resources/images/get/get_5.png" alt="" loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <p class="get__text" data-translate="get-6" data-translate-type="html">Server vs. Server<br />Battle</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <!-- Usage TITANIUM -->
+                    <article id="usage" class="usage">
+                        <h3 class="hidden">Usage TITANIUM</h3>
+                        <div class="usage__container">
+                            <h3 class="usage__title" data-translate="usage-title" data-translate-type="text">Usage TITANIUM</h3>
+                            <ul class="usage__list">
+                                <li class="usage__item">
+                                    <div class="usage__image">
+                                        <picture>
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/usage/mobile/usage_0.png" />
+                                            <img src="./resources/images/usage/usage_0.png" alt="" loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <p class="usage__text" data-translate="usage-1" data-translate-type="html">Jet Production<br />& Upgrade</p>
+                                </li>
+                                <li class="usage__item">
+                                    <div class="usage__image">
+                                        <picture>
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/usage/mobile/usage_1.png" />
+                                            <img src="./resources/images/usage/usage_1.png" alt="" loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <p class="usage__text" data-translate="usage-2" data-translate-type="html">Ship Production<br />& Upgrade</p>
+                                </li>
+                                <li class="usage__item">
+                                    <div class="usage__image">
+                                        <picture>
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/usage/mobile/usage_2.png" />
+                                            <img src="./resources/images/usage/usage_2.png" alt="" loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <p class="usage__text" data-translate="usage-3" data-translate-type="html">
+                                        Aircraft Production<br />
+                                        & Upgrade
+                                    </p>
+                                </li>
+                                <li class="usage__item">
+                                    <div class="usage__image">
+                                        <picture>
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/usage/mobile/usage_3.png" />
+                                            <img src="./resources/images/usage/usage_3.png" alt="" loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <p class="usage__text" data-translate="usage-4" data-translate-type="html">Equipment Crafting<br />& Upgrade</p>
+                                </li>
+                                <li class="usage__item">
+                                    <div class="usage__image">
+                                        <picture>
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/usage/mobile/usage_4.png" />
+                                            <img src="./resources/images/usage/usage_4.png" alt="" loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <p class="usage__text" data-translate="usage-5" data-translate-type="html">Building Upgrade</p>
+                                </li>
+                                <li class="usage__item">
+                                    <div class="usage__image">
+                                        <picture>
+                                            <source media="(max-width: 1100px)" srcset="./resources/images/usage/mobile/usage_5.png" />
+                                            <img src="./resources/images/usage/usage_5.png" alt="" loading="lazy" />
+                                        </picture>
+                                    </div>
+                                    <p class="usage__text" data-translate="usage-6" data-translate-type="html">Advanced Research</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <!-- How to Earn -->
+                    <article id="how" class="how">
+                        <h3 class="hidden">How to Earn</h3>
+                        <div class="how__container">
+                            <h3 class="how__title" data-translate="how-title" data-translate-type="text">How to Earn</h3>
+                            <div class="how__content">
+                                <div class="how__swiper swiper">
+                                    <ul class="how__swiper-wrapper swiper-wrapper">
+                                        <li class="how__slide swiper-slide">
+                                            <picture class="how__image">
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/how/mobile/how_0.png" />
+                                                <img src="./resources/images/how/how_0.png" alt="" loading="lazy" />
+                                            </picture>
+                                            <div class="how__desc">
+                                                <h4 class="how__desc-title" data-translate="how-desc-title-1" data-translate-type="text">1. Refinery</h4>
+                                                <p class="how__desc-text" data-translate="how-desc-text-1" data-translate-type="text">
+                                                    You can create MILICO in Gunship Battle: Crypto Conflict at a Lv.18 or Higher Trade Warehouse.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="how__slide swiper-slide">
+                                            <picture class="how__image">
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/how/mobile/how_1.png" />
+                                                <img src="./resources/images/how/how_1.png" alt="" loading="lazy" />
+                                            </picture>
+                                            <div class="how__desc">
+                                                <h4 class="how__desc-title" data-translate="how-desc-title-2" data-translate-type="text">2. How to get MILICO (TITANIUM > MILICO)</h4>
+                                                <p class="how__desc-text" data-translate="how-desc-text-2-1" data-translate-type="html">
+                                                    1) You can create MILICO if you own at least 100,000 TITANIUM.
+                                                </p>
+                                                <p class="how__desc-text" data-translate="how-desc-text-2-2" data-translate-type="html">
+                                                    2) TITANIUM-MILICO Exchange Rate (TIMER) is the exchange rate of MILICO and TITANIUN. <br />
+                                                    - Base exchange rate, 1 MILICO : 10,000 TITANIUM. <br />
+                                                    - More or less TITANIUM might be required due to the TIMER.
+                                                </p>
+                                                <p class="how__desc-text" data-translate="how-desc-text-2-3" data-translate-type="text">
+                                                    3) A fee of 10-25% TITANIUM is additionally charged. This fee can be lowered by leveling up the Trade Warehouse.
+                                                </p>
+                                                <p class="how__desc-text" data-translate="how-desc-text-2-4" data-translate-type="text">
+                                                    4) Created MILICO’s are automatically sent and stored in the WEMIX Wallet that is linked to your game account.
+                                                </p>
+                                                <p class="how__desc-text" data-translate="how-desc-text-2-5" data-translate-type="text">
+                                                    5) The results of the MILICO production are sent to your mail in game.
+                                                </p>
+                                                <p class="how__desc-text" data-translate="how-desc-text-2-6" data-translate-type="html">
+                                                    6) Restrictions <br />
+                                                    - Only up to 1,500,000 MILICO’s can be produced each day. (Updated every day at 00:00 UTC) <br />
+                                                    - Each admiral can only create up to 100 MILICO each day. (Updated every day at 00:00 UTC) <br />
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="how__slide swiper-slide">
+                                            <picture class="how__image">
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/how/mobile/how_2.png" />
+                                                <img src="./resources/images/how/how_2.png" alt="" loading="lazy" />
+                                            </picture>
+                                            <div class="how__desc">
+                                                <h4 class="how__desc-title" data-translate="how-desc-title-3" data-translate-type="text">3. How to Exchange (MILICO > TITANIUM)</h4>
+                                                <p class="how__desc-text" data-translate="how-desc-text-3-1" data-translate-type="text">
+                                                    1) When exchanging MILICO for TITANIUM, you can receive 0% to 8% additional TITANIUM depending on the level of your Trade Warehouse.
+                                                </p>
+                                                <p class="how__desc-text" data-translate="how-desc-text-3-2" data-translate-type="text">
+                                                    2) You can only exchange MILICO for TITANIUM if the obtained TITANIUM and the TITANIUM that you already own do not exceed the maximum number of
+                                                    TITANIUM that you can own.
+                                                </p>
+                                                <p class="how__desc-text" data-translate="how-desc-text-3-3" data-translate-type="text">
+                                                    3) The results of the MILICO exchanges are sent to your mail in game.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="how__slide swiper-slide">
+                                            <picture class="how__image">
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/how/mobile/how_3.png" />
+                                                <img src="./resources/images/how/how_3.png" alt="" loading="lazy" />
+                                            </picture>
+                                            <div class="how__desc">
+                                                <h4 class="how__desc-title" data-translate="how-desc-title-4" data-translate-type="text">4. Connecting the WEMIX Wallet to Your Account</h4>
+                                                <p class="how__desc-text" data-translate="how-desc-text-4-1" data-translate-type="text">
+                                                    1) In order to turn TITANIUM into MILICO, a WEMIX Wallet account must be linked your game account.
+                                                </p>
+                                                <p class="how__desc-text" data-translate="how-desc-text-4-2" data-translate-type="text">
+                                                    2) If the WEMIX Wallet login screen appears during the process of creating or exchanging MILICO, please proceed and connect the account.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="how__swiper-button how__swiper-button-left" type="button"></button>
+                                <button class="how__swiper-button how__swiper-button-right" type="button"></button>
+                                <div class="how__swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </main>
+            <!-- FOOTER -->
+            <footer class="footer">ⓒ WEMADE TREE PTE. LTD & JOYCITY. All Rights Reserved.</footer>
+            <!-- FOOT ALERT -->
+            <div class="display-alert">
+                <div class="display-wrap">
+                    <div class="display display--alert">
+                        <div class="display__container">
+                            <dl class="display__price">
+                                <dt class="display__price-dt">WEMIX / MILICO</dt>
+                                <dd class="display__price-dd">
+                                    <picture class="display__ico">
+                                        <source media="(max-width: 1100px)" srcset="./resources/images/ico/mobile/ico_wemix-alert.png" />
+                                        <img src="./resources/images/ico/ico_wemix-alert.png" alt="" loading="lazy" />
+                                    </picture>
+                                    <span class="display__value priceControll">0.0000</span>
+                                    <span class="display__change priceControll -plus">+0.00%</span>
+                                </dd>
+                            </dl>
+                            <div class="display__date priceDate">Last updated on mm dd yyyy, TIME (UTC)</div>
+                        </div>
+                    </div>
+                    <div class="display display--alert">
+                        <div class="display__container">
+                            <dl class="display__price">
+                                <dt class="display__price-dt">USD / MILICO</dt>
+                                <dd class="display__price-dd">
+                                    <span class="display__value priceControll">$0.0000</span>
+                                    <span class="display__change priceControll -minus">-0.00%</span>
+                                </dd>
+                            </dl>
+                            <div class="display__date priceDate">Last updated on mm dd yyyy, TIME (UTC)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- POPUP -->
+            <div class="download">
+                <div class="download__container">
+                    <div class="download__content">
+                        <div class="download__header">
+                            <h4 class="download__title">Gunship Battle: Crypto Conflict PLAY NOW!</h4>
+                            <button class="download__button" type="button"></button>
+                        </div>
+                        <div class="download__body">
+                            <h3 class="download__logo">
+                                <a href="#">
+                                    <img src="./resources/images/logo/mobile/logo_download-body.png" alt="" loading="lazy" />
+                                </a>
+                            </h3>
+                            <div class="download__pc">
+                                <h5 class="download__sub-title">PC Download</h5>
+                                <ul class="download__list">
+                                    <li class="download__item">
+                                        <a class="download__link" href="https://gt-client.global.joycityglobal.com/public/PC/Installer/GTLauncherInstall.exe" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/download/mobile/download_window.png" />
+                                                <img src="./resources/images/download/download_window.png" alt="" loading="lazy" />
+                                            </picture>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="download__mobile">
+                                <h5 class="download__sub-title">Mobile Download</h5>
+                                <ul class="download__list">
+                                    <li class="download__item">
+                                        <a class="download__link" href="https://gc-and.onelink.me/7k3a?pid=WW_And_OfficialSite_PreBrandpage&c=WW_And_OfficialSite_PreBrandpage" target="_blank">
+                                            <picture data-translate="download-image-1" data-translate-type="html">
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/download/mobile/download_google-en.png" />
+                                                <img src="./resources/images/download/download_google.png" alt="" loading="lazy" />
+                                            </picture>
+                                            <p class="download__text">Google Play</p>
+                                        </a>
+                                    </li>
+                                    <li class="download__item">
+                                        <a class="download__link" href="https://gc-ios.onelink.me/CAoB?pid=WW_IOS_OfficialSite_PreBrandpage&c=WW_IOS_OfficialSite_PreBrandpage" target="_blank">
+                                            <picture data-translate="download-image-2" data-translate-type="html">
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/download/mobile/download_apple-en.png" />
+                                                <img src="./resources/images/download/download_apple.png" alt="" loading="lazy" />
+                                            </picture>
+                                            <p class="download__text">App Store</p>
+                                        </a>
+                                    </li>
+                                    <li class="download__item">
+                                        <a class="download__link" href="#" onclick="alert('Coming soon')" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/download/mobile/download_joycity.png" />
+                                                <img src="./resources/images/download/download_joycity.png" alt="" loading="lazy" />
+                                            </picture>
+                                            <p class="download__text">Joy Store</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

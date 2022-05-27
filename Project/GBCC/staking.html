@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./resources/css/style.min.css" />
+        <title>MILICO</title>
+        <!-- META -->
+        <meta property="og:title" content="MILICO" />
+        <meta property="og:url" content="https://milico.joycity.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./resources/images/share.png" />
+        <meta property="og:description" content="Gunship Battle: Crypto Conflict" />
+        <meta name="description" content="The only crypto solution that connects the real world to the GUNSHIPBATTLE of choice for 100 million users worldwide." />
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" type="image/x-icon" href="./resources/images/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="./resources/images/favicon.ico" />
+        <!-- SCRIPT -->
+        <script defer src="/resources/js/jquery.min.js"></script>
+        <script defer src="/resources/js/tool-1.0.min.js"></script>
+        <script defer src="/resources/js/translate.js"></script>
+        <script defer src="/resources/js/gsap.min.js"></script>
+        <script defer src="/resources/js/scrollTrigger.min.js"></script>
+        <script defer src="/resources/js/swiper.min.js"></script>
+        <script defer src="/resources/js/common.js"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="header__container">
+                    <nav class="nav">
+                        <h1 class="logo">
+                            <a href="https://milico.joycity.com">
+                                <picture>
+                                    <source media="(max-width:1100px)" srcset="./resources/images/logo/mobile/logo_milico.png" />
+                                    <img src="./resources/images/logo/logo_milico.png" alt="" loading="lazy" />
+                                </picture>
+                            </a>
+                        </h1>
+                        <button class="nav__button"></button>
+                        <div class="menu">
+                            <button class="menu__button"></button>
+                            <h2 class="menu__logo">
+                                <a href="https://milico.joycity.com/"><img src="./resources/images/logo/mobile/logo_menu.png" alt="" loading="lazy" /> </a>
+                            </h2>
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#" data-translate="menu-1" data-translate-type="text">MILICO is</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#" data-translate="menu-2" data-translate-type="text">How to P2E</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#" onclick="alert('Coming soon')">NFT</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link -active" href="#">M-SUPPLIES Staking</a>
+                                </li>
+                                <li class="menu__item menu__item--go">
+                                    <a class="menu__link" href="https://cryptoconflict.joycity.com"><img class="go--gt" src="./resources/images/etc/mobile/go_gt.png" alt="" loading="lazy" /></a>
+                                    <a class="menu__link" href="https://wemixnetwork.com/"><img class="go--wemix" src="./resources/images/etc/mobile/go_wemix.png" alt="" loading="lazy" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="util">
+                        <button class="util__button" type="button"><span>PLAY NOW!</span></button>
+                        <a class="gt" href="https://cryptoconflict.joycity.com" target="_blank"></a>
+                        <div class="sns">
+                            <button class="sns__button" type="button"></button>
+                            <ul class="sns__list">
+                                <li class="sns__item">
+                                    <a class="sns__link sns__link--youtube" href="https://www.youtube.com/c/jcenest" target="_blank">
+                                        <span>Youtube</span>
+                                    </a>
+                                </li>
+                                <li class="sns__item">
+                                    <a class="sns__link sns__link--discord" href="https://discord.com/invite/yaqDbjYATU" target="_blank">
+                                        <span>Discord</span>
+                                    </a>
+                                </li>
+                                <li class="sns__item">
+                                    <a class="sns__link sns__link--telegram" href="https://t.me/cryptoconflict" target="_blank">
+                                        <span>Telegram</span>
+                                    </a>
+                                </li>
+                                <li class="sns__item">
+                                    <a class="sns__link sns__link--twitter" href="https://twitter.com/Cryptoconflict_" target="_blank">
+                                        <span>Twitter</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="wemix" href="https://wemixnetwork.com/" target="_blank">
+                            <img src="./resources/images/ico/ico_wemix.png" alt="" loading="lazy" />
+                        </a>
+                        <div class="lang">
+                            <button class="lang__button" type="button"></button>
+                            <ul class="lang__list">
+                                <li class="lang__item"><a class="lang__link" href="#">English</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">日本語</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">简体中文</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">繁體中文</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Русский</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Français</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Deutsch</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">ภาษาไทย</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Español</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Portugês</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Tiếng Việt</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Indonesian</a></li>
+                                <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">العربية</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- MAIN -->
+            <main class="main home">
+                <!-- FLOATING -->
+                <!-- <div class="floating floating--nav">
+                    <ul class="floating__list">
+                        <li class="floating__item">
+                            <a href="#milico" class="floating__link">MILICO</a>
+                        </li>
+                        <li class="floating__item">
+                            <a href="#titanium" class="floating__link">TITANIUM</a>
+                        </li>
+                        <li class="floating__item">
+                            <a href="#price" class="floating__link">PRICE</a>
+                        </li>
+                        <li class="floating__item">
+                            <a href="#traits" class="floating__link" data-translate="floating-4" data-translate-type="text">MILICO traits</a>
+                        </li>
+                    </ul>
+                </div> -->
+                <!-- SNS-FLOATING -->
+                <div class="floating floating--sns">
+                    <ul>
+                        <li><a class="circle--youtube" href="https://www.youtube.com/c/jcenest" target="_blank"></a></li>
+                        <li><a class="circle--discord" href="https://discord.com/invite/yaqDbjYATU" target="_blank"></a></li>
+                        <li><a class="circle--telegram" href="https://t.me/cryptoconflict" target="_blank"></a></li>
+                        <li><a class="circle--twitter" href="https://twitter.com/Cryptoconflict_" target="_blank"></a></li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <!-- MILICO -->
+                    <article class="staking">
+                        <h3 class="hidden">STAKING</h3>
+                        <div class="staking__visual">
+                            <div class="staking__container">
+                                <div class="staking__visual-wrap">
+                                    <p class="staking__visual-sub-title">M-SUPPLIES</p>
+                                    <h2 class="staking__visual-title">STAKING <br class="br-mo" />PROGRAM</h2>
+                                    <p class="staking__visual-desc">
+                                        M-SUPPLIES에서 MILICO를 <br class="br-mo" />스테이킹하여 전략적 투자를 하고 <br class="br-mo" />보상으로 <br class="br-pc" />
+                                        풍부한 MILICO를 받으세요.
+                                    </p>
+                                    <a class="staking__more" href="#staking">MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="staking" class="staking__container">
+                            <div class="staking__wrap">
+                                <div class="staking__info">
+                                    <div class="staking__info-item">
+                                        <dl class="staking__rewards">
+                                            <dt class="staking__rewards-title">
+                                                Staking Rewards
+                                                <span class="staking__rewards-icon" aria-haspopup="true"></span>
+                                                <div class="staking__tooltip">
+                                                    <h5 class="staking__tooltip-title">M-SUPPLIES Reward MILICOs</h5>
+                                                    <ul class="staking__tooltip-list" style="list-style-type: disc">
+                                                        <li class="staking__tooltip-item" style="list-style-type: disc">Total cumulative minted rewards MILICOs</li>
+                                                        <li class="staking__tooltip-item" style="list-style-type: disc">
+                                                            Automatically mints one MILICO<br />
+                                                            as M-SUPPLIES reward for every 1 blocks<br />
+                                                            generated
+                                                        </li>
+                                                        <li class="staking__tooltip-item" style="list-style-type: disc">
+                                                            Minted reward MILICOs will be proportionally<br />
+                                                            distributed among M-SUPPLIES plarticipants<br />
+                                                            based on their staked shares
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </dt>
+                                            <dd class="staking__rewards-milico">
+                                                <div class="staking__rewards-item staking__rewards-item--1">
+                                                    <span class="staking__rewards-integer">103</span>
+                                                    <em class="staking__rewards-point">.<span>23413453</span></em>
+                                                </div>
+                                                <div class="staking__rewards-refresh"></div>
+                                            </dd>
+                                            <dd class="staking__rewards-list">
+                                                <ul class="staking__rewards-item staking__rewards-item--2">
+                                                    <li class="staking__rewards-wemix">
+                                                        <div class="staking__rewards-wemix-icon"></div>
+                                                        <div>
+                                                            <span class="staking__rewards-wemix-integer">999,999</span>
+                                                            <em class="staking__rewards-wemix-point">.<span>999999</span></em>
+                                                        </div>
+                                                    </li>
+                                                    <li class="staking__rewards-dollor">
+                                                        <div class="staking__rewards-dollor-icon"></div>
+                                                        <div>
+                                                            <span class="staking__rewards-dollor-integer">999,999,999</span>
+                                                            <em class="staking__rewards-dollor-point">.<span>999999</span></em>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="staking__rewards-per">
+                                                    <em>99.9999%</em>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="staking__info-item">
+                                        <dl class="staking__rewards">
+                                            <dt class="staking__rewards-title">
+                                                TVL (Total Value Locked)
+                                                <span class="staking__rewards-icon"></span>
+                                                <div class="staking__tooltip staking__tooltip--2">
+                                                    <h5 class="staking__tooltip-title">Total Staked Volume</h5>
+                                                </div>
+                                            </dt>
+                                            <dd class="staking__rewards-milico">
+                                                <div class="staking__rewards-item staking__rewards-item--1">
+                                                    <span class="staking__rewards-integer">103</span>
+                                                    <em class="staking__rewards-point">.<span>23413453</span></em>
+                                                </div>
+                                                <div class="staking__rewards-refresh"></div>
+                                            </dd>
+                                            <dd class="staking__rewards-list">
+                                                <ul class="staking__rewards-item staking__rewards-item--2">
+                                                    <li class="staking__rewards-wemix">
+                                                        <div class="staking__rewards-wemix-icon"></div>
+                                                        <div>
+                                                            <span class="staking__rewards-wemix-integer">999,999</span>
+                                                            <em class="staking__rewards-wemix-point">.<span>999999</span></em>
+                                                        </div>
+                                                    </li>
+                                                    <li class="staking__rewards-dollor">
+                                                        <div class="staking__rewards-dollor-icon"></div>
+                                                        <div>
+                                                            <span class="staking__rewards-dollor-integer">999,999,999</span>
+                                                            <em class="staking__rewards-dollor-point">.<span>999999</span></em>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="staking__rewards-per">
+                                                    <em>999% APR</em>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="staking__service">
+                                    <div class="staking__title-wrap">
+                                        <h3 class="staking__title">MILICO STAKING SERVICE</h3>
+                                        <dl class="contract">
+                                            <dt>Stake Contract</dt>
+                                            <dd class="contract__code">
+                                                <a class="contract__link" href="#" target="_blank">0x7fc9…ce5b45</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <!-- 로그인 전 화면 / 로그인 후 hidden 클래스 추가 -->
+                                    <div class="staking__wallet">
+                                        <div class="staking__wemix">
+                                            <div class="staking__wemix-icon"></div>
+                                            <p class="staking__wemix-text">Log in with WEMIX Wallet</p>
+                                            <a class="staking__wemix-btn staking__wemix-btn--login" href="#">WEMIX LOGIN</a>
+                                        </div>
+                                    </div>
+                                    <!-- 로그인 후 화면 / 로그인 후 hidden 클래스 제거, 스테이킹 후 hidden 클래스 추가 -->
+                                    <div class="staking__service-wrap hidden">
+                                        <div class="staking__service-item">
+                                            <dl class="staking__service-item-wrap">
+                                                <dt class="staking__service-title">
+                                                    My Stake
+                                                    <span></span>
+                                                </dt>
+                                                <dd class="staking__mystake">
+                                                    <div class="staking__mystake-milico">999.0</div>
+                                                    <div class="staking__mystake-item">
+                                                        <p class="staking__mystake-credit">
+                                                            <span></span>
+                                                            <em>999,999</em>
+                                                        </p>
+                                                        <p class="staking__mystake-dollor">
+                                                            <span></span>
+                                                            <em>999,999,999</em>
+                                                        </p>
+                                                    </div>
+                                                </dd>
+                                                <dd class="staking__mystake-text">
+                                                    <div class="staking__mystake-mo-item">
+                                                        <p class="staking__mystake-credit">
+                                                            <span></span>
+                                                            <em>999,999</em>
+                                                        </p>
+                                                        <p class="staking__mystake-dollor">
+                                                            <span></span>
+                                                            <em>999,999,999</em>
+                                                        </p>
+                                                    </div>
+                                                    <div class="staking__mystake-apr">00% APR</div>
+                                                </dd>
+
+                                                <!-- -active 클래스명 활성화 -->
+                                                <a class="staking__mystake-btn staking__mystake-btn--stake -active" href="#">STAKE</a>
+                                            </dl>
+                                        </div>
+                                        <div class="staking__service-item">
+                                            <dl class="staking__service-item-wrap">
+                                                <dt class="staking__service-title">
+                                                    Stake Reward
+                                                    <span></span>
+                                                </dt>
+                                                <dd class="staking__mystake">
+                                                    <div class="staking__mystake-milico">999.0</div>
+                                                    <div class="staking__mystake-item">
+                                                        <p class="staking__mystake-credit">
+                                                            <span></span>
+                                                            <em>999,999</em>
+                                                        </p>
+                                                        <p class="staking__mystake-dollor">
+                                                            <span></span>
+                                                            <em>999,999,999</em>
+                                                        </p>
+                                                    </div>
+                                                </dd>
+                                                <dd class="staking__mystake-text">
+                                                    <div class="staking__mystake-mo-item">
+                                                        <p class="staking__mystake-credit">
+                                                            <span></span>
+                                                            <em>999,999</em>
+                                                        </p>
+                                                        <p class="staking__mystake-dollor">
+                                                            <span></span>
+                                                            <em>999,999,999</em>
+                                                        </p>
+                                                    </div>
+                                                    <div class="staking__mystake-total-wrap">
+                                                        <p class="staking__mystake-total-text">Total Reward</p>
+                                                        <p class="staking__mystake-total-num">999.9</p>
+                                                    </div>
+                                                </dd>
+
+                                                <!-- -active 클래스명 활성화 -->
+                                                <a class="staking__mystake-btn staking__mystake-btn--reward -active" href="#">REWARD CLAIM</a>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <!-- 로그인 후 화면 / 스테이킹 후 hidden 클래스 제거 -->
+                                    <div class="staking__service-wrap hidden">
+                                        <div class="staking__service-item">
+                                            <dl class="staking__service-item-wrap">
+                                                <dt class="staking__service-title">
+                                                    My Stake
+                                                    <span></span>
+                                                </dt>
+                                                <dd class="staking__mystake">
+                                                    <div class="staking__mystake-milico">999.0</div>
+                                                    <div class="staking__mystake-item">
+                                                        <p class="staking__mystake-credit">
+                                                            <span></span>
+                                                            <em>999,999</em>
+                                                        </p>
+                                                        <p class="staking__mystake-dollor">
+                                                            <span></span>
+                                                            <em>999,999,999</em>
+                                                        </p>
+                                                    </div>
+                                                </dd>
+                                                <dd class="staking__mystake-text">
+                                                    <div class="staking__mystake-mo-item">
+                                                        <p class="staking__mystake-credit">
+                                                            <span></span>
+                                                            <em>999,999</em>
+                                                        </p>
+                                                        <p class="staking__mystake-dollor">
+                                                            <span></span>
+                                                            <em>999,999,999</em>
+                                                        </p>
+                                                    </div>
+                                                    <div class="staking__mystake-apr">00% APR</div>
+                                                </dd>
+
+                                                <div class="staking__mystake-btn-wrap">
+                                                    <!-- 쿨타임 종료 시 -active 클래스명 활성화 -->
+                                                    <a class="staking__mystake-btn staking__mystake-btn--stake staking__mystake-btn--column" href="#"
+                                                        >STAKE
+                                                        <span>(59m 59s)</span>
+                                                    </a>
+                                                    <!-- 쿨타임 종료 시 -active 클래스명 활성화 -->
+                                                    <a class="staking__mystake-btn staking__mystake-btn--unstake staking__mystake-btn--column" href="#">UNSTAKE <span>(13d 23h 59m 59s)</span></a>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                        <div class="staking__service-item">
+                                            <dl class="staking__service-item-wrap">
+                                                <dt class="staking__service-title">
+                                                    Stake Reward
+                                                    <span></span>
+                                                </dt>
+                                                <dd class="staking__mystake">
+                                                    <div class="staking__mystake-milico">999.0</div>
+                                                    <div class="staking__mystake-item">
+                                                        <p class="staking__mystake-credit">
+                                                            <span></span>
+                                                            <em>999,999</em>
+                                                        </p>
+                                                        <p class="staking__mystake-dollor">
+                                                            <span></span>
+                                                            <em>999,999,999</em>
+                                                        </p>
+                                                    </div>
+                                                </dd>
+                                                <dd class="staking__mystake-text">
+                                                    <div class="staking__mystake-mo-item">
+                                                        <p class="staking__mystake-credit">
+                                                            <span></span>
+                                                            <em>999,999</em>
+                                                        </p>
+                                                        <p class="staking__mystake-dollor">
+                                                            <span></span>
+                                                            <em>999,999,999</em>
+                                                        </p>
+                                                    </div>
+                                                    <div class="staking__mystake-total-wrap">
+                                                        <p class="staking__mystake-total-text">Total Reward</p>
+                                                        <p class="staking__mystake-total-num">999.9</p>
+                                                    </div>
+                                                </dd>
+                                                <!-- 쿨타임 종료 시 -active 클래스명 활성화 -->
+                                                <a class="staking__mystake-btn staking__mystake-btn--reward" href="#">REWARD CLAIM<span>(59m 59s)</span></a>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <!-- 로그인 후 화면 / 로그인 후 hidden 클래스 제거 -->
+                                    <div class="staking__mywallet hidden">
+                                        <div class="staking__mywallet-title-wrap">
+                                            <h4 class="staking__mywallet-title">My Wallet</h4>
+                                            <div class="staking__history">
+                                                <span class="staking__history-link">0x12263e85e0598f8fbd2bd058ff2e26d016d6cf77</span>
+                                                <a class="staking__history-btn" href="#">History</a>
+                                            </div>
+                                            <a class="staking__balance-mo-btn" href="#">LOGOUT</a>
+                                        </div>
+                                        <div class="staking__balance">
+                                            <ul class="staking__balance-list">
+                                                <li class="staking__balance-item">
+                                                    <p class="staking__balance-title">MILICO Balance</p>
+                                                    <p class="staking__balance-num staking__balance-num--milico">0.999</p>
+                                                </li>
+                                                <li class="staking__balance-item">
+                                                    <p class="staking__balance-title">WEMIX CREDIT Balance</p>
+                                                    <p class="staking__balance-num staking__balance-num--credit">0.999</p>
+                                                </li>
+                                                <li class="staking__balance-item">
+                                                    <p class="staking__balance-title">WEMIX Balance</p>
+                                                    <p class="staking__balance-num staking__balance-num--wemix">0.999</p>
+                                                </li>
+                                            </ul>
+                                            <a class="staking__balance-btn" href="#">LOGOUT</a>
+                                        </div>
+                                        <div class="staking__history-mo">
+                                            <span class="staking__history-link staking__history-mo-link">0x12263e85e0598f8fbd2bd058ff2e26d016d6cf77</span>
+                                            <a class="staking__history-btn staking__history-mo-btn" href="#">History</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="staking__disc">
+                                    <div class="staking__disc-image"><img src="./resources/images/background/bg_disclaimer.png" alt="disclaimer" /></div>
+                                    <div class="staking__desc staking__disc-text">
+                                        <h3 class="staking__title">[M-SUPPLIES] Disclaimer</h3>
+                                        <p class="staking__desc-text">
+                                            By participating in the staking of M-SUPPLIES, each participating individual acknowledges and agrees that we disclaim all liability, loss, or expense associated with M-SUPPLIES participation. If participants do not accept any of the following factors, they
+                                            should not be taking part in the M-SUPPLIES.
+                                        </p>
+                                        <ul class="staking__sub-list staking__sub-list--1" style="list-style-type: disc">
+                                            <li class="staking__sub-item" style="list-style-type: disc">One(1) reward MILICO will be minted in the M-SUPPLIES pool for every block generated,</li>
+                                            <li class="staking__sub-item" style="list-style-type: disc">One(1) MILICO is generated for every block created according to the reward schedule.</li>
+                                            <li class="staking__sub-item" style="list-style-type: disc">Claiming reward will be subject to a fee 5% of the total amount claimed.</li>
+                                            <li class="staking__sub-item" style="list-style-type: disc">Staking, Unstaking, and Claiming can be done an hour after another action.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="staking__playbook">
+                                    <div class="staking__play-wrap">
+                                        <div class="staking__play-image"><img src="./resources/images/background/bg_playbook.png" alt="playbook" /></div>
+                                        <div class="staking__desc staking__play-desc">
+                                            <h3 class="staking__title">[M-SUPPLIES] PLAYBOOK</h3>
+                                            <p class="staking__desc-text">
+                                                Gunship Battle: Crypto Conflict 의 DeFi 서비스가 시작됩니다. <br />
+                                                M-SUPPLIES Staking Program은 참여자가 MILICO토큰을 staking pool에 잠그면 M-SUPPLIES가 발행한 MILICO 토큰을 보상으로 받을 수 있는 DeFi 서비스입니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="staking__desc">
+                                        <h4 class="staking__sub-title">Description</h4>
+                                        <p class="staking__sub-desc">
+                                            Gunship Battle: Crypto Conflict는 DeFi 서비스의 시작으로 가장 직관적인 구조로 설계된 M-SUPPLIES Staking Program을 진행합니다.<br />
+                                            M-SUPPLIES는 PoS(Proof of Stake) 방식의 DeFi로 참여자는 <br class="br-mo" />보유한 MILICO를 원하는 만큼 staking pool에 잠글 수 있습니다.<br />
+                                            설정된 Staking Program 기간에 따라 모든 블록에 대해 1MILICO가 발행되고 참여자는 staking pool에 잠긴 총 MILICO 중 자신이<br class="br-pc" />
+                                            잠근 MILICO 수량 비율에 따라 보상을 받게 됩니다.<br />
+                                            충분한 MILICO 보상으로 staking에 참여함으로써 발생하는 <br class="br-mo" />기회비용을 상쇄하고 전략적 투자기회를 제공합니다.<br />
+                                            Staking Program에 원하는 만큼 참여할 수 있으며, 기간 중 추가 참여도 가능합니다.<br />
+                                            상대적으로 짧은 스테이킹 기간으로 너무 오랜 기간 동안 토큰이 잠기는 것을 방지합니다.<br />
+                                            MILICO를 보유하고 있다면 복잡한 과정 없이 손쉽게 참여할 수 있습니다.
+                                        </p>
+                                        <h4 class="staking__sub-title">Characteristics</h4>
+                                        <p class="staking__sub-desc">
+                                            보상 발행(Minted Rewards)<br />
+                                            매 블록이 생성 될 때 마다 하나(one)의 보상 MILICO가 <br class="br-mo" />M-SUPPLIES Staking Program 참가자에게 스테이킹 보너스로 발행됩니다. <br />
+                                            M-SUPPLIES Staking Program은 180일간 매 블록 생성마다 MILICO를 계속 발행 하도록 설계되어 있습니다.<br />
+                                            M-SUPPLIES Staking Program은 180일간 <br class="br-mo" />15,552,000개의 밀리코를 자동으로 발행합니다.
+                                        </p>
+                                        <h5 class="staking__sub-text">Staking</h5>
+                                        <p class="staking__sub-desc">
+                                            M-SUPPLIES Staking Program이 시작되면 참여자는 MILICO를 스테이킹하여 새로 발행된 보상 MILICO의 배당금을 얻을 수 있습니다. <br />
+                                            스테이킹 1회 당 최소 1MILICO가 필요하고 최대 수량제한은 없습니다. <br />
+                                            스테이킹을 여러 번 추가 진행하여 보상을 늘릴 수 있으며, <br class="br-mo" />한 사람에 스테이킹 가능한 누적 수량 제한은 없습니다.<br />
+                                            스테이킹 시점에 부과되는 수수료는 없습니다.
+                                        </p>
+                                        <h5 class="staking__sub-text">Reward Claiming</h5>
+                                        <p class="staking__sub-desc">
+                                            M-SUPPLIES Staking Program 참여자는 M-SUPPLIES Staking Program 페이지에서 누적 스테이킹 보상 금액을 확인할 수 있습니다. <br />
+                                            보상 청구를 진행해도 원래 스테이킹 된 MILICO의 양에 영향을 미치지 않으며 청구된 보상은 WEMIX 지갑에 입금됩니다.
+                                        </p>
+                                        <ul class="staking__sub-list" style="list-style-type: disc">
+                                            <li class="staking__sub-item" style="list-style-type: disc">보상 청구에는 청구된 총 금액의 5% 에 해당하는 수수료가 부과됩니다.</li>
+                                            <li class="staking__sub-item" style="list-style-type: disc">보상은 1시간마다 1회 청구할 수 있습니다.</li>
+                                        </ul>
+                                        <h5 class="staking__sub-text">Unstaking</h5>
+                                        <p class="staking__sub-desc">
+                                            스테이킹시 스테이킹 수량은 14일간 락업됩니다.<br />
+                                            스테이킹을 추가로 진행할 경우 기존의 스테이킹 수량과 새로운 스테이킹 수량 모두 새로운 스테이킹이 발생한 시점으로부터 <br class="br-mo" />14일간 락업됩니다. <br />
+                                            M-SUPPLIES Staking Program 참여자는 스테이킹한 MILICO를 언제든지 언스테이킹 할 수 있습니다.<br />
+                                            M-SUPPLIES Staking Program에서 언스테이킹을 진행하면 <br class="br-mo" />스테이킹된 모든 MILICO가 WEMIX 지갑으로 반환됩니다.
+                                        </p>
+                                        <ul class="staking__sub-list" style="list-style-type: disc">
+                                            <li class="staking__sub-item" style="list-style-type: disc">언스테이킹에 따른 수수료는 없습니다.</li>
+                                            <li class="staking__sub-item" style="list-style-type: disc">참여자는 1시간마다 1회 언스테이킹 할 수 있습니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </main>
+            <!-- FOOTER -->
+            <footer class="footer">ⓒ WEMADE TREE PTE. LTD & JOYCITY. All Rights Reserved.</footer>
+            <!-- FOOT ALERT -->
+            <div class="display-alert">
+                <div class="display-wrap">
+                    <div class="display display--alert">
+                        <div class="display__container">
+                            <dl class="display__price">
+                                <dt class="display__price-dt">WEMIX / MILICO</dt>
+                                <dd class="display__price-dd">
+                                    <picture class="display__ico">
+                                        <source media="(max-width: 1100px)" srcset="./resources/images/ico/mobile/ico_wemix-alert.png" />
+                                        <img src="./resources/images/ico/ico_wemix-alert.png" alt="" loading="lazy" />
+                                    </picture>
+                                    <span class="display__value priceControll">0.0000</span>
+                                    <span class="display__change priceControll -plus">+0.00%</span>
+                                </dd>
+                            </dl>
+                            <div class="display__date priceDate">Last updated on mm dd yyyy, TIME (UTC)</div>
+                        </div>
+                    </div>
+                    <div class="display display--alert">
+                        <div class="display__container">
+                            <dl class="display__price">
+                                <dt class="display__price-dt">USD / MILICO</dt>
+                                <dd class="display__price-dd">
+                                    <span class="display__value priceControll">$0.0000</span>
+                                    <span class="display__change priceControll -minus">-0.00%</span>
+                                </dd>
+                            </dl>
+                            <div class="display__date priceDate">Last updated on mm dd yyyy, TIME (UTC)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- POPUP -->
+            <div class="download">
+                <div class="download__container">
+                    <div class="download__content">
+                        <div class="download__header">
+                            <h4 class="download__title">Gunship Battle: Crypto Conflict PLAY NOW!</h4>
+                            <button class="download__button" type="button"></button>
+                        </div>
+                        <div class="download__body">
+                            <h3 class="download__logo">
+                                <a href="#">
+                                    <img src="./resources/images/logo/mobile/logo_download-body.png" alt="" loading="lazy" />
+                                </a>
+                            </h3>
+                            <div class="download__pc">
+                                <h5 class="download__sub-title">PC Download</h5>
+                                <ul class="download__list">
+                                    <li class="download__item">
+                                        <a class="download__link" href="https://gt-client.global.joycityglobal.com/public/PC/Installer/GTLauncherInstall.exe" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/download/mobile/download_window.png" />
+                                                <img src="./resources/images/download/download_window.png" alt="" loading="lazy" />
+                                            </picture>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="download__mobile">
+                                <h5 class="download__sub-title">Mobile Download</h5>
+                                <ul class="download__list">
+                                    <li class="download__item">
+                                        <a class="download__link" href="https://gc-and.onelink.me/7k3a?pid=WW_And_OfficialSite_PreBrandpage&c=WW_And_OfficialSite_PreBrandpage" target="_blank">
+                                            <picture data-translate="download-image-1" data-translate-type="html">
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/download/mobile/download_google.png" />
+                                                <img src="./resources/images/download/download_google.png" alt="" loading="lazy" />
+                                            </picture>
+                                            <p class="download__text">Google Play</p>
+                                        </a>
+                                    </li>
+                                    <li class="download__item">
+                                        <a class="download__link" href="https://gc-ios.onelink.me/CAoB?pid=WW_IOS_OfficialSite_PreBrandpage&c=WW_IOS_OfficialSite_PreBrandpage" target="_blank">
+                                            <picture data-translate="download-image-2" data-translate-type="html">
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/download/mobile/download_apple.png" />
+                                                <img src="./resources/images/download/download_apple.png" alt="" loading="lazy" />
+                                            </picture>
+                                            <p class="download__text">App Store</p>
+                                        </a>
+                                    </li>
+                                    <li class="download__item">
+                                        <a class="download__link" href="#" onclick="alert('Coming soon')" target="_blank">
+                                            <picture>
+                                                <source media="(max-width: 1100px)" srcset="./resources/images/download/mobile/download_joycity.png" />
+                                                <img src="./resources/images/download/download_joycity.png" alt="" loading="lazy" />
+                                            </picture>
+                                            <p class="download__text">Joy Store</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- STAKING POPUP -->
+            <div class="popup">
+                <!-- STAKE -->
+                <div class="popup__stake">
+                    <h4 class="popup__stake-title popup__title">Stake</h4>
+                    <div class="popup__stake-milico">
+                        <ul class="popup__milico-item">
+                            <li class="popup__milico-title">
+                                Currently Staked <br class="br-mo" />
+                                MILICO
+                            </li>
+                            <li class="popup__milico-num">1,000</li>
+                        </ul>
+                        <div class="popup__stake-plus"></div>
+                        <ul class="popup__milico-item">
+                            <li class="popup__milico-title">Additional <br class="br-mo" />MILICO</li>
+                            <li class="popup__milico-num">0</li>
+                        </ul>
+                    </div>
+                    <div class="popup__milico-balance">
+                        <div class="popup__milico-balance--title">MILICO Balance</div>
+                        <div class="popup__milico-coin">99<span>MILICO</span></div>
+                    </div>
+                    <div class="popup__input-box">
+                        <div class="popup__input-coin"></div>
+                        <input type="text" placeholder="Input your staking amount" />
+                        <a class="popup__input-btn" href="#">MAX</a>
+                    </div>
+                    <div class="popup__btn-wrap">
+                        <a class="popup__stake-btn" href="#">STAKE</a>
+                    </div>
+                    <a class="popup__close" href="#"></a>
+                </div>
+                <!-- UNSTAKE -->
+                <div class="popup__unstake">
+                    <h4 class="popup__unstake-title popup__title">Unstake</h4>
+                    <div class="popup__unstake-milico">
+                        <p class="popup__milico-title">Unstakeable MILICO</p>
+                        <p class="popup__milico-num">1,000</p>
+                    </div>
+                    <div class="popup__input-box">
+                        <div class="popup__input-coin"></div>
+                        <input type="text" placeholder="Input your unstaking amount" />
+                        <a class="popup__input-btn" href="#">MAX</a>
+                    </div>
+                    <div class="popup__btn-wrap">
+                        <a class="popup__unstake-btn" href="#">UNSTAKE</a>
+                    </div>
+                    <a class="popup__close" href="#"></a>
+                </div>
+                <!-- REWARD -->
+                <div class="popup__reward">
+                    <h4 class="popup__reward-title popup__title">Reward Claim</h4>
+                    <div class="popup__reward-desc-wrap">
+                        <p class="popup__reward-desc-title">Claimed reward will be deposited into your Wemix Wallet.</p>
+                        <ul class="popup__reward-desc" style="list-style-type: disc">
+                            <li class="popup__reward-desc-item" style="list-style-type: disc">Total claimable reward minus a 5% fee will automatically be deposited into your Wemix Wallet.</li>
+                            <li class="popup__reward-desc-item" style="list-style-type: disc">The total reward amount claimed may differ from what is displayed based on the exact moment of when the transaction takes place.</li>
+                        </ul>
+                    </div>
+                    <div class="popup__reward-milico">
+                        <p class="popup__milico-title">Claimable Reward</p>
+                        <p class="popup__milico-num">1000<span>MILICO</span></p>
+                    </div>
+                    <div class="popup__btn-wrap">
+                        <a class="popup__reward-btn" href="#">Reward Claim</a>
+                    </div>
+                    <a class="popup__close" href="#"></a>
+                </div>
+                <!-- HISTORY -->
+                <div class="popup__history">
+                    <h4 class="popup__history-title popup__title">History</h4>
+                    <ul class="popup__history-list-wrap">
+                        <span class="popup__history-list--border"></span>
+                        <li class="popup__history-list">
+                            <ul class="popup__history-col">
+                                <li class="popup__history-date">yyyy-mm-dd hh:mm:ss</li>
+                                <li class="popup__history-result">MILICO <span class="popup__history-result--unstaked">Unstaked</span></li>
+                            </ul>
+                            <ul class="popup__history-row">
+                                <li class="popup__history-coin"></li>
+                                <li class="popup__history-num">999.9</li>
+                            </ul>
+                        </li>
+                        <li class="popup__history-list">
+                            <ul class="popup__history-col">
+                                <li class="popup__history-date">yyyy-mm-dd hh:mm:ss</li>
+                                <li class="popup__history-result">MILICO <span class="popup__history-result--unstaked">Unstaked</span></li>
+                            </ul>
+                            <ul class="popup__history-row">
+                                <li class="popup__history-coin"></li>
+                                <li class="popup__history-num">999.9</li>
+                            </ul>
+                        </li>
+                        <li class="popup__history-list">
+                            <ul class="popup__history-col">
+                                <li class="popup__history-date">yyyy-mm-dd hh:mm:ss</li>
+                                <li class="popup__history-result">MILICO <span class="popup__history-result--claimed">Claimed</span></li>
+                            </ul>
+                            <ul class="popup__history-row">
+                                <li class="popup__history-coin"></li>
+                                <li class="popup__history-num">999.9</li>
+                            </ul>
+                        </li>
+                        <li class="popup__history-list">
+                            <ul class="popup__history-col">
+                                <li class="popup__history-date">yyyy-mm-dd hh:mm:ss</li>
+                                <li class="popup__history-result">MILICO <span class="popup__history-result--staked">Staked</span></li>
+                            </ul>
+                            <ul class="popup__history-row">
+                                <li class="popup__history-coin"></li>
+                                <li class="popup__history-num">999.9</li>
+                            </ul>
+                        </li>
+                        <li class="popup__history-list">
+                            <ul class="popup__history-col">
+                                <li class="popup__history-date">yyyy-mm-dd hh:mm:ss</li>
+                                <li class="popup__history-result">MILICO <span class="popup__history-result--unstaked">Unstaked</span></li>
+                            </ul>
+                            <ul class="popup__history-row">
+                                <li class="popup__history-coin"></li>
+                                <li class="popup__history-num">999.9</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="popup__page-wrap">
+                        <li class="popup__page popup__page--prev">
+                            <a href="#"></a>
+                        </li>
+                        <li class="popup__page popup__page--prev-p">
+                            <a href="#"></a>
+                        </li>
+                        <li class="popup__page on">
+                            <a href="#">1</a>
+                        </li>
+                        <li class="popup__page">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="popup__page">
+                            <a href="#">3</a>
+                        </li>
+                        <li class="popup__page">
+                            <a href="#">4</a>
+                        </li>
+                        <li class="popup__page">
+                            <a href="#">5</a>
+                        </li>
+                        <li class="popup__page popup__page--next">
+                            <a href="#"></a>
+                        </li>
+                        <li class="popup__page popup__page--next-p">
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                    <a class="popup__close" href="#"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

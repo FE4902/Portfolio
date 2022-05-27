@@ -1,0 +1,31 @@
+@use '../helpers/' as *;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $c-light;
+    background-color: $c-dark;
+    visibility: hidden;
+}
+
+b {
+    font-weight: $fw-bold !important;
+}
+
+picture {
+    display: flex;
+    justify-content: center;
+}
+
+.br {
+    &-pc {
+        display: none;
+        @include desktop {
+            display: block;
+        }
+    }
+    &-mo {
+        @include desktop {
+            display: none;
+        }
+    }
+}
