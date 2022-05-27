@@ -1,0 +1,96 @@
+@use "../helpers/" as *;
+
+html {
+    scroll-behavior: smooth;
+    @include custom(640px) {
+        font-size: 14px;
+    }
+    @include custom(480px) {
+        font-size: 12px;
+    }
+    @include custom(360px) {
+        font-size: 10px;
+    }
+}
+
+body {
+    font-family: "Rajdhani", sans-serif;
+    font-size: rem(20px);
+    min-width: 320px;
+}
+
+.hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+.wrap {
+    position: relative;
+    display: grid;
+    grid-template-areas: "aside main floating";
+    grid-auto-columns: 36% 1fr 8%;
+    @include mobile {
+        grid-template-areas:
+            "aside"
+            "main"
+            "footer";
+        grid-auto-columns: 100%;
+    }
+
+    &::before,
+    &::after {
+        z-index: 100;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $c-dark;
+        animation: first-animation-before 0.5s forwards 2s;
+        @include mobile {
+            animation: mobile-first-animation-before 0.5s forwards 2s;
+        }
+    }
+
+    &::after {
+        background-color: $c-primary;
+        width: 0%;
+        animation: first-animation-after 0.5s forwards 1.5s, first-animation-before 0.5s forwards 2s;
+        @include mobile {
+            width: 100%;
+            height: 0;
+            animation: mobile-first-animation-after 0.5s forwards 1.5s, mobile-first-animation-before 0.5s forwards 2s;
+        }
+    }
+}
+
+$areas: header, floating, aside, main;
+@each $area in $areas {
+    .#{$area} {
+        grid-area: #{$area};
+    }
+}
+
+.go-to-top-button {
+    position: fixed;
+    right: rem(20px);
+    bottom: rem(20px);
+    padding: 0.5em;
+    border: 1px solid $c-black;
+    background-color: $c-white;
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition;
+
+    &.-active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &:hover {
+        color: $c-white;
+        border-color: $c-primary;
+        background-color: $c-primary;
+    }
+}
