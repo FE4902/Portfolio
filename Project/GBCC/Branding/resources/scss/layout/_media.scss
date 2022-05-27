@@ -1,0 +1,161 @@
+@use '../helpers/' as *;
+
+.media {
+    padding: 24px 16px;
+    background-color: $c-media;
+    @include flex-center;
+    @include desktop {
+        height: 1080px;
+        padding: 112px 0;
+    }
+
+    &__container {
+        width: 328px;
+        flex-direction: column;
+        @include flex-center;
+        @include desktop {
+            max-width: 900px;
+            width: 100%;
+            padding: 0;
+        }
+        @include retina {
+            max-width: 1440px;
+        }
+    }
+
+    &__title {
+        width: 100%;
+        padding-bottom: 12px;
+        color: $c-primary;
+        text-align: center;
+        @include font-style-20($fw-bold);
+        @include desktop {
+            padding-bottom: 32px;
+            @include font-style-48($fw-bold);
+        }
+    }
+
+    &__sub-title {
+        padding-bottom: 24px;
+        color: $c-gray;
+        text-align: center;
+        @include font-style-16($fw-medium);
+        @include desktop {
+            padding-bottom: 48px;
+            @include font-style-28($fw-medium);
+        }
+    }
+
+    &__content {
+        position: relative;
+        width: 100%;
+    }
+
+    &__swiper-slide {
+        margin: 0 auto;
+        @include flex-center;
+    }
+
+    &__swiper-button {
+        z-index: $z-common;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 32px;
+        height: 32px;
+        @include background-cover;
+        @include desktop {
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+    &__swiper-button-left {
+        left: -16px;
+        background-image: url('#{$path-image}/ico/ico_left-white.png');
+        @include desktop {
+            left: -64px;
+        }
+    }
+
+    &__swiper-button-right {
+        right: -16px;
+        background-image: url('#{$path-image}/ico/ico_right-white.png');
+        @include desktop {
+            right: -64px;
+        }
+    }
+
+    &__swiper-pagination {
+        // display: none;
+        padding-top: 35px;
+        @include flex-center;
+        @include desktop {
+            padding-top: 70px;
+        }
+    }
+}
+
+.video {
+    width: 328px;
+    @include desktop {
+        width: 900px;
+    }
+    @include retina {
+        width: 1130px;
+    }
+
+    &__content {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56%;
+    }
+
+    &__button {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.swiper-pagination-bullet {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid $c-gray;
+    background-color: transparent;
+    border-radius: 50%;
+
+    &-active {
+        border-color: $c-light;
+        background-color: $c-light;
+    }
+
+    & + & {
+        margin-left: 16px;
+
+        @include desktop {
+            margin-left: 24px;
+        }
+    }
+
+    // AR
+    .ar & + & {
+        margin-left: 0;
+        margin-right: 16px;
+
+        @include desktop {
+            margin-left: 0;
+            margin-right: 24px;
+        }
+    }
+}

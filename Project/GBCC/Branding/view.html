@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./resources/css/style.min.css" />
+        <title>GUNSHIP BATTLE: CRYPTO CONFLICT</title>
+        <!--  -->
+        <meta property="og:title" content="Gunship Battle: Crypto Conflict" />
+        <meta property="og:url" content="https://cryptoconflict.joycity.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./resources/images/logo.png" />
+        <meta property="og:description" content="Play and Earn 4x War Strategy Game Gunship Battle: Crypto Conflict is Play and Earn. Explore the top-tier, P2E game based on the popular Gunship Battle War Strategy franchise with 100 Million Global Downloads." />
+        <meta name="description" content="Play and Earn 4x War Strategy Game Gunship Battle: Crypto Conflict is Play and Earn. Explore the top-tier, P2E game based on the popular Gunship Battle War Strategy franchise with 100 Million Global Downloads." />
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" type="image/x-icon" href="./resources/images/ico/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="./resources/images/ico/favicon.ico" />
+        <!-- SCRIPT -->
+        <script defer src="./resources/js/jquery.min.js"></script>
+        <script defer src="./resources/js/gsap.min.js"></script>
+        <script defer src="./resources/js/scrollTrigger.min.js"></script>
+        <script defer src="./resources/js/swiper.min.js"></script>
+        <script defer src="./resources/js/common.js"></script>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header__container">
+                <!-- 로고 -->
+                <h1 class="logo">
+                    <a href="https://cryptoconflict.joycity.com/">
+                        <picture>
+                            <source media="(min-width: 1100px)" srcset="resources/images/logo/logo_gt-header.png" />
+                            <img src="./resources/images/logo/mobile/logo_gt-header.png" alt="" />
+                        </picture>
+                    </a>
+                </h1>
+                <!-- 모바일 메뉴 버튼 -->
+                <button class="header__button header__button--menu js-gnb" type="button"></button>
+                <!-- 메뉴 -->
+                <nav class="gnb">
+                    <ul class="gnb__menu">
+                        <li class="gnb__item">
+                            <a class="gnb__link" href="#home"> <span>Home</span></a>
+                        </li>
+                        <li class="gnb__item js-gnb-contents">
+                            <a class="gnb__link -after-scroll" href="#"><span>Contents</span> </a>
+                            <ul class="gnb__contents">
+                                <li class="gnb__contents-item"><a class="gnb__contents-link" href="#game">About Game</a></li>
+                                <li class="gnb__contents-item"><a class="gnb__contents-link" href="#milico">MILICO</a></li>
+                                <li class="gnb__contents-item"><a class="gnb__contents-link" href="#play">Play</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb__item">
+                            <a class="gnb__link" href="#media"><span>Media</span></a>
+                        </li>
+                        <li class="gnb__item">
+                            <a class="gnb__link" href="#promotion"><span>Airdrop</span></a>
+                        </li>
+                        <li class="gnb__item">
+                            <a class="gnb__link" href="#roadmap"><span>Roadmap</span></a>
+                        </li>
+                        <li class="gnb__item">
+                            <a class="gnb__link" href="#"><span>Notice</span></a>
+                        </li>
+                    </ul>
+                    <ul class="gnb__sns">
+                        <li class="gnb__sns-item">
+                            <a href="https://www.youtube.com/c/jcenest" target="_blank"><img src="./resources/images/sns/sns_youtube-circle.png" alt="" /></a>
+                        </li>
+                        <li class="gnb__sns-item">
+                            <a href="https://discord.com/invite/yaqDbjYATU" target="_blank"><img src="./resources/images/sns/sns_discord-circle.png" alt="" /></a>
+                        </li>
+                        <li class="gnb__sns-item">
+                            <a href="https://t.me/cryptoconflict" target="_blank"><img src="./resources/images/sns/sns_telegram-circle.png" alt="" /></a>
+                        </li>
+                        <li class="gnb__sns-item">
+                            <a href="https://twitter.com/Cryptoconflict_" target="_blank"><img src="./resources/images/sns/sns_twitter-circle.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="util">
+                    <li class="util__item util__item--community js-community">
+                        <a class="util__link -after-scroll" href="#"><span>Community</span></a>
+                        <ul class="community">
+                            <li class="community__item">
+                                <a class="community__link community__link--youtube" href="https://www.youtube.com/c/jcenest" target="_blank"><span>Youtube</span></a>
+                            </li>
+                            <li class="community__item">
+                                <a class="community__link community__link--discord" href="https://discord.com/invite/yaqDbjYATU" target="_blank"><span>Discord</span></a>
+                            </li>
+                            <li class="community__item">
+                                <a class="community__link community__link--telegram" href="https://t.me/cryptoconflict" target="_blank"><span>Telegram</span></a>
+                            </li>
+                            <li class="community__item">
+                                <a class="community__link community__link--twitter" href="https://twitter.com/Cryptoconflict_" target="_blank"><span>Twitter</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="util__item js-warp">
+                        <a class="header__button header__button--warp" href="#"></a>
+                        <ul class="warp">
+                            <li class="warp__item">
+                                <a class="warp__link" href="https://cbz.joycity.com/" data-translate="game-name-cbz" data-translate-type="html">Crypto Ball Z on WEMIX</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="util__item">
+                        <a class="header__button header__button--wemix" href="https://wemixnetwork.com/"></a>
+                    </li>
+                    <li class="util__item js-lang">
+                        <a class="header__button header__button--lang" href="#"></a>
+                        <ul class="lang">
+                            <!-- <li class="lang__item"><a class="lang__link" href="#">한국어</a></li> -->
+                            <li class="lang__item"><a class="lang__link" href="#">English</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">日本語</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">简体中文</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">繁體中文</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Русский</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Français</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Deutsch</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">ภาษาไทย</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Español</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Portugês</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Tiếng Việt</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Indonesian</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">العربية</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main class="main">
+            <article class="board">
+                <div class="board__container">
+                    <!-- div.view에 -new 클래스 추가시 N 아이콘 생성 -->
+                    <div class="view -new">
+                        <h4 class="view__category">Notice</h4>
+                        <div class="view__title-wrap">
+                            <p class="view__title"><span>[NOTICE] World War Tournament Season 5 - 2nd Round BEST 10 Season 5 - 2nd Round</span></p>
+                            <p class="view__date">2019. 7. 17</p>
+                        </div>
+                        <div class="view__content-wrap">
+                            <!-- <ul class="view__sns">
+                                <li class="view__sns-item"><a class="view__sns-link view__sns-link--discord" href="#"></a></li>
+                                <li class="view__sns-item"><a class="view__sns-link view__sns-link--youtube" href="#"></a></li>
+                                <li class="view__sns-item"><a class="view__sns-link view__sns-link--telegram" href="#"></a></li>
+                                <li class="view__sns-item"><a class="view__sns-link view__sns-link--twitter" href="#"></a></li>
+                            </ul> -->
+                            <div class="view__content">
+                                <p>
+                                    Hello, Admirals!We are pleased to announce the Best 10 contestants of the 2nd Round of World War Tournament Season 5 who have who lead their Alliances to victory!​ BEST 10 for 2nd Round of World War Tournament Season 5 ​​​Congratulations to the Hello, Admirals!We
+                                    are pleased to announce the Best 10 contestants of the 2nd Round of World War Tournament Season 5 who lead their Alliances to victory!​ BEST 10 for 2nd Round of World War Tournament Season 5 ​​​Congratulations to the Admirals who made to
+                                </p>
+                                <br /><br />
+                                <p>Hello, Admirals!We are pleased to announce the Best 10 contestants of the 2nd Round of World War Tournament lead their Alliances to victory!​ BEST 10 for 2nd Round of World War Tournament Season 5 ​​​Congratulations to the Admirals who made to</p>
+                                <br /><br />
+                                <p>
+                                    Hello, Admirals!We are pleased to announce the Best 10 contestants of the 2nd Round of World War Tournament Season 5 who lead their Alliances to victory!​ BEST 10 for 2nd Round of World War Tournament Season 5 ​​​Congratulations to the Admirals who made to Hello,
+                                    Admirals!We are pleased to announce the Best 10 contestants of the 2nd Round of World War Tournament Season 5 who lead their Alliances to victory!​ BEST 10 for 2nd Round of World War Tournament Season 5 ​​​Congratulations to the Admirals who made to
+                                </p>
+                            </div>
+                        </div>
+                        <div class="view__btn-wrap">
+                            <div class="view__arr-wrap">
+                                <!-- 밑, 위 게시글이 없을때 button disabled -->
+                                <button class="view__arr view__arr--up" type="button" disabled></button>
+                                <button class="view__arr view__arr--down" type="button"></button>
+                            </div>
+                            <button class="view__btn" type="button">LIST</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <!-- FLOATING -->
+        <ul class="floating">
+            <li class="floating__item">
+                <a href="https://www.youtube.com/c/jcenest" target="_blank"><img src="./resources/images/sns/sns_youtube-circle.png" alt="" /></a>
+            </li>
+            <li class="floating__item">
+                <a href="https://discord.com/invite/yaqDbjYATU" target="_blank"><img src="./resources/images/sns/sns_discord-circle.png" alt="" /></a>
+            </li>
+            <li class="floating__item">
+                <a href="https://t.me/cryptoconflict" target="_blank"><img src="./resources/images/sns/sns_telegram-circle.png" alt="" /></a>
+            </li>
+            <li class="floating__item">
+                <a href="https://twitter.com/Cryptoconflict_" target="_blank"><img src="./resources/images/sns/sns_twitter-circle.png" alt="" /></a>
+            </li>
+        </ul>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <h2 class="hidden">FOOTER</h2>
+            <div class="footer__container">
+                <a class="footer__logo" href="https://corp.joycity.com/en/main" target="_blank">
+                    <img src="./resources/images/logo/logo_joycity.png" alt="" loading="lazy" />
+                </a>
+                <div class="footer__desc">
+                    <p class="policy">
+                        <a class="policy-terms" href="http://policy.joycity.com/gc/provision" target="_blank">Terms of use</a>
+                        <span>|</span>
+                        <a class="policy-privacy" href="https://policy.joycity.com/gc/privacy" target="_blank">Privacy Policy</a>
+                        <span>|</span>
+                        <a class="support" href="mailto:cryptoconflict@joycity.com" data-translate="support-1" data-translate-type="text">Support</a>
+                    </p>
+                    <p class="copy">ⓒ WEMADE TREE PTE. LTD & JOYCITY. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

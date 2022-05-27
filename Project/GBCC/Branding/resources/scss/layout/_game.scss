@@ -1,0 +1,334 @@
+@use '../helpers/' as *;
+
+.game {
+    min-height: 640px;
+    padding: 24px 16px;
+    background-color: $c-black;
+    background-image: url('#{$path-image}/background/mobile/bg_game.jpg');
+    @include background-cover;
+    @include desktop {
+        min-height: 1080px;
+        padding: 108px 0 68px;
+        background-image: url('#{$path-image}/background/bg_game.png');
+    }
+
+    &__container {
+        max-width: 328px;
+        margin: 0 auto;
+        @include desktop {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        @include retina {
+            max-width: 1440px;
+            padding: 0 40px;
+        }
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__title {
+        padding-bottom: 24px;
+        color: $c-light;
+        text-align: center;
+        @include font-style-20($fw-bold);
+        @include desktop {
+            padding-bottom: 56px;
+            @include font-style-48($fw-bold);
+        }
+    }
+
+    &__text {
+        color: $c-light;
+    }
+
+    &__desc {
+        background-color: $c-black;
+    }
+
+    &__image {
+        height: 216px;
+    }
+
+    &__swiper-button {
+        z-index: $z-common;
+        position: absolute;
+        top: 20%;
+        transform: translateY(calc(-50% + 64px));
+        width: 32px;
+        height: 32px;
+        @include background-cover;
+        @include desktop {
+            top: 50%;
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+    &__swiper-button-left {
+        left: -16px;
+        background-image: url('#{$path-image}/ico/ico_left-white.png');
+        @include desktop {
+            left: -64px;
+        }
+        @include retina {
+            left: -104px;
+        }
+    }
+
+    &__swiper-button-right {
+        right: -16px;
+        background-image: url('#{$path-image}/ico/ico_right-white.png');
+        @include desktop {
+            right: -64px;
+        }
+        @include retina {
+            right: -104px;
+        }
+    }
+
+    &__swiper-pagination {
+        padding-top: 64px;
+        @include flex-center;
+        @include desktop {
+            padding-top: 70px;
+        }
+    }
+}
+
+.story {
+    @include desktop {
+        display: flex;
+        align-items: center;
+        height: 640px;
+    }
+
+    &__desc {
+        padding: 20px 12px 20px 24px;
+        height: 178px;
+        background-color: $c-dark;
+        @include desktop {
+            flex-shrink: 1;
+            // height: 640px;
+            height: 487.3px;
+            padding: 72px 24px 72px 48px;
+        }
+        @include retina {
+            height: 616px;
+        }
+    }
+
+    &__box {
+        height: 100%;
+        padding-right: 12px;
+        @include custom-scroll;
+        @include desktop {
+            padding-right: 24px;
+        }
+    }
+
+    &__image {
+        position: relative;
+        @include desktop {
+            overflow: hidden;
+            width: 43%;
+            height: 487.3px;
+        }
+        @include retina {
+            height: 616px;
+        }
+
+        picture {
+            @include desktop {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                max-width: initial;
+            }
+        }
+
+        img {
+            @include desktop {
+                max-width: initial;
+                height: 100%;
+            }
+        }
+    }
+
+    &__title {
+        padding-bottom: 12px;
+        color: $c-white;
+        @include font-style-20($fw-bold);
+        @include desktop {
+            padding-bottom: 40px;
+            @include font-style-24($fw-bold);
+        }
+    }
+
+    &__text {
+        display: inline;
+        color: $c-light;
+        @include font-style-16($fw-regular);
+        @include desktop {
+            display: block;
+            @include font-style-18($fw-regular);
+        }
+
+        &:not(:last-child) {
+            @include desktop {
+                padding-bottom: 40px;
+            }
+        }
+    }
+}
+
+.unit {
+    display: flex;
+    @include desktop {
+        align-items: center;
+        height: 640px;
+    }
+
+    &__item {
+        display: none;
+        position: relative;
+        width: 100%;
+        @include desktop {
+            display: block;
+            width: 32.333%;
+        }
+        @include retina {
+            height: 616px;
+        }
+
+        &:not(:last-child) {
+            @include desktop {
+                margin-right: 1.5%;
+            }
+        }
+
+        &--active {
+            display: block;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 4px solid transparent;
+            transition: all 0.3s ease-in-out 0.05s;
+            pointer-events: none;
+        }
+
+        @include hover {
+            &::after {
+                border-color: $c-primary;
+            }
+        }
+    }
+
+    &__image {
+        height: 216px;
+        // background-image: url('#{$path-image}/background/bg_unit.png');
+        @include background-cover;
+        @include flex-center;
+        @include desktop {
+            height: auto;
+        }
+    }
+
+    &__desc {
+        height: 142px;
+        padding: 12px 8px 12px 16px;
+        background-color: $c-dark;
+        @include desktop {
+            height: 236px;
+            padding: 32px 16px 32px 32px;
+        }
+    }
+
+    &__box {
+        height: 100%;
+        padding-right: 8px;
+        @include custom-scroll;
+        @include desktop {
+            padding-right: 16px;
+        }
+    }
+
+    &__title {
+        padding-bottom: 4px;
+        color: $c-light;
+        @include font-style-16($fw-medium);
+        @include desktop {
+            padding-bottom: 12px;
+            @include font-style-24($fw-bold);
+        }
+    }
+
+    &__text {
+        color: $c-gray;
+        @include font-style-12($fw-medium);
+        @include desktop {
+            @include font-style-16($fw-medium);
+        }
+    }
+
+    // AR
+    .ar &__item {
+        &:not(:last-child) {
+            @include desktop {
+                margin-right: 0;
+                margin-left: 1.5%;
+            }
+        }
+    }
+}
+
+.unit__tab {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    @include desktop {
+        display: none;
+    }
+
+    &-item {
+        font-weight: $fw-medium;
+        color: $c-gray;
+
+        & + & {
+            padding-left: 12px;
+        }
+
+        &--active {
+            color: $c-light;
+        }
+    }
+
+    &-link {
+        display: inline-block;
+        border: 1px solid $c-gray;
+        padding: 8px 12px;
+
+        .unit__tab-item--active & {
+            border: 2px solid $c-white;
+        }
+    }
+
+    // AR
+    .ar &-item {
+        &:not(:first-child) {
+            padding-left: 0;
+            padding-right: 12px;
+        }
+    }
+}

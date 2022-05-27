@@ -1,0 +1,313 @@
+@use '../helpers/' as *;
+
+@mixin new {
+    content: 'N';
+    width: 1.4em;
+    height: 1.4em;
+    margin-right: 0.4em;
+    font-size: 0.7em;
+    line-height: 0.5;
+    font-weight: $fw-medium;
+    color: #fff;
+    background-color: #ad0505;
+    position: relative;
+    top: -3px;
+    @include flex-center;
+    display: inline-flex;
+}
+
+.board {
+    font-size: 16px;
+    @include custom(640px) {
+        font-size: 15px;
+    }
+    @include custom(540px) {
+        font-size: 14px;
+    }
+    @include custom(480px) {
+        font-size: 13px;
+    }
+    @include custom(420px) {
+        font-size: 12px;
+    }
+    @include custom(360px) {
+        font-size: 11px;
+    }
+}
+
+.board {
+    min-height: 100vh;
+    padding: em(112px) 16px em(100px);
+    background-image: url('#{$path-image}/background/mobile/bg_board.png');
+    @include background-cover;
+    @include desktop {
+        padding: 124px 36px;
+        background-image: url('#{$path-image}/background/bg_board.png');
+    }
+
+    &__container {
+        max-width: 668px;
+        margin: 0 auto;
+        @include desktop {
+            max-width: 1200px;
+        }
+    }
+
+    &__item {
+        &:not(:first-child) {
+            border-top: 1px solid #3b3d41;
+        }
+    }
+
+    &__box {
+        display: block;
+        padding: em(36px) 0;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: em(28px, 28px);
+        color: $c-white;
+        line-height: 1.2;
+        font-size: em(28px);
+        font-weight: $fw-medium;
+        @include ellipsis(2);
+
+        .-new &::before {
+            @include new;
+        }
+    }
+
+    &__text {
+        margin-bottom: em(28px, 20px);
+        color: #9ea3ae;
+        line-height: 1.2;
+        font-size: em(20px);
+        // font-weight: $fw-medium;
+        @include ellipsis(2);
+    }
+
+    &__date {
+        color: #71757d;
+        font-size: em(16px);
+        font-weight: $fw-medium;
+    }
+}
+
+.board__tab {
+    display: flex;
+
+    &-item {
+        width: 50%;
+        border-bottom: 2px solid #7a7a86;
+        &.-active {
+            border-color: $c-primary;
+        }
+    }
+
+    &-link {
+        padding: em(36px, 32px) 0;
+        color: #7a7a86;
+        font-size: em(32px);
+        font-weight: $fw-bold;
+        @include flex-center;
+        border-bottom: 2px solid transparent;
+
+        .-active & {
+            border-color: $c-primary;
+            color: $c-primary;
+        }
+
+        .-new &::before {
+            @include new;
+            top: 0;
+        }
+    }
+}
+
+.board__btn {
+    display: block;
+    // min-width: 240px;
+    padding: 16px 48px;
+    height: em(80px, 28px);
+    color: $c-white;
+    // background-color: $c-primary;
+    border: 1px solid $c-gray;
+    font-size: 28px;
+    font-weight: $fw-bold;
+
+    @include hover {
+        background-color: $c-primary;
+        border: none;
+    }
+
+    &-wrap {
+        padding-top: 36px;
+        @include flex-center;
+    }
+}
+
+.view {
+    &__category {
+        padding: 0.85em 0;
+        color: $c-white;
+        font-size: em(40px);
+        font-weight: $fw-bold;
+        text-align: center;
+        @include desktop {
+            padding: 0 0 40px 0;
+            font-size: em(48px);
+        }
+    }
+
+    &__title {
+        margin-bottom: em(16px, 32px);
+        color: $c-white;
+        line-height: 1.2;
+        font-size: em(28px);
+        font-weight: $fw-medium;
+        // @include ellipsis(2);
+        @include desktop {
+            margin-bottom: 20px;
+        }
+
+        .-new &::before {
+            @include new;
+        }
+
+        &-wrap {
+            padding: em(40px);
+            background-color: #37424c;
+            border-top: em(4px) solid $c-primary;
+        }
+    }
+
+    &__date {
+        color: #71757d;
+        font-size: em(24px);
+        font-weight: $fw-medium;
+        @include desktop {
+            font-size: 18px;
+        }
+    }
+
+    &__content {
+        color: #9ea3ae;
+        line-height: 1.5;
+        font-size: em(20px);
+        // font-weight: $fw-medium;
+
+        &-wrap {
+            padding: em(40px) em(40px);
+            border-bottom: 1px solid #3b3d41;
+        }
+    }
+
+    &__btn {
+        align-self: stretch;
+        display: block;
+        // min-width: 170px;
+        padding: 16px 48px;
+        // max-height: 80px;
+        color: $c-white;
+        background-color: $c-primary;
+        font-size: em(26px);
+        font-weight: $fw-bold;
+        @include desktop {
+            font-size: 28px;
+        }
+
+        &-wrap {
+            display: flex;
+            justify-content: space-between;
+            padding-top: em(60px);
+        }
+    }
+
+    &__arr {
+        display: block;
+        width: em(80px);
+        height: em(80px);
+        @include background-cover;
+
+        &:disabled {
+            opacity: 0.5;
+        }
+
+        &--up {
+            margin-right: 10px;
+            background-image: url('#{$path-image}/ico/ico_up-square.png');
+        }
+
+        &--down {
+            background-image: url('#{$path-image}/ico/ico_down-square.png');
+        }
+
+        &-wrap {
+            display: flex;
+        }
+    }
+}
+
+// .view__sns {
+//     display: flex;
+//     justify-content: flex-end;
+//     padding-bottom: em(40px);
+
+//     &-item {
+//         &:not(:last-child) {
+//             padding-right: em(8px);
+//         }
+//     }
+
+//     &-link {
+//         display: block;
+//         width: em(40px);
+//         height: em(40px);
+//         @include background-cover;
+
+//         &--discord {
+//             background-image: icon(circle-discord, fff);
+//         }
+//         &--youtube {
+//             background-image: icon(circle-youtube, fff);
+//         }
+//         &--telegram {
+//             background-image: icon(circle-telegram, fff);
+//         }
+//         &--twitter {
+//             background-image: icon(circle-twitter, fff);
+//         }
+//     }
+// }
+
+// 게시판 내부
+.view__content {
+    img,
+    iframe,
+    video {
+        max-width: 100% !important;
+    }
+
+    b,
+    strong {
+        font-weight: $fw-bold !important;
+    }
+
+    em,
+    i {
+        font-style: italic !important;
+    }
+
+    s,
+    del,
+    strike {
+        text-decoration: line-through !important;
+    }
+
+    u {
+        text-decoration: underline !important;
+    }
+}

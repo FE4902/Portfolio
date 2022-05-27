@@ -1,0 +1,135 @@
+@use '../helpers/' as *;
+
+.milico {
+    // padding: 0;
+    background-color: $c-dark;
+    // background-image: url('#{$path-image}/background/bg_milico.png');
+    @include background-cover;
+    @include desktop {
+        // padding: 0 0 68px;
+        // background-color: $c-dark;
+    }
+    @include retina {
+        height: 1080px;
+    }
+
+    &__container {
+        @include desktop {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 0 40px;
+        }
+        @include retina {
+            max-width: 1440px;
+            padding: 0 40px 40px;
+        }
+    }
+
+    &__content {
+        padding-top: 24px;
+        background-color: $c-dark;
+        // background-image: url('#{$path-image}/background/mobile/bg_milico.png');
+        @include background-cover;
+        @include desktop {
+            padding-top: 56px;
+            background-color: transparent;
+        }
+    }
+
+    &__info {
+        @include desktop {
+            display: flex;
+            padding-bottom: 64px;
+        }
+        @include retina {
+            padding-bottom: 0;
+        }
+    }
+
+    &__desc {
+        flex-shrink: 1;
+        max-width: 360px;
+        padding: 0 16px 24px;
+        margin: 0 auto;
+        text-align: center;
+        @include desktop {
+            max-width: 100%;
+            padding: 56px 0 0;
+            margin: 0;
+            text-align: left;
+        }
+    }
+
+    &__title {
+        padding-bottom: 16px;
+        color: $c-primary;
+        @include font-style-20($fw-bold);
+        @include desktop {
+            padding-bottom: 64px;
+            @include font-style-48($fw-bold);
+        }
+    }
+
+    &__text {
+        color: $c-light;
+        @include font-style-16;
+        @include desktop {
+            @include font-style-18;
+        }
+        & + & {
+            padding-top: 30px;
+            @include desktop {
+                padding-top: 40px;
+            }
+        }
+    }
+
+    &__image {
+        padding-bottom: 16px;
+        @include flex-center;
+        @include desktop {
+            // width: 48%;
+            padding: 0 24px 0 0;
+        }
+        // @include retina {
+        //     width: 646px;
+        // }
+
+        picture {
+            width: 360px;
+            @include desktop {
+                width: auto;
+            }
+        }
+    }
+
+    &__exchange {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: $c-dark;
+        padding: 25px 0 40px;
+        @include desktop {
+            padding: 0 0 40px;
+            background-color: transparent;
+        }
+
+        picture {
+            width: 264px;
+            @include desktop {
+                width: auto;
+            }
+        }
+    }
+
+    &__button-wrap {
+        padding-bottom: 23px;
+        background-color: $c-dark;
+        text-align: center;
+        @include desktop {
+            padding: 0;
+            background-color: transparent;
+        }
+    }
+}

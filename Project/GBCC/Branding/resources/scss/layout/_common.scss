@@ -1,0 +1,297 @@
+@use '../helpers/' as *;
+
+body {
+    font-family: 'Roboto';
+    background-color: $c-dark;
+}
+
+b {
+    font-weight: $fw-bold;
+}
+
+em {
+    color: $c-secondary;
+}
+
+.br {
+    &-pc {
+        display: none;
+        @include desktop {
+            display: block;
+        }
+    }
+    &-mo {
+        @include desktop {
+            display: none;
+        }
+    }
+}
+
+.button {
+    flex-shrink: 0;
+    line-height: 1 !important;
+
+    &--default {
+        // padding: 8px 24px;
+        display: inline-block;
+        padding: 0.5em 1.5em;
+        @include btn-style-1;
+        @include font-style-16($fw-medium);
+        @include desktop {
+            padding: 16px 48px;
+            // padding: 0.6em 1.7em;
+            @include font-style-28($fw-bold);
+        }
+        @include hover {
+            background-color: $c-primary;
+            border: none;
+        }
+    }
+
+    &--check {
+        display: flex;
+        align-items: center;
+        height: 18px;
+        color: $c-secondary;
+        text-decoration: underline;
+        @include font-style-12;
+        @include desktop {
+            height: auto;
+            @include font-style-14;
+        }
+
+        span {
+            padding: 0 4px;
+            @include desktop {
+                padding: 0 4px 0 10px;
+            }
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-image: url('#{$path-image}/ico/ico_right-circle.png');
+            @include background-cover;
+            @include desktop {
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        // AR
+        .ar & {
+            span {
+                @include desktop {
+                    padding: 0 10px 0 4px;
+                }
+            }
+        }
+    }
+}
+
+.download {
+    @include flex-center;
+
+    &__item {
+        height: 48px;
+        & + & {
+            padding-left: 24px;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        width: 48px;
+        @include desktop {
+            width: auto;
+        }
+    }
+
+    &--play {
+        padding-bottom: 48px;
+        @include desktop {
+            padding-bottom: 104px;
+        }
+    }
+
+    // AR
+    .ar &__item {
+        &:not(:first-child) {
+            padding-left: 0;
+            padding-right: 24px;
+        }
+    }
+}
+
+.tab {
+    padding-bottom: 34px;
+    @include flex-center;
+    @include desktop {
+        display: none;
+    }
+
+    &--milico {
+        max-width: 328px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    &__item {
+        flex: 1;
+        padding-bottom: 4px;
+        color: $c-gray;
+        text-align: center;
+        border-bottom: 2px solid $c-gray;
+        @include font-style-16($fw-bold);
+
+        &.-active {
+            color: $c-primary;
+            border-color: $c-primary;
+        }
+    }
+
+    &__link {
+        display: block;
+        width: 100%;
+        padding: 0.5em 0;
+    }
+}
+
+.floating {
+    z-index: $z-floating;
+    position: fixed;
+    // left: 96px;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    @include desktop {
+        display: block;
+    }
+
+    &__item {
+        padding-bottom: 12px;
+
+        @include desktop {
+            width: 40px;
+        }
+    }
+}
+
+.contents {
+    position: relative;
+
+    &__floating {
+        z-index: $z-floating;
+        position: absolute;
+        right: 20px;
+        top: 240px;
+        display: none;
+        border-right: 2px solid $c-gray;
+        @include desktop {
+            display: block;
+        }
+
+        &.-active {
+            position: fixed;
+        }
+
+        &-item {
+            position: relative;
+            color: $c-gray;
+            font-weight: $fw-bold;
+            text-align: right;
+
+            & + & {
+                margin-top: 80px;
+            }
+
+            &--active {
+                color: $c-primary;
+            }
+        }
+
+        &-item::after {
+            content: '';
+            position: absolute;
+            right: -8px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 14px;
+            height: 18px;
+            background-image: url('#{$path-image}/ico/ico_floating.png');
+            @include background-cover;
+        }
+
+        &-item--active::after {
+            right: -10px;
+            width: 18px;
+            background-image: url('#{$path-image}/ico/ico_floating-on.png');
+        }
+
+        &-link {
+            padding-right: 12px;
+        }
+    }
+}
+
+// animation
+.a1 {
+    opacity: 0;
+    transition-property: opacity, transform;
+    transform: translateY(101%);
+    transition-duration: 0.6s;
+
+    .-ani & {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.a2 {
+    opacity: 0;
+    transform: translateY(101%);
+    transition-property: opacity, transform;
+    transition-duration: 0.6s;
+    transition-delay: 0.2s;
+
+    .-ani & {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.swiper-button-disabled {
+    opacity: 0.5;
+}
+
+.banner {
+    z-index: $z-floating;
+    position: fixed;
+    display: none;
+    @include background-cover;
+    @include desktop {
+        right: 12.5%;
+        top: 170px;
+        display: block;
+        width: 226px;
+        height: 270px;
+        background-image: url('#{$path-image}/etc/banner.png');
+    }
+
+    &__link {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__close {
+        position: absolute;
+        right: 6%;
+        top: 3%;
+        width: 13%;
+        height: 12%;
+    }
+}

@@ -1,0 +1,39 @@
+/*
+    COLOR
+*/
+$c-black: #000;
+$c-white: #fff;
+
+$c-primary: #009cff;
+// $c-secondary: #7bc8fa;
+$c-secondary: #47d3ff;
+$c-gray: #bdbdbd;
+$c-dark: #1d1d1f;
+$c-light: #f5f5f5;
+$c-d-gray: #8c8c8c;
+
+$c-footer: $c-dark;
+$c-media: $c-dark;
+$c-header: $c-black;
+
+$c-placeholder: #c9c9c9;
+$c-warning: #ff2e00;
+/*
+    Z-INDEX
+*/
+$z-floating: 10;
+$z-header: 100;
+$z-popup: 100;
+
+/*
+    PATH
+*/
+$path-image: '../images';
+
+/*
+    FONT-WEIGHT
+*/
+$z-common: 1;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;

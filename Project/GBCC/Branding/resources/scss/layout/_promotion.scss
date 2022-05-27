@@ -1,0 +1,378 @@
+@use '../helpers/' as *;
+
+.promotion {
+    padding: 64px 16px 0;
+    background: url('#{$path-image}/background/mobile/bg_promotion.jpg');
+    @include flex-center;
+    @include background-cover;
+    @include desktop {
+        position: relative;
+        display: block;
+        height: 1080px;
+        padding: 156px 0;
+        background-image: url('#{$path-image}/background/bg_promotion.png');
+        background-color: $c-black;
+    }
+
+    &__container {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        @include flex-center;
+        @include desktop {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        @include retina {
+            max-width: 1440px;
+            padding: 0 40px;
+        }
+    }
+
+    &__title-wrap {
+        z-index: $z-common;
+        position: relative;
+        width: 328px;
+        @include desktop {
+            position: static;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        padding-bottom: 8px;
+        color: $c-light;
+        @include font-style-20($fw-bold);
+        @include desktop {
+            padding-bottom: 32px;
+            @include font-style-48($fw-bold);
+        }
+    }
+
+    &__text {
+        padding-bottom: 48px;
+        color: $c-light;
+        @include font-style-16($fw-bold);
+        @include desktop {
+            padding-bottom: 113px;
+            @include font-style-28($fw-bold);
+        }
+    }
+
+    &__list {
+        position: relative;
+        flex-wrap: wrap;
+        width: 360px;
+        @include flex-center;
+        @include desktop {
+            width: 1100px;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            transform: translateX(-50%);
+            width: 240px;
+            height: 2px;
+            background-image: url('#{$path-image}/etc/mobile/line.png');
+        }
+
+        &::before {
+            left: 65%;
+            top: -7px;
+            @include desktop {
+                left: 50%;
+                top: -16px;
+                width: 774px;
+                height: 4px;
+                background-image: url('#{$path-image}/etc/line.png');
+            }
+        }
+
+        &::after {
+            left: 33.5%;
+            top: 340px;
+            display: block;
+            @include desktop {
+                display: none;
+            }
+        }
+
+        .pt &::after {
+            top: 406px;
+        }
+        .es &::after,
+        .vn &::after,
+        .ar &::after {
+            top: 381px;
+        }
+
+        .ja &::after,
+        .id &::after,
+        .th &::after,
+        .de &::after,
+        .fr &::after,
+        .ru &::after {
+            top: 358px;
+        }
+    }
+
+    &__item {
+        z-index: $z-common;
+        position: relative;
+        width: 160px;
+        margin: 4px 4px 54px 4px;
+        background-color: $c-dark;
+        @include desktop {
+            width: 260px;
+            margin: 0;
+        }
+
+        &:not(:last-child) {
+            @include desktop {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__step {
+        position: absolute;
+        left: 50%;
+        top: -30px;
+        transform: translateX(-50%);
+        width: 42px;
+        height: 44px;
+        color: $c-primary;
+        background-image: url('#{$path-image}/etc/step.png');
+        @include font-style-16($fw-bold);
+        @include background-cover;
+        @include flex-center;
+        @include desktop {
+            top: -45px;
+            width: 60px;
+            height: 64px;
+            @include font-style-22($fw-bold);
+        }
+
+        &::after {
+            content: '%';
+            @include font-style-14;
+        }
+
+        .-active & {
+            color: $c-light;
+            background-image: url('#{$path-image}/etc/step-on.png');
+        }
+    }
+
+    // AR
+    .ar &__item {
+        &:not(:last-child) {
+            @include desktop {
+                margin-right: 0;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.card {
+    flex-direction: column;
+    padding: 24px 4px;
+    color: $c-gray;
+    background-color: $c-dark;
+    border: 2px solid $c-dark;
+    @include flex-center;
+    @include desktop {
+        padding: 40px 16px;
+    }
+
+    .-active & {
+        color: $c-light;
+        background-color: rgba($c-primary, 0.2);
+        border-color: $c-primary;
+    }
+
+    .complete & {
+        border: 1px solid $c-primary;
+    }
+
+    &__date {
+        padding-bottom: 4px;
+        // color: $c-gray;
+        @include font-style-12($fw-bold);
+        @include desktop {
+            padding-bottom: 8px;
+            @include font-style-18($fw-bold);
+        }
+    }
+
+    &__part {
+        padding-bottom: 4px;
+        // color: $c-light;
+        @include flex-center;
+        @include font-style-16($fw-bold);
+        @include desktop {
+            padding-bottom: 8px;
+            @include font-style-28($fw-bold);
+        }
+
+        span {
+            padding: 0 3px;
+            @include desktop {
+                padding: 0 4px;
+            }
+        }
+
+        &::after,
+        &::before {
+            content: '';
+            display: block;
+            width: 7px;
+            height: 8px;
+            background-image: url('#{$path-image}/ico/ico_milico.png');
+            opacity: 0.5;
+            @include background-cover;
+            @include desktop {
+                width: 14px;
+                height: 16px;
+            }
+
+            .-active & {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__title {
+        padding-bottom: 4px;
+        color: $c-primary;
+        @include font-style-16($fw-bold);
+        @include desktop {
+            padding-bottom: 8px;
+            @include font-style-28($fw-bold);
+        }
+    }
+
+    &__sub-title {
+        padding-bottom: 12px;
+        // color: $c-light;
+        @include font-style-12($fw-regular);
+        @include desktop {
+            padding-bottom: 20px;
+            @include font-style-18($fw-regular);
+        }
+    }
+
+    &__image {
+        height: 78px;
+        margin-bottom: 12px;
+        opacity: 0.5;
+        @include desktop {
+            height: 116px;
+            margin-bottom: 18px;
+        }
+
+        img {
+            height: 100%;
+        }
+
+        .-active & {
+            opacity: 1;
+        }
+    }
+
+    &__button {
+        width: 132px;
+        height: 40px;
+        color: $c-gray;
+        background-color: $c-dark;
+        border: 1px solid $c-primary;
+        border-radius: 2px;
+        pointer-events: none;
+        touch-action: none;
+        @include font-style-12($fw-bold);
+        @include desktop {
+            width: 194px;
+            height: 60px;
+            @include font-style-18($fw-bold);
+        }
+
+        .-active & {
+            color: $c-light;
+            background-color: $c-primary;
+            pointer-events: all;
+            @include font-style-16($fw-bold);
+            @include desktop {
+                @include font-style-24($fw-bold);
+            }
+        }
+
+        .complete & {
+            visibility: hidden;
+        }
+    }
+
+    &__complete {
+        display: none;
+        position: absolute;
+        bottom: 18px;
+        @include desktop {
+            bottom: 25px;
+        }
+
+        .complete & {
+            display: block;
+        }
+    }
+}
+
+.deco-coin {
+    z-index: 0;
+    position: absolute;
+    @include background-cover;
+
+    &__0 {
+        right: -8px;
+        top: -55px;
+        width: 70px;
+        height: 81px;
+        background-image: url('#{$path-image}/etc/mobile/coin_0.png');
+        @include desktop {
+            right: 266px;
+            top: 45px;
+            width: 251px;
+            height: 274px;
+            background-image: url('#{$path-image}/etc/coin_0.png');
+        }
+    }
+
+    &__1 {
+        left: 0;
+        top: 88px;
+        width: 51px;
+        height: 58px;
+        background-image: url('#{$path-image}/etc/mobile/coin_1.png');
+        @include desktop {
+            left: 515px;
+            top: 51px;
+            width: 98px;
+            height: 114px;
+            background-image: url('#{$path-image}/etc/coin_1.png');
+        }
+    }
+
+    &__2 {
+        display: none;
+        @include desktop {
+            left: 297px;
+            top: 267px;
+            display: block;
+            width: 113px;
+            height: 142px;
+            background-image: url('#{$path-image}/etc/coin_2.png');
+        }
+    }
+}

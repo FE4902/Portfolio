@@ -1,0 +1,233 @@
+@use '../helpers/' as *;
+
+.play {
+    padding: 24px 16px 56px;
+    background-color: $c-black;
+    background-image: url('#{$path-image}/background/mobile/bg_play.jpg');
+    @include flex-center;
+    @include background-cover;
+    @include desktop {
+        min-height: 1080px;
+        padding: 112px 0;
+        background-image: url('#{$path-image}/background/bg_play.png');
+    }
+
+    &__container {
+        text-align: center;
+        max-width: 328px;
+        margin: 0 auto;
+
+        @include desktop {
+            max-width: 900px;
+            width: 100%;
+        }
+        @include retina {
+            max-width: 1440px;
+            padding: 0 40px;
+        }
+    }
+
+    &__title {
+        padding-bottom: 12px;
+        color: $c-secondary;
+        @include font-style-20($fw-bold);
+        @include desktop {
+            padding-bottom: 32px;
+            @include font-style-48($fw-bold);
+        }
+    }
+
+    &__text {
+        padding-bottom: 28px;
+        color: $c-light;
+        @include font-style-16($fw-medium);
+        @include desktop {
+            padding-bottom: 40px;
+            @include font-style-28($fw-medium);
+        }
+    }
+
+    &__image {
+        padding-bottom: 24px;
+        @include desktop {
+            padding-bottom: 64px;
+        }
+
+        picture {
+            width: 328px;
+            @include desktop {
+                width: auto;
+            }
+        }
+    }
+}
+
+.info {
+    text-align: left;
+
+    @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            padding-bottom: 28px;
+            @include desktop {
+                padding-right: 100px;
+            }
+        }
+    }
+
+    &__title {
+        padding-bottom: 14px;
+        color: $c-gray;
+        @include font-style-16($fw-bold);
+        @include desktop {
+            padding-bottom: 16px;
+            @include font-style-28($fw-bold);
+        }
+
+        &--lang {
+            @include desktop {
+                padding-bottom: 24px;
+            }
+        }
+    }
+
+    &__text {
+        color: $c-light;
+        @include font-style-12($fw-medium);
+        @include desktop {
+            @include font-style-18($fw-medium);
+        }
+
+        &--simulation {
+            display: flex;
+            align-items: center;
+            @include desktop {
+                height: 36px;
+            }
+        }
+    }
+
+    // AR
+    .ar &__title {
+        text-align: right;
+    }
+}
+
+.info__compatible {
+    display: flex;
+    align-items: center;
+
+    &-item {
+        display: flex;
+        align-items: center;
+
+        & + & {
+            padding-left: 16px;
+        }
+    }
+
+    &-item::before {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        @include background-cover;
+        @include desktop {
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    // AR
+    .ar &-item {
+        &:not(:first-child) {
+            padding-left: 0;
+            padding-right: 16px;
+        }
+    }
+}
+
+.info__lang {
+    &-item {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            padding-bottom: 20px;
+        }
+    }
+
+    &-box {
+        display: flex;
+        align-items: center;
+        width: 82px;
+        @include desktop {
+            width: 118px;
+        }
+
+        & + & {
+            margin-left: 2px;
+            @include desktop {
+                margin-left: 6px;
+            }
+        }
+    }
+
+    // AR
+    .ar &-box {
+        &:not(:first-child) {
+            margin-left: 0;
+            margin-right: 2px;
+            @include desktop {
+                margin-left: 0;
+                margin-right: 6px;
+            }
+        }
+    }
+
+    // &-box::before {
+    //     content: '';
+    //     display: block;
+    //     width: 24px;
+    //     height: 18px;
+    //     margin-right: 4px;
+    //     @include background-cover;
+    //     @include desktop {
+    //         width: 28px;
+    //         height: 20px;
+    //     }
+    // }
+}
+
+$platforms: (apple, android, windows);
+@each $platform in $platforms {
+    .info__compatible-item--#{$platform}::before {
+        background-image: url('#{$path-image}/ico/ico_#{$platform}.png');
+        background-size: 170% 170%;
+        margin-right: 5px;
+        @include desktop {
+            margin-right: 8px;
+        }
+    }
+
+    .ar .info__compatible-item--#{$platform}::before {
+        margin-right: 0;
+        margin-left: 5px;
+        @include desktop {
+            margin-left: 8px;
+        }
+    }
+}
+
+$flags: (gb, jp, ch, tw, ru, fr, de, th, es, pt, vn, id, sa);
+@each $flag in $flags {
+    .info__lang-box--#{$flag}::before {
+        background-image: url('#{$path-image}/flag/#{$flag}.png');
+    }
+}

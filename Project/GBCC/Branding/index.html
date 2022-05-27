@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./resources/css/style.min.css" />
+        <title>GUNSHIP BATTLE: CRYPTO CONFLICT</title>
+        <!--  -->
+        <meta property="og:title" content="Gunship Battle: Crypto Conflict" />
+        <meta property="og:url" content="https://cryptoconflict.joycity.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./resources/images/logo.png" />
+        <meta property="og:description" content="Play and Earn 4x War Strategy Game Gunship Battle: Crypto Conflict is Play and Earn. Explore the top-tier, P2E game based on the popular Gunship Battle War Strategy franchise with 100 Million Global Downloads." />
+        <meta name="description" content="Play and Earn 4x War Strategy Game Gunship Battle: Crypto Conflict is Play and Earn. Explore the top-tier, P2E game based on the popular Gunship Battle War Strategy franchise with 100 Million Global Downloads." />
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" type="image/x-icon" href="./resources/images/ico/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="./resources/images/ico/favicon.ico" />
+        <!-- SCRIPT -->
+        <script defer src="./resources/js/jquery.min.js"></script>
+        <script defer src="./resources/js/gsap.min.js"></script>
+        <script defer src="./resources/js/scrollTrigger.min.js"></script>
+        <script defer src="./resources/js/swiper.min.js"></script>
+        <script defer src="./resources/js/common.js"></script>
+        <script defer src="./resources/js/tool-1.0.min.js"></script>
+        <script defer src="./resources/js/translation.js"></script>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header__container">
+                <!-- 로고 -->
+                <h1 class="logo">
+                    <a href="#home">
+                        <picture>
+                            <source media="(min-width: 1100px)" srcset="resources/images/logo/logo_gt-header.png" />
+                            <img src="./resources/images/logo/mobile/logo_gt-header.png" alt="" />
+                        </picture>
+                    </a>
+                </h1>
+                <!-- 모바일 메뉴 버튼 -->
+                <button class="header__button header__button--menu js-gnb" type="button"></button>
+                <!-- 메뉴 -->
+                <nav class="gnb">
+                    <ul class="gnb__menu">
+                        <li class="gnb__item">
+                            <a class="gnb__link" href="#home"><span data-translate="gnb-link-1" data-translate-type="text">Home</span></a>
+                        </li>
+                        <li class="gnb__item js-gnb-contents">
+                            <a class="gnb__link -after-scroll" href="#"><span data-translate="gnb-link-2" data-translate-type="text">Contents</span> </a>
+                            <ul class="gnb__contents">
+                                <li class="gnb__contents-item"><a class="gnb__contents-link" href="#game" data-translate="gnb-contentslink-1" data-translate-type="text">About Game</a></li>
+                                <li class="gnb__contents-item"><a class="gnb__contents-link" href="#milico" data-translate="gnb-contentslink-2" data-translate-type="text">MILICO</a></li>
+                                <li class="gnb__contents-item"><a class="gnb__contents-link" href="#play" data-translate="gnb-contentslink-3" data-translate-type="text">Play</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb__item">
+                            <a class="gnb__link" href="#media"><span data-translate="gnb-link-3" data-translate-type="text">Media</span></a>
+                        </li>
+                        <li class="gnb__item">
+                            <a class="gnb__link" href="#promotion"><span data-translate="gnb-link-4" data-translate-type="text">Airdrop</span></a>
+                        </li>
+                        <li class="gnb__item">
+                            <a class="gnb__link" href="#roadmap"><span data-translate="gnb-link-6" data-translate-type="text">Roadmap</span></a>
+                        </li>
+                        <li class="gnb__item">
+                            <a class="gnb__link" href="#" target="_blank" onclick="alert('Coming soon')"><span data-translate="gnb-link-5" data-translate-type="text">Notice</span></a>
+                        </li>
+                    </ul>
+                    <ul class="gnb__sns">
+                        <li class="gnb__sns-item">
+                            <a href="https://www.youtube.com/c/jcenest" target="_blank"><img src="./resources/images/sns/sns_youtube-circle.png" alt="" /></a>
+                        </li>
+                        <li class="gnb__sns-item">
+                            <a href="https://discord.com/invite/yaqDbjYATU" target="_blank"><img src="./resources/images/sns/sns_discord-circle.png" alt="" /></a>
+                        </li>
+                        <li class="gnb__sns-item">
+                            <a href="https://t.me/cryptoconflict" target="_blank"><img src="./resources/images/sns/sns_telegram-circle.png" alt="" /></a>
+                        </li>
+                        <li class="gnb__sns-item">
+                            <a href="https://twitter.com/Cryptoconflict_" target="_blank"><img src="./resources/images/sns/sns_twitter-circle.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="util">
+                    <li class="util__item util__item--community js-community">
+                        <a class="util__link -after-scroll" href="#"><span>Community</span></a>
+                        <ul class="community">
+                            <li class="community__item">
+                                <a class="community__link community__link--youtube" href="https://www.youtube.com/c/jcenest" target="_blank"><span>Youtube</span></a>
+                            </li>
+                            <li class="community__item">
+                                <a class="community__link community__link--discord" href="https://discord.com/invite/yaqDbjYATU" target="_blank"><span>Discord</span></a>
+                            </li>
+                            <li class="community__item">
+                                <a class="community__link community__link--telegram" href="https://t.me/cryptoconflict" target="_blank"><span>Telegram</span></a>
+                            </li>
+                            <li class="community__item">
+                                <a class="community__link community__link--twitter" href="https://twitter.com/Cryptoconflict_" target="_blank"><span>Twitter</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="util__item js-warp">
+                        <a class="header__button header__button--warp" href="#"></a>
+                        <ul class="warp">
+                            <li class="warp__item">
+                                <a class="warp__link" href="https://cbz.joycity.com/" data-translate="game-name-cbz" data-translate-type="html">Crypto Ball Z on WEMIX</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="util__item">
+                        <a class="header__button header__button--wemix" href="https://wemixnetwork.com/"></a>
+                    </li>
+                    <li class="util__item js-lang">
+                        <a class="header__button header__button--lang" href="#"></a>
+                        <ul class="lang">
+                            <!-- <li class="lang__item"><a class="lang__link" href="#">한국어</a></li> -->
+                            <li class="lang__item"><a class="lang__link" href="#">English</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">日本語</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">简体中文</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">繁體中文</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Русский</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Français</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Deutsch</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">ภาษาไทย</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Español</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Portugês</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Tiếng Việt</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">Indonesian</a></li>
+                            <li class="lang__item"><a class="lang__link" href="#" onclick="alert('Coming soon')">العربية</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- BANNER -->
+        <div class="banner">
+            <a class="banner__link" href="https://gt-client.global.joycityglobal.com/public/PC/Installer/GTLauncherInstall.exe" target="_blank"> </a>
+            <a class="banner__close" href="#"></a>
+        </div>
+        <!-- MAIN -->
+        <main class="main">
+            <article id="home" class="home">
+                <h2 class="hidden">HOME</h2>
+                <div class="home__container">
+                    <div class="home__content">
+                        <div class="visual">
+                            <div class="visual__logo">
+                                <picture>
+                                    <source media="(min-width: 1100px)" srcset="./resources/images/logo/logo_gt.png" />
+                                    <img src="./resources/images/logo/mobile/logo_gt.png" alt="" />
+                                </picture>
+                            </div>
+                            <h3 class="visual__title">Free to Play. Play and Earn.</h3>
+                            <p class="visual__text" data-translate="visual-text-1" data-translate-type="html">
+                                The Next Gen, <b>Play and Earn,</b><br class="br-mo" />
+                                Top Tier War Strategy Game.<br />
+                                Crypto Conflict is a Blockchain Game<br class="br-mo" />
+                                from the Gunship Battle franchise with<br class="br-mo" />
+                                <b>100 Million global downloads.</b>
+                            </p>
+                            <p class="visual__text" data-translate="visual-text-2" data-translate-type="html">
+                                <b>Play. Battle. Earn.</b><br class="br-mo" />
+                                Make every minute count, Yearn to Earn!
+                            </p>
+                        </div>
+                        <div class="subscribe">
+                            <h4 class="subscribe__title" data-translate="subscribe-title" data-translate-type="html">
+                                Sign up to our newsletter, so you can be <br class="br-mo" />
+                                the FIRST to find out the latest news and updates for <br class="br-mo" />
+                                Gunship Battle: Crypto Conflict
+                            </h4>
+                            <div class="subscribe__form">
+                                <input type="text" data-translate="subscribe-form" data-translate-type="placeholder" placeholder="Please enter your e-mail address here" />
+                                <button type="button" data-translate="subscribe-button" data-translate-type="text">SUBSCRIBE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check">
+                        <ul class="check__list">
+                            <li class="check__item">
+                                <div class="check__box">
+                                    <input id="check-0" class="check__input hidden" type="checkbox" />
+                                    <label class="check__label" for="check-0" data-translate="check-label-1" data-translate-type="html"
+                                        ><span><b>[Required]</b> I consent to Collection and Use of Personal Information</span>
+                                    </label>
+                                    <button class="button button--check js-detail" type="button" data-translate="button-check" data-translate-type="html"><span>DETAILS</span></button>
+                                </div>
+                            </li>
+                            <li class="check__item">
+                                <div class="check__box">
+                                    <input id="check-1" class="check__input hidden" type="checkbox" />
+                                    <label class="check__label" for="check-1" data-translate="check-label-2" data-translate-type="html"
+                                        ><span> <b>[Required]</b> I am over 16 years old</span>
+                                    </label>
+                                </div>
+                                <p class="check__warning" data-translate="check-warning" data-translate-type="text">Please click the box to continue.</p>
+                            </li>
+                        </ul>
+                        <a class="campaign-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeVwpwG6P7TbsXBl4Nox9t314WONHyZUppOTdcFhUu0HxzpCQ/viewform" target="_blank">
+                            <picture>
+                                <source media="(min-width: 1100px)" srcset="./resources/images/etc/campaign.png" />
+                                <img src="./resources/images/etc/mobile/campaign.png" alt="" />
+                            </picture>
+                        </a>
+                        <ul class="download download--home">
+                            <li class="download__item">
+                                <a class="download__link" href="https://gc-ios.onelink.me/CAoB?pid=WW_IOS_OfficialSite_PreBrandpage&c=WW_IOS_OfficialSite_PreBrandpage" target="_blank">
+                                    <picture data-translate="down-apple-1" data-translate-type="html">
+                                        <source media="(min-width: 1100px)" srcset="./resources/images/down/en/down_apple-en.png" />
+                                        <img src="./resources/images/down/mobile/down_apple.png" alt="" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="download__item">
+                                <a class="download__link" href="https://gc-and.onelink.me/7k3a?pid=WW_And_OfficialSite_PreBrandpage&c=WW_And_OfficialSite_PreBrandpage" target="_blank">
+                                    <picture data-translate="down-google-1" data-translate-type="html">
+                                        <source media="(min-width: 1100px)" srcset="./resources/images/down/en/down_google-en.png" />
+                                        <img src="./resources/images/down/mobile/down_google.png" alt="" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="download__item">
+                                <a class="download__link" href="https://gt-client.global.joycityglobal.com/public/PC/Installer/GTLauncherInstall.exe" target="_blank">
+                                    <picture>
+                                        <source media="(min-width: 1100px)" srcset="./resources/images/down/down_window.png" />
+                                        <img src="./resources/images/down/mobile/down_window.png" alt="" />
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="contents">
+                <!-- GAME -->
+                <section id="game" class="game">
+                    <h2 class="hidden">GAME</h2>
+                    <div class="game__container">
+                        <ul class="tab">
+                            <li class="tab__item -active"><a class="tab__link" href="#game">About Game</a></li>
+                            <li class="tab__item"><a class="tab__link" href="#milico">MILICO</a></li>
+                            <li class="tab__item"><a class="tab__link" href="#play">Play</a></li>
+                        </ul>
+                        <div class="game__content">
+                            <div class="swiper game__swiper">
+                                <ul class="swiper-wrapper game__swiper-wrapper">
+                                    <!-- 1 -->
+                                    <li class="swiper-slide game__swiper-slide">
+                                        <h3 class="game__title a1" data-translate="game-title-1" data-translate-type="text">STORY</h3>
+                                        <div class="story">
+                                            <div class="story__image">
+                                                <picture>
+                                                    <source media="(min-width: 1100px)" srcset="./resources/images/etc/story.png" />
+                                                    <img src="./resources/images/etc/mobile/story.png" alt="" />
+                                                </picture>
+                                            </div>
+                                            <div class="story__desc">
+                                                <div class="story__box">
+                                                    <p class="story__title" data-translate="story-title" data-translate-type="html">Protect the world! <br class="br-mo" />Find global peace!</p>
+                                                    <p class="story__text" data-translate="story-text-1" data-translate-type="text">
+                                                        In the near future, global warming has accelerated past all projections. With seas on the rise and mass migration across every ocean and continent, conflicts break out across the globe and threaten to become an all-annihilating World War III.
+                                                    </p>
+                                                    <p class="story__text" data-translate="story-text-2" data-translate-type="text">
+                                                        Armada has released a propaganda video claiming it soon will acquire nuclear weapons of its own. Armada was getting ready to declare a nuclear war, to eradicate peace of the world.
+                                                    </p>
+                                                    <p class="story__text" data-translate="story-text-3" data-translate-type="text">
+                                                        But, the old world order died in their place, along with countries, military, and your own navy. Only a single battleship, crew, and a deserted island were left behind you.
+                                                    </p>
+                                                    <p class="story__text" data-translate="story-text-4" data-translate-type="text">In a world full of despair, Will you be able to build the warship to protect the world from Armada, and find global peace?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- 2 -->
+                                    <li class="swiper-slide game__swiper-slide game__swiper-slide--ship">
+                                        <h3 class="game__title" data-translate="game-title-2" data-translate-type="text">AIRCRAFT CARRIER</h3>
+                                        <ul class="unit">
+                                            <li class="unit__item unit__item--active" data-ship="1">
+                                                <div class="unit__image">
+                                                    <picture>
+                                                        <source media="(min-width: 1100px)" srcset="./resources/images/unit/ship_0.png" />
+                                                        <img src="./resources/images/unit/mobile/ship_0.png" alt="" />
+                                                    </picture>
+                                                </div>
+                                                <div class="unit__desc">
+                                                    <div class="unit__box">
+                                                        <p class="unit__title" data-translate="unit-title-1" data-translate-type="text">Kuznetsov</p>
+                                                        <p class="unit__text" data-translate="unit-text-1" data-translate-type="text">The Kuznetsov aircraft carrier is designed to launch jets from a short, curved ski-jump ramp. It is capable of carrying a lot of munitions.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="unit__item" data-ship="2">
+                                                <div class="unit__image">
+                                                    <picture>
+                                                        <source media="(min-width: 1100px)" srcset="./resources/images/unit/ship_1.png" />
+                                                        <img src="./resources/images/unit/mobile/ship_1.png" alt="" />
+                                                    </picture>
+                                                </div>
+                                                <div class="unit__desc">
+                                                    <div class="unit__box">
+                                                        <p class="unit__title" data-translate="unit-title-2" data-translate-type="text">Elizabeth</p>
+                                                        <p class="unit__text" data-translate="unit-text-2" data-translate-type="text">The Elizabeth aircraft carrier has separate bridges for navigation and flight control. It has a range of up to 10,000 nautical miles.</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="unit__item" data-ship="3">
+                                                <div class="unit__image">
+                                                    <picture>
+                                                        <source media="(min-width: 1100px)" srcset="./resources/images/unit/ship_2.png" />
+                                                        <img src="./resources/images/unit/mobile/ship_2.png" alt="" />
+                                                    </picture>
+                                                </div>
+                                                <div class="unit__desc">
+                                                    <div class="unit__box">
+                                                        <p class="unit__title" data-translate="unit-title-3" data-translate-type="text">Nimitz</p>
+                                                        <p class="unit__text" data-translate="unit-text-3" data-translate-type="text">
+                                                            The Nimitz is a nuclear-powered aircraft carrier mass produced to take over similar missions accomplished by Enterprise class aircraft carriers. Large aircraft carrier that can place many jets and AFVs. It has relatively high upgrade cost.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="unit__tab">
+                                            <li class="unit__tab-item unit__tab-item--active">
+                                                <a class="unit__tab-link js-ship" href="#" data-ship="1" data-translate="unit-tab-link-1" data-translate-type="text">Kuznetsov</a>
+                                            </li>
+                                            <li class="unit__tab-item">
+                                                <a class="unit__tab-link js-ship" href="#" data-ship="2" data-translate="unit-tab-link-2" data-translate-type="text">Elizabeth</a>
+                                            </li>
+                                            <li class="unit__tab-item">
+                                                <a class="unit__tab-link js-ship" href="#" data-ship="3" data-translate="unit-tab-link-3" data-translate-type="text">Nimitz</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- 3 -->
+                                    <li class="swiper-slide game__swiper-slide game__swiper-slide--air">
+                                        <h3 class="game__title" data-translate="game-title-3" data-translate-type="text">FIGHTER AIRCRAFT</h3>
+                                        <ul class="unit">
+                                            <li class="unit__item unit__item--active" data-air="1">
+                                                <div class="unit__image">
+                                                    <picture>
+                                                        <source media="(min-width: 1100px)" srcset="./resources/images/unit/aircraft_0.png" />
+                                                        <img src="./resources/images/unit/mobile/aircraft_0.png" alt="" />
+                                                    </picture>
+                                                </div>
+                                                <div class="unit__desc">
+                                                    <div class="unit__box">
+                                                        <p class="unit__title" data-translate="unit-title-4" data-translate-type="text">RF-M</p>
+                                                        <p class="unit__text" data-translate="unit-text-4" data-translate-type="text">
+                                                            It is a multi purpose jet that has balanced anti-air, anti-ship, and anti-ground combat abilities. Its lowered speed performance has been fixed by installing canards.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="unit__item" data-air="2">
+                                                <div class="unit__image">
+                                                    <picture>
+                                                        <source media="(min-width: 1100px)" srcset="./resources/images/unit/aircraft_1.png" />
+                                                        <img src="./resources/images/unit/mobile/aircraft_1.png" alt="" />
+                                                    </picture>
+                                                </div>
+                                                <div class="unit__desc">
+                                                    <div class="unit__box">
+                                                        <p class="unit__title" data-translate="unit-title-5" data-translate-type="text">EF2000</p>
+                                                        <p class="unit__text" data-translate="unit-text-5" data-translate-type="text">
+                                                            The EF2000 is an elite combat jet that is capable of supersonic flights. Its excellent mobility and small radar cross-section make it suitable for gaining air superiority.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="unit__item" data-air="3">
+                                                <div class="unit__image">
+                                                    <picture>
+                                                        <source media="(min-width: 1100px)" srcset="./resources/images/unit/aircraft_2.png" />
+                                                        <img src="./resources/images/unit/mobile/aircraft_2.png" alt="" />
+                                                    </picture>
+                                                </div>
+                                                <div class="unit__desc">
+                                                    <div class="unit__box">
+                                                        <p class="unit__title" data-translate="unit-title-6" data-translate-type="text">Desert F-16 FF</p>
+                                                        <p class="unit__text" data-translate="unit-text-6" data-translate-type="text">
+                                                            The Desert F-16FF is upgraded version of the F-16FF; equipped with conformal fuel tanks. It also has sensor and radar enhancements. Its operation range and anti-ground attack improved significantly compared to F-16FF.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="unit__tab">
+                                            <li class="unit__tab-item unit__tab-item--active">
+                                                <a class="unit__tab-link js-air" href="#" data-air="1" data-translate="unit-tab-link-4" data-translate-type="text">RF-M</a>
+                                            </li>
+                                            <li class="unit__tab-item">
+                                                <a class="unit__tab-link js-air" href="#" data-air="2" data-translate="unit-tab-link-5" data-translate-type="text">EF2000</a>
+                                            </li>
+                                            <li class="unit__tab-item">
+                                                <a class="unit__tab-link js-air" href="#" data-air="3" data-translate="unit-tab-link-6" data-translate-type="text">Desert F-16 FF</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="game__swiper-button game__swiper-button-left" type="button"></button>
+                            <button class="game__swiper-button game__swiper-button-right" type="button"></button>
+                        </div>
+                        <div class="game__swiper-pagination"></div>
+                    </div>
+                </section>
+                <!-- MILICO -->
+                <section id="milico" class="milico">
+                    <h2 class="hidden">MILICO</h2>
+                    <div class="milico__container">
+                        <div class="milico__content">
+                            <ul class="tab tab--milico">
+                                <li class="tab__item"><a class="tab__link" href="#game">About Game</a></li>
+                                <li class="tab__item -active"><a class="tab__link" href="#milico">MILICO</a></li>
+                                <li class="tab__item"><a class="tab__link" href="#play">Play</a></li>
+                            </ul>
+                            <div class="milico__info">
+                                <div class="milico__image">
+                                    <picture>
+                                        <source media="(min-width: 1600px)" srcset="./resources/images/etc/coin.png" />
+                                        <source media="(min-width: 1100px)" srcset="./resources/images/etc/coin-middle.png" />
+                                        <img src="./resources/images/etc/mobile/coin.png" alt="" />
+                                    </picture>
+                                </div>
+                                <div class="milico__desc">
+                                    <h3 class="milico__title a1">MILICO</h3>
+                                    <p class="milico__text" data-translate="milico-text-1" data-translate-type="html">
+                                        <b>MILICO is a interchangeable asset.</b> <br />
+                                        You can exchange the in-game currency Titanium into MILICO, and vice versa.
+                                    </p>
+                                    <p class="milico__text" data-translate="milico-text-2" data-translate-type="html">
+                                        Titanium is a unique resource you can earn through completing daily quest or excavating resource island.<br class="br-pc" />
+                                        Earn Titanium and upgrade Aircraft, exchange Blueprint, conduct Research and more!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="milico__exchange">
+                            <picture>
+                                <source media="(min-width: 1100px)" srcset="./resources/images/etc/exchange.png" />
+                                <img src="./resources/images/etc/mobile/exchange.png" alt="" />
+                            </picture>
+                        </div>
+                        <div class="milico__button-wrap">
+                            <a class="button button--default" href="https://milico.joycity.com" target="_blank">MORE</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- PLAY -->
+                <section id="play" class="play">
+                    <h2 class="hidden">PLAY</h2>
+                    <div class="play__container">
+                        <ul class="tab">
+                            <li class="tab__item"><a class="tab__link" href="#game">About Game</a></li>
+                            <li class="tab__item"><a class="tab__link" href="#milico">MILICO</a></li>
+                            <li class="tab__item -active"><a class="tab__link" href="#play">Play</a></li>
+                        </ul>
+                        <h3 class="play__title a1" data-translate="play-title" data-translate-type="html">
+                            Play Gunship Battle: <br class="br-mo" />
+                            Crypto Conflict, anywhere!
+                        </h3>
+                        <p class="play__text a2" data-translate="play-text" data-translate-type="html">
+                            Gunship Battle: Crypto Conflict <br class="br-mo" />
+                            can be played across below platforms.
+                        </p>
+                        <ul class="download download--play">
+                            <li class="download__item">
+                                <a class="download__link" href="https://gc-ios.onelink.me/CAoB?pid=WW_IOS_OfficialSite_PreBrandpage&c=WW_IOS_OfficialSite_PreBrandpage" target="_blank">
+                                    <picture data-translate="down-apple-1" data-translate-type="html">
+                                        <source media="(min-width: 1100px)" srcset="./resources/images/down/en/down_apple-en.png" />
+                                        <img src="./resources/images/down/mobile/down_apple.png" alt="" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="download__item">
+                                <a class="download__link" href="https://gc-and.onelink.me/7k3a?pid=WW_And_OfficialSite_PreBrandpage&c=WW_And_OfficialSite_PreBrandpage" target="_blank">
+                                    <picture data-translate="down-google-1" data-translate-type="html">
+                                        <source media="(min-width: 1100px)" srcset="./resources/images/down/en/down_google-en.png" />
+                                        <img src="./resources/images/down/mobile/down_google.png" alt="" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="download__item">
+                                <a class="download__link" href="https://gt-client.global.joycityglobal.com/public/PC/Installer/GTLauncherInstall.exe" target="_blank">
+                                    <picture>
+                                        <source media="(min-width: 1100px)" srcset="./resources/images/down/down_window.png" />
+                                        <img src="./resources/images/down/mobile/down_window.png" alt="" />
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="play__image">
+                            <picture>
+                                <source media="(min-width: 1100px)" srcset="./resources/images/etc/play.png" />
+                                <img src="./resources/images/etc/mobile/play.png" alt="" />
+                            </picture>
+                        </div>
+                        <ul class="info">
+                            <li class="info__item">
+                                <h4 class="info__title">Genre</h4>
+                                <p class="info__text info__text--simulation">4x Strategy Simulation</p>
+                            </li>
+                            <li class="info__item">
+                                <h4 class="info__title">Compatible with</h4>
+                                <ul class="info__compatible">
+                                    <li class="info__compatible-item info__compatible-item--apple">
+                                        <p class="info__text">iOS</p>
+                                    </li>
+                                    <li class="info__compatible-item info__compatible-item--android">
+                                        <p class="info__text">Android</p>
+                                    </li>
+                                    <li class="info__compatible-item info__compatible-item--windows">
+                                        <p class="info__text">Windows</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="info__item">
+                                <h4 class="info__title info__title--lang">Language</h4>
+                                <ul class="info__lang">
+                                    <li class="info__lang-item">
+                                        <!-- <div class="info__lang-box info__lang-box--kr">
+                                        <p class="info__text">한국어</p>
+                                    </div> -->
+                                        <div class="info__lang-box info__lang-box--gb">
+                                            <p class="info__text">English</p>
+                                        </div>
+                                        <div class="info__lang-box info__lang-box--jp">
+                                            <p class="info__text">日本語</p>
+                                        </div>
+                                        <div class="info__lang-box info__lang-box--ch">
+                                            <p class="info__text">简体中文</p>
+                                        </div>
+                                        <div class="info__lang-box info__lang-box--tw">
+                                            <p class="info__text">繁體中文</p>
+                                        </div>
+                                    </li>
+                                    <li class="info__lang-item">
+                                        <div class="info__lang-box info__lang-box--ru">
+                                            <p class="info__text">Русский</p>
+                                        </div>
+                                        <div class="info__lang-box info__lang-box--fr">
+                                            <p class="info__text">Français</p>
+                                        </div>
+                                        <div class="info__lang-box info__lang-box--de">
+                                            <p class="info__text">Deutsch</p>
+                                        </div>
+                                        <div class="info__lang-box info__lang-box--th">
+                                            <p class="info__text">ภาษาไทย</p>
+                                        </div>
+                                    </li>
+                                    <li class="info__lang-item">
+                                        <div class="info__lang-box info__lang-box--es">
+                                            <p class="info__text">Español</p>
+                                        </div>
+                                        <div class="info__lang-box info__lang-box--pt">
+                                            <p class="info__text">Portugês</p>
+                                        </div>
+                                        <div class="info__lang-box info__lang-box--vn">
+                                            <p class="info__text">Tiếng Việt</p>
+                                        </div>
+                                        <div class="info__lang-box info__lang-box--id">
+                                            <p class="info__text">Indonesian</p>
+                                        </div>
+                                    </li>
+                                    <li class="info__lang-item">
+                                        <div class="info__lang-box info__lang-box--sa">
+                                            <p class="info__text">العربية</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="contents__floating">
+                    <ul class="contents__floating-list">
+                        <li class="contents__floating-item">
+                            <a class="contents__floating-link" href="#game"><span>About Game</span></a>
+                        </li>
+                        <li class="contents__floating-item">
+                            <a class="contents__floating-link" href="#milico"><span>MILICO</span></a>
+                        </li>
+                        <li class="contents__floating-item">
+                            <a class="contents__floating-link" href="#play"><span>Play</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <!-- MEDIA -->
+            <article id="media" class="media">
+                <h2 class="hidden">MEDIA</h2>
+                <div class="media__container">
+                    <h3 class="media__title a1">
+                        PEER into the<br class="br-mo" />
+                        Gunship Battle: Crypto Conflict!
+                    </h3>
+                    <p class="media__sub-title a2">PLAY. ENJOY. EARN. REPEAT.</p>
+                    <div class="media__content">
+                        <div class="swiper media__swiper">
+                            <ul class="swiper-wrapper media__swiper-wrapper">
+                                <li class="swiper-slide media__swiper-slide">
+                                    <div class="video">
+                                        <div class="video__content">
+                                            <iframe src="https://www.youtube.com/embed/q_XDGn2P_nQ?enablejsapi=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide media__swiper-slide">
+                                    <div class="video">
+                                        <div class="video__content">
+                                            <iframe src="https://www.youtube.com/embed/0wYPzgdRQvs?enablejsapi=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide media__swiper-slide">
+                                    <div class="video">
+                                        <div class="video__content">
+                                            <iframe src="https://www.youtube.com/embed/4pOjr0XdCLE?enablejsapi=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide media__swiper-slide">
+                                    <div class="video">
+                                        <div class="video__content">
+                                            <iframe src="https://www.youtube.com/embed/QjQvv3TF_Rs?enablejsapi=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- <li class="swiper-slide media__swiper-slide">
+                                    <div class="video">
+                                        <div class="video__content">
+                                            <iframe src="https://www.youtube.com/embed/C36AW7VixZ4?enablejsapi=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </li> -->
+                                <!-- <li class="swiper-slide media__swiper-slide">
+                                    <div class="video">
+                                        <div class="video__content">
+                                            <iframe src="https://www.youtube.com/embed/wHmcziPRFtc?enablejsapi=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <button class="media__swiper-button media__swiper-button-left" type="button"></button>
+                        <button class="media__swiper-button media__swiper-button-right" type="button"></button>
+                    </div>
+                    <div class="media__swiper-pagination"></div>
+                </div>
+            </article>
+            <!-- PROMOTION -->
+            <article id="promotion" class="promotion">
+                <h2 class="hidden">PROMOTION</h2>
+                <div class="promotion__container">
+                    <div class="promotion__title-wrap">
+                        <p class="deco-coin deco-coin__0"></p>
+                        <p class="deco-coin deco-coin__1"></p>
+                        <p class="deco-coin deco-coin__2"></p>
+                        <h3 class="promotion__title a1" data-translate="promotion-title" data-translate-type="html"><em>4X AIRDROP</em> ROADMAP</h3>
+                        <p class="promotion__text a2" data-translate="promotion-text" data-translate-type="html">
+                            Gunship Battle: Crypto Conflict 4X AIRDROP <br />
+                            More than <em>1,000,000</em> in MILICO <br class="br-mo" />
+                            Give-away Event
+                        </p>
+                    </div>
+                    <div class="promotion__content">
+                        <ul class="promotion__list">
+                            <li class="promotion__item complete">
+                                <div class="promotion__step">25</div>
+                                <div class="card">
+                                    <p class="card__date" data-translate="card-date" data-translate-type="text">Q1 2022</p>
+                                    <p class="card__part" data-translate="card-part-1" data-translate-type="text"><span>Part 1</span></p>
+                                    <h4 class="card__title" data-translate="card-title" data-translate-type="html">AIRDROP EVENT</h4>
+                                    <p class="card__sub-title" data-translate="card-sub-title-1" data-translate-type="html">Join the Community</p>
+                                    <picture class="card__image">
+                                        <img src="./resources/images/promotion/promotion_0.png" alt="" />
+                                    </picture>
+                                    <button class="card__button" type="button" onclick="window.open('https://gleam.io/6qwcU/gunship-battle-crypto-conflict-airdrop-event')">GET!</button>
+                                    <picture class="card__complete">
+                                        <source media="(min-width: 1100px)" srcset="./resources/images/promotion/complete.png" />
+                                        <img src="./resources/images/promotion/mo_complete.png" alt="" />
+                                    </picture>
+                                </div>
+                            </li>
+                            <li class="promotion__item complete">
+                                <div class="promotion__step">50</div>
+                                <div class="card">
+                                    <p class="card__date" data-translate="card-date" data-translate-type="text">Q1 2022</p>
+                                    <p class="card__part" data-translate="card-part-2" data-translate-type="text"><span>Part 2</span></p>
+                                    <h4 class="card__title" data-translate="card-title" data-translate-type="html">AIRDROP EVENT</h4>
+                                    <p class="card__sub-title" data-translate="card-sub-title-2" data-translate-type="html">App Pre-Registration</p>
+                                    <picture class="card__image">
+                                        <img src="./resources/images/promotion/promotion_1.png" alt="" />
+                                    </picture>
+                                    <button class="card__button" type="button" onclick="window.open('https://gleam.io/tisKn/gunship-battle-crypto-conflict-airdrop-event2')">GET!</button>
+                                    <picture class="card__complete">
+                                        <source media="(min-width: 1100px)" srcset="./resources/images/promotion/complete.png" />
+                                        <img src="./resources/images/promotion/mo_complete.png" alt="" />
+                                    </picture>
+                                </div>
+                            </li>
+                            <li class="promotion__item complete">
+                                <div class="promotion__step">75</div>
+                                <div class="card">
+                                    <p class="card__date" data-translate="card-date" data-translate-type="text">Q1 2022</p>
+                                    <p class="card__part" data-translate="card-part-3" data-translate-type="text"><span>Part 3</span></p>
+                                    <h4 class="card__title" data-translate="card-title" data-translate-type="html">AIRDROP EVENT</h4>
+                                    <p class="card__sub-title" data-translate="card-sub-title-3" data-translate-type="html">Refer 5 friends, Get MILICO</p>
+                                    <picture class="card__image">
+                                        <img src="./resources/images/promotion/promotion_2.png" alt="" />
+                                    </picture>
+                                    <button class="card__button" type="button" onclick="window.open('https://gleam.io/Wj77n/gunship-battle-crypto-conflict-airdrop-event3')">GET!</button>
+                                    <picture class="card__complete">
+                                        <source media="(min-width: 1100px)" srcset="./resources/images/promotion/complete.png" />
+                                        <img src="./resources/images/promotion/mo_complete.png" alt="" />
+                                    </picture>
+                                </div>
+                            </li>
+                            <li class="promotion__item complete">
+                                <div class="promotion__step">100</div>
+                                <div class="card">
+                                    <p class="card__date" data-translate="card-date" data-translate-type="text">Q1 2022</p>
+                                    <p class="card__part" data-translate="card-part-4" data-translate-type="text"><span>Part 4</span></p>
+                                    <h4 class="card__title" data-translate="card-title" data-translate-type="html">AIRDROP EVENT</h4>
+                                    <p class="card__sub-title" data-translate="card-sub-title-4" data-translate-type="html">Clear in-game Mission</p>
+                                    <picture class="card__image">
+                                        <img src="./resources/images/promotion/promotion_3.png" alt="" />
+                                    </picture>
+                                    <button class="card__button" type="button" onclick="window.open('https://gleam.io/IWQi9/gunship-battle-crypto-conflict-airdrop-event4')">GET!</button>
+                                    <picture class="card__complete">
+                                        <source media="(min-width: 1100px)" srcset="./resources/images/promotion/complete.png" />
+                                        <img src="./resources/images/promotion/mo_complete.png" alt="" />
+                                    </picture>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <!-- ROADMAP-->
+            <article id="roadmap" class="roadmap">
+                <h2 class="hidden">ROADMAP</h2>
+                <div class="roadmap__container">
+                    <div class="roadmap__title-wrap">
+                        <h3 class="roadmap__title a1">ROADMAP V1.0</h3>
+                        <p class="roadmap__text a2" data-translate="roadmap-text" data-translate-type="html">
+                            * The content listed above is subject to change <br class="br-mo" />
+                            based on the game and token market economies.
+                        </p>
+                    </div>
+                    <div class="roadmap__content-wrap">
+                        <ul class="roadmap__list">
+                            <li class="roadmap__item roadmap__item--1 complete">
+                                <div class="roadmap__step" data-translate="roadmap-step-1" data-translate-type="html">
+                                    February<br />
+                                    2022
+                                </div>
+                                <ul class="roadmap__content">
+                                    <div class="roadmap__content-title">MILICO</div>
+                                    <ul class="roadmap__desc">
+                                        <li class="roadmap__desc-item" data-translate="roadmap-milico-1" data-translate-type="text">WEMIX Platform Onboarding</li>
+                                        <li class="roadmap__desc-item" data-translate="roadmap-milico-2" data-translate-type="text">MILICO Facility OPEN</li>
+                                        <li class="roadmap__desc-item" data-translate="roadmap-milico-3" data-translate-type="text">4x Airdrop Event</li>
+                                    </ul>
+                                </ul>
+                                <ul class="roadmap__content">
+                                    <div class="roadmap__content-title" data-translate="roadmap-content-title" data-translate-type="text">Content</div>
+                                    <ul class="roadmap__desc">
+                                        <li class="roadmap__desc-item" data-translate="roadmap-content-1" data-translate-type="text">Official Community OPEN</li>
+                                        <li class="roadmap__desc-item" data-translate="roadmap-content-2" data-translate-type="text">Brand Page & MILICO Tech Page OPEN</li>
+                                        <li class="roadmap__desc-item" data-translate="roadmap-content-3" data-translate-type="html">
+                                            Mobile (AOS, IOS) & <br />
+                                            PC (WINDOWS) Now LIVE
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <picture class="roadmap__complete">
+                                    <source media="(min-width: 1100px)" srcset="./resources/images/promotion/complete.png" />
+                                    <img src="./resources/images/promotion/mo_complete.png" alt="" />
+                                </picture>
+                            </li>
+                            <li class="roadmap__item roadmap__item--2 complete">
+                                <div class="roadmap__step" data-translate="roadmap-step-2" data-translate-type="html">
+                                    Early<br />
+                                    2022
+                                </div>
+                                <ul class="roadmap__content">
+                                    <div class="roadmap__content-title">MILICO</div>
+                                    <ul class="roadmap__desc">
+                                        <li class="roadmap__desc-item" data-translate="roadmap-milico-4" data-translate-type="text">Bot/Macro Prevention System</li>
+                                    </ul>
+                                </ul>
+                                <ul class="roadmap__content">
+                                    <div class="roadmap__content-title" data-translate="roadmap-content-title" data-translate-type="text">Content</div>
+                                    <ul class="roadmap__desc">
+                                        <li class="roadmap__desc-item" data-translate="roadmap-content-5" data-translate-type="text">City Conquest</li>
+                                        <li class="roadmap__desc-item" data-translate="roadmap-content-6" data-translate-type="text">World War</li>
+                                        <li class="roadmap__desc-item" data-translate="roadmap-content-7" data-translate-type="html">
+                                            HQ Max Level Expansion<br />
+                                            [Phase 1]
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <picture class="roadmap__complete">
+                                    <source media="(min-width: 1100px)" srcset="./resources/images/promotion/complete.png" />
+                                    <img src="./resources/images/promotion/mo_complete.png" alt="" />
+                                </picture>
+                            </li>
+                            <li class="roadmap__item roadmap__item--3">
+                                <div class="roadmap__step" data-translate="roadmap-step-3" data-translate-type="html">
+                                    Mid<br />
+                                    2022
+                                </div>
+                                <ul class="roadmap__content">
+                                    <div class="roadmap__content-title">MILICO</div>
+                                    <ul class="roadmap__desc">
+                                        <li class="roadmap__desc-item" data-translate="roadmap-milico-5" data-translate-type="text">TITANIUM Trade Shop</li>
+                                        <li class="roadmap__desc-item" data-translate="roadmap-milico-6" data-translate-type="html">MILICO Staking Service</li>
+                                    </ul>
+                                </ul>
+                                <ul class="roadmap__content">
+                                    <div class="roadmap__content-title" data-translate="roadmap-content-title" data-translate-type="text">Content</div>
+                                    <ul class="roadmap__desc">
+                                        <li class="roadmap__desc-item" data-translate="roadmap-content-8" data-translate-type="text">Server Invasion</li>
+                                        <li class="roadmap__desc-item" data-translate="roadmap-content-9" data-translate-type="html">
+                                            HQ Max Level Expansion<br />
+                                            [Phase 2]
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <picture class="roadmap__complete">
+                                    <source media="(min-width: 1100px)" srcset="./resources/images/promotion/complete.png" />
+                                    <img src="./resources/images/promotion/mo_complete.png" alt="" />
+                                </picture>
+                            </li>
+                            <li class="roadmap__item roadmap__item--4">
+                                <div class="roadmap__step" data-translate="roadmap-step-4" data-translate-type="html">
+                                    Upcoming<br />
+                                    2022
+                                </div>
+                                <ul class="roadmap__content">
+                                    <div class="roadmap__content-title">MILICO</div>
+                                    <ul class="roadmap__desc">
+                                        <li class="roadmap__desc-item" data-translate="roadmap-milico-7" data-translate-type="html">
+                                            In-Game MILICO Ecosystem<br />
+                                            (Direct Consumption)
+                                        </li>
+                                        <li class="roadmap__desc-item" data-translate="roadmap-milico-8" data-translate-type="text">NFT</li>
+                                    </ul>
+                                </ul>
+                                <ul class="roadmap__content">
+                                    <div class="roadmap__content-title" data-translate="roadmap-content-title" data-translate-type="text">Content</div>
+                                    <ul class="roadmap__desc">
+                                        <li class="roadmap__desc-item" data-translate="roadmap-content-10" data-translate-type="text">World Boss System</li>
+                                        <li class="roadmap__desc-item" data-translate="roadmap-content-11" data-translate-type="text">World War Tournament</li>
+                                        <li class="roadmap__desc-item" data-translate="roadmap-content-12" data-translate-type="text">War of the Factions</li>
+                                    </ul>
+                                </ul>
+                                <picture class="roadmap__complete">
+                                    <source media="(min-width: 1100px)" srcset="./resources/images/promotion/complete.png" />
+                                    <img src="./resources/images/promotion/mo_complete.png" alt="" />
+                                </picture>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <!-- FLOATING -->
+        <ul class="floating">
+            <li class="floating__item">
+                <a href="https://www.youtube.com/c/jcenest" target="_blank"><img src="./resources/images/sns/sns_youtube-circle.png" alt="" /></a>
+            </li>
+            <li class="floating__item">
+                <a href="https://discord.com/invite/yaqDbjYATU" target="_blank"><img src="./resources/images/sns/sns_discord-circle.png" alt="" /></a>
+            </li>
+            <li class="floating__item">
+                <a href="https://t.me/cryptoconflict" target="_blank"><img src="./resources/images/sns/sns_telegram-circle.png" alt="" /></a>
+            </li>
+            <li class="floating__item">
+                <a href="https://twitter.com/Cryptoconflict_" target="_blank"><img src="./resources/images/sns/sns_twitter-circle.png" alt="" /></a>
+            </li>
+        </ul>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <h2 class="hidden">FOOTER</h2>
+            <div class="footer__container">
+                <a class="footer__logo" href="https://corp.joycity.com/en/main" target="_blank">
+                    <img src="./resources/images/logo/logo_joycity.png" alt="" loading="lazy" />
+                </a>
+                <div class="footer__desc">
+                    <p class="policy">
+                        <a class="policy-terms" href="http://policy.joycity.com/gc/provision" target="_blank">Terms of use</a>
+                        <span>|</span>
+                        <a class="policy-privacy" href="https://policy.joycity.com/gc/privacy" target="_blank">Privacy Policy</a>
+                        <span>|</span>
+                        <a class="support" href="mailto:cryptoconflict@joycity.com" data-translate="support-1" data-translate-type="text">Support</a>
+                    </p>
+                    <p class="copy">ⓒ WEMADE TREE PTE. LTD & JOYCITY. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- POPUP -->
+        <div class="popup">
+            <div class="popup__container popup__container--subscribe">
+                <div class="popup__box">
+                    <div class="popup__content">
+                        <button class="popup__button js-popup-close" type="button">
+                            <img src="./resources/images/ico/ico_close-gray.png" alt="" />
+                        </button>
+                        <h5 class="popup__title popup__title--subscribe" data-translate="popup-title-subscribe" data-translate-type="html">Thank you for Subscribing!</h5>
+                        <p class="popup__text" data-translate="popup-text-1" data-translate-type="html">
+                            You are now part of the Gunship Battle: Crypto Conflict community <br />
+                            and will be the first to find out the latest news and updates for <b>Gunship Battle: Crypto Conflict.</b> <br />
+                            Join our <b>Discord</b> and <b>Youtube</b> channel for upcoming promotions, <br />
+                            game information, and community events!
+                        </p>
+                        <ul class="popup__sns">
+                            <li class="popup__sns-item">
+                                <a class="popup__sns-link" href="https://www.youtube.com/c/jcenest" target="_blank"><img src="./resources/images/sns/sns_youtube-white.png" alt="" /></a>
+                            </li>
+                            <li class="popup__sns-item">
+                                <a class="popup__sns-link" href="https://discord.com/invite/yaqDbjYATU" target="_blank"><img src="./resources/images/sns/sns_discord-white.png" alt="" /></a>
+                            </li>
+                            <li class="popup__sns-item">
+                                <a class="popup__sns-link" href="https://t.me/cryptoconflict" target="_blank"><img src="./resources/images/sns/sns_telegram-white.png" alt="" /></a>
+                            </li>
+                            <li class="popup__sns-item">
+                                <a class="popup__sns-link" href="https://twitter.com/Cryptoconflict_" target="_blank"><img src="./resources/images/sns/sns_twitter-white.png" alt="" /></a>
+                            </li>
+                        </ul>
+                        <p class="popup__text" data-translate="popup-text-2" data-translate-type="html">If you are a creator, journalist or game community lead:</p>
+                        <a class="popup__link" href="https://docs.google.com/forms/d/e/1FAIpQLSeVwpwG6P7TbsXBl4Nox9t314WONHyZUppOTdcFhUu0HxzpCQ/viewform" target="_blank" data-translate="popup-text-3" data-translate-type="html"><span>Fill out this survey</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup__container popup__container--detail">
+                <div class="popup__box">
+                    <div class="popup__content">
+                        <button class="popup__button js-popup-close" type="button">
+                            <img src="./resources/images/ico/ico_close-gray.png" alt="" />
+                        </button>
+                        <h5 class="popup__title popup__title--detail" data-translate="popup-title-detail" data-translate-type="html">Collection and Use of Personal Information Consent</h5>
+                        <ul class="popup__list">
+                            <li class="popup__list-item">
+                                <p class="popup__text" data-translate="popup-text-4" data-translate-type="html">
+                                    <b>The purpose of the collection and use of personal information:</b><br />
+                                    Notification of events, newsletter, announcements, and or updates about the Game Services.
+                                </p>
+                            </li>
+                            <li class="popup__list-item">
+                                <p class="popup__text" data-translate="popup-text-5" data-translate-type="html">
+                                    <b>Personal Information Collected:</b> E-mail address <br />
+                                    <small>* Depending on the type of survey, there may be additional information collected such as your social media account ID (including Tiktok, Instagram, Twitter, Telegram), Youtube and blog URL Address.</small>
+                                </p>
+                            </li>
+                            <li class="popup__list-item">
+                                <p class="popup__text" data-translate="popup-text-6" data-translate-type="html">
+                                    <b>Personal Information Retention:</b>
+                                    Personal information on our system will be held for 2 years or until the user decides to opt-out of the subscription service.
+                                </p>
+                            </li>
+                            <li class="popup__list-item">
+                                <p class="popup__text" data-translate="popup-text-7" data-translate-type="html"><b> How to opt-out of subscription service:</b>  Users can opt out by clicking the 'Unsubscribe' link provided in the newsletter sent to the subscribed email address.</p>
+                            </li>
+                            <li class="popup__list-item">
+                                <p class="popup__text" data-translate="popup-text-8" data-translate-type="html">
+                                    <b>Limitations:</b>
+                                    For any countries (including South Korea, Japan, China, Singapore, etc) where the service is not provided, or cryptocurrency transactions are forbidden by law, there may be limitations in accessing the play-and-earn update features in the game.
+                                </p>
+                            </li>
+                            <li class="popup__list-item" data-translate="popup-text-9" data-translate-type="html">
+                                <small
+                                    >* You have the right to refuse consent to the collection of personal information listed above. <br />
+                                    However, you will not be able to Join our official community. <br />
+                                    Matters not specified in this agreement are subject to the provisions of the "Privacy Policy" of JOYCITY.
+                                </small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

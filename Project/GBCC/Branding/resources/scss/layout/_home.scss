@@ -1,0 +1,240 @@
+@use '../helpers/' as *;
+
+.home {
+    background-color: $c-dark;
+    background-image: url('#{$path-image}/background/mobile/bg_home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @include desktop {
+        height: 1080px;
+        background-image: url('#{$path-image}/background/bg_home.png');
+        @include background-cover;
+    }
+
+    &__content {
+        flex-direction: column;
+        text-align: center;
+        max-width: 328px;
+        margin: auto;
+        @include flex-center;
+        @include desktop {
+            max-width: 100%;
+            background: none;
+            @include background-cover(1);
+        }
+    }
+}
+
+.visual {
+    &__logo {
+        padding: 72px 0 250px;
+        @include flex-center;
+        @include desktop {
+            padding: 113px 0 56px;
+        }
+
+        picture {
+            width: 250px;
+            @include desktop {
+                width: auto;
+            }
+        }
+    }
+
+    &__title {
+        padding-bottom: 16px;
+        color: $c-secondary;
+        @include font-style-24($fw-bold);
+        @include desktop {
+            padding-bottom: 22px;
+            @include font-style-48($fw-bold);
+        }
+    }
+
+    &__text {
+        padding-bottom: 22px;
+        color: $c-light;
+        @include font-style-16;
+        @include desktop {
+            padding-bottom: 0;
+            @include font-style-18;
+        }
+
+        & + & {
+            padding-bottom: 40px;
+            @include desktop {
+                padding-bottom: 48px;
+            }
+        }
+
+        span {
+            color: $c-secondary;
+            font-weight: $fw-bold;
+        }
+    }
+}
+
+.subscribe {
+    &__title {
+        padding-bottom: 12px;
+        color: $c-light;
+        @include font-style-12;
+        @include desktop {
+            padding-bottom: 16px;
+            @include font-style-14;
+        }
+    }
+
+    &__form {
+        flex-direction: column;
+        margin-bottom: 8px;
+        @include flex-center;
+        @include desktop {
+            flex-direction: row;
+            height: 78px;
+            margin-bottom: 16px;
+        }
+
+        input {
+            width: 328px;
+            height: 52px;
+            padding: 0 12px;
+            margin-bottom: 16px;
+            background-color: $c-white;
+            border: 1px solid $c-black;
+            border-radius: 2px;
+            @include desktop {
+                width: 650px;
+                height: 100%;
+                margin: 0 10px 0 0;
+                @include font-style-18;
+            }
+
+            &::placeholder {
+                color: $c-placeholder;
+            }
+
+            .es &::placeholder,
+            .id &::placeholder {
+                font-size: 0.85em;
+                @include desktop {
+                    font-size: 1em;
+                }
+            }
+        }
+
+        button {
+            width: 328px;
+            height: 52px;
+            color: $c-white;
+            background-color: $c-primary;
+            border-radius: 2px;
+            @include font-style-24($fw-bold);
+            @include hover {
+                background-color: $c-secondary;
+            }
+            @include desktop {
+                width: 240px;
+                height: 100%;
+            }
+        }
+    }
+
+    // AR
+    .ar &__form {
+        input {
+            @include desktop {
+                margin: 0 0 0 10px;
+            }
+        }
+    }
+}
+
+.check {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 24px;
+    // background-color: $c-dark;
+    @include flex-center;
+    @include desktop {
+        background-color: transparent;
+    }
+
+    &__list {
+        width: 328px;
+        padding: 8px 0 20px;
+        @include font-style-12;
+        @include desktop {
+            width: 900px;
+            padding: 0 0 48px;
+            @include font-style-14($fw-regular);
+        }
+    }
+
+    &__box {
+        display: flex;
+        width: 100%;
+        padding-bottom: 4px;
+    }
+
+    &__label {
+        display: flex;
+        flex-shrink: 1;
+        color: $c-light;
+        @include desktop {
+            align-items: center;
+        }
+
+        span {
+            flex-shrink: 1;
+        }
+    }
+
+    &__label::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-right: 4px;
+        background-image: url('#{$path-image}/ico/ico_chk.png');
+        @include background-cover;
+        @include desktop {
+            margin-right: 10px;
+        }
+    }
+
+    &__input:checked + &__label::before {
+        background-image: url('#{$path-image}/ico/ico_chk-on.png');
+    }
+
+    &__warning {
+        color: $c-warning;
+    }
+
+    // AR
+    .ar &__label::before {
+        margin-right: 0;
+        margin-left: 4px;
+        @include desktop {
+            margin-right: 0;
+            margin-left: 10px;
+        }
+    }
+}
+
+.campaign-button {
+    width: 328px;
+    height: 52px;
+    margin-bottom: 24px;
+    @include flex-center;
+    @include font-style-24($fw-bold);
+    @include hover {
+        outline: 2px solid $c-primary;
+    }
+    @include desktop {
+        width: 900px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+}

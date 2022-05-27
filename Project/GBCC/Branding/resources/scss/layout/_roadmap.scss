@@ -1,0 +1,370 @@
+@use '../helpers/' as *;
+
+.roadmap {
+    padding: 56px 16px;
+    background-image: url('#{$path-image}/background/mobile/bg_roadmap.png');
+    @include flex-center;
+    @include background-cover;
+    @include desktop {
+        height: 1080px;
+        padding: 0;
+        background-image: url('#{$path-image}/background/bg_roadmap.png');
+    }
+    &__title-wrap {
+        display: flex;
+        flex-direction: column;
+        max-width: 328px;
+        margin: auto;
+        @include desktop {
+            max-width: 100%;
+        }
+    }
+    &__title {
+        color: $c-primary;
+        text-align: center;
+        @include font-style-24($fw-bold);
+        @include desktop {
+            @include font-style-48($fw-bold);
+        }
+    }
+    &__text {
+        color: $c-light;
+        text-align: center;
+        font-size: 12px;
+        font-weight: $fw-medium;
+        line-height: 16px;
+        padding-top: 11px;
+        @include desktop {
+            font-size: 16px;
+            line-height: 20px;
+            padding-top: 30px;
+        }
+        @include retina {
+            font-size: 19px;
+            line-height: 24px;
+        }
+    }
+    &__content-wrap {
+        width: 360px;
+        padding-top: 40px;
+        overflow: hidden;
+        @include desktop {
+            width: 100%;
+            padding-top: 100px;
+        }
+    }
+    &__list {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-right: 20px;
+        @include desktop {
+            flex-direction: row;
+            padding-right: 0;
+            @include flex-center;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            @include desktop {
+                width: 927px;
+                height: 6px;
+                top: -24px;
+                background-image: url('#{$path-image}/etc/road_line.png');
+                @include background-cover;
+            }
+        }
+
+        .ar & {
+            padding: 0 0 0 20px;
+
+            &::before {
+                @include desktop {
+                    width: 905px;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        width: 228px;
+        // height: 276px;
+        height: 305px;
+        padding: 15px 20px;
+        @include background-cover;
+        @include desktop {
+            width: 260px;
+            height: 420px;
+            padding: 45px 25px;
+        }
+        @include retina {
+            width: 320px;
+            height: 518px;
+            padding: 96px 30px;
+        }
+
+        & + & {
+            margin-top: 60px;
+            @include desktop {
+                margin: 0 0 0 18px;
+            }
+        }
+
+        .ru & {
+            @include desktop {
+                padding: 36px 20px;
+            }
+            @include retina {
+                padding: 75px 30px;
+            }
+        }
+
+        .fr & {
+            padding: 15px 13px;
+            @include desktop {
+                padding: 36px 25px;
+            }
+            @include retina {
+                padding: 96px 22px;
+            }
+        }
+
+        .pt & {
+            padding: 15px 18px;
+            @include desktop {
+                padding: 45px 18px;
+            }
+            @include retina {
+                padding: 96px 30px;
+            }
+        }
+        .es & {
+            height: 336px;
+            @include desktop {
+                height: 420px;
+            }
+            @include retina {
+                height: 518px;
+                padding: 75px 30px;
+            }
+
+            &::before {
+                height: 298px;
+            }
+        }
+
+        .vn & {
+            @include desktop {
+                padding: 45px 20px;
+            }
+            @include retina {
+                padding: 78px 30px;
+            }
+        }
+
+        .ar & {
+            @include desktop {
+                margin: 0 18px 0 0;
+            }
+            @include retina {
+                padding: 80px 30px;
+            }
+
+            &::before {
+                left: 277px;
+            }
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 75px;
+            left: -57px;
+            width: 5px;
+            height: 264px;
+            background-image: url('#{$path-image}/etc/mobile/road_line-on.png');
+            @include background-cover;
+            @include desktop {
+                display: none;
+            }
+        }
+        &.complete {
+            &::before {
+                background-image: url('#{$path-image}/etc/mobile/road_line.png');
+            }
+        }
+    }
+    &__step {
+        position: absolute;
+        top: -20px;
+        left: -55px;
+        width: 80px;
+        height: 92px;
+        transform: translateX(-50%);
+        text-align: center;
+        color: $c-primary;
+        background-image: url('#{$path-image}/etc/roadmap_step-on.png');
+        @include font-style-14($fw-bold);
+        @include background-cover;
+        @include flex-center;
+        @include desktop {
+            top: -66px;
+            left: 50%;
+            width: 94px;
+            height: 108px;
+            @include font-style-16($fw-bold);
+        }
+        @include retina {
+            // top: -66px;
+            width: 118px;
+            height: 134px;
+            @include font-style-22($fw-bold);
+        }
+
+        .complete & {
+            color: #6b6b6b;
+            background-image: url('#{$path-image}/etc/roadmap_step.png');
+        }
+
+        .id & {
+            font-size: 12px;
+            @include desktop {
+                font-size: 14px;
+            }
+            @include retina {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+        .ar & {
+            left: 280px;
+            @include desktop {
+                left: 50%;
+            }
+            @include retina {
+                font-size: 20px;
+            }
+        }
+    }
+    &__content {
+        & + & {
+            margin-top: 20px;
+            // @include desktop {
+            //     margin-top: 20px;
+            // }
+        }
+    }
+    &__content-title {
+        color: $c-primary;
+        @include font-style-14($fw-bold);
+        @include desktop {
+            @include font-style-16($fw-bold);
+        }
+        @include retina {
+            @include font-style-18($fw-bold);
+        }
+
+        .complete & {
+            color: $c-white;
+        }
+    }
+    &__desc {
+        color: $c-light;
+        padding: 6px 0 0 14px;
+        @include desktop {
+            padding: 15px 0 0 20px;
+        }
+        @include retina {
+            padding: 15px 0 0 20px;
+        }
+
+        .complete & {
+            color: $c-d-gray;
+        }
+
+        .ru &,
+        .fr &,
+        .pt & {
+            @include desktop {
+                padding: 9px 0 0 20px;
+            }
+        }
+
+        .es & {
+            @include desktop {
+                padding: 9px 0 0 15px;
+            }
+        }
+
+        .ar & {
+            padding: 6px 14px 0 0;
+            @include desktop {
+                padding: 15px 20px 0 0;
+            }
+        }
+    }
+    &__desc-item {
+        list-style-type: disc;
+        font-size: 12px;
+        font-weight: $fw-medium;
+        line-height: 1.2em;
+        @include desktop {
+            font-size: 14px;
+        }
+        @include retina {
+            font-size: 16px;
+        }
+
+        & + & {
+            padding-top: 6px;
+            @include retina {
+                padding-top: 10px;
+            }
+        }
+    }
+    &__complete {
+        display: none;
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        @include desktop {
+            right: 20px;
+            bottom: 20px;
+        }
+
+        img {
+            @include desktop {
+                width: 175px;
+            }
+            @include retina {
+                width: 214px;
+            }
+        }
+
+        .complete & {
+            display: block;
+        }
+
+        .ar & {
+            right: auto;
+            left: 15px;
+            @include desktop {
+                left: 20px;
+            }
+        }
+    }
+}
+
+@for $i from 1 through 4 {
+    .roadmap__item--#{$i} {
+        background-image: url('#{$path-image}/background/mobile/bg_roadmap-#{$i}.png');
+        @include desktop {
+            background-image: url('#{$path-image}/background/bg_roadmap-#{$i}.png');
+        }
+    }
+}

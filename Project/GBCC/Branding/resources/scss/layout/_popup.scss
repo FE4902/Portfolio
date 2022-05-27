@@ -1,0 +1,179 @@
+@use '../helpers/' as *;
+
+.popup {
+    z-index: $z-popup;
+    position: fixed;
+    left: 0;
+    top: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    background-color: rgba($c-black, 0.5);
+    overflow-y: auto;
+    @include flex-center;
+    display: none;
+
+    &.-active {
+        display: flex;
+    }
+
+    &__container {
+        position: relative;
+        display: none;
+        max-width: 900px;
+        width: 100%;
+        background: linear-gradient(180deg, #414141 0%, #1f1f1f 71.96%, #292929 100%);
+        border: 1px solid #666;
+
+        &--subscribe {
+            text-align: center;
+        }
+
+        &.-active {
+            display: block;
+        }
+    }
+
+    &__box {
+        padding: 40px 16px;
+        @include desktop {
+            padding: 64px 20px;
+        }
+    }
+
+    &__content {
+        max-height: 403px;
+        padding-right: 1em;
+        @include custom-scroll;
+        @include desktop {
+            max-height: 100%;
+            overflow-y: visible;
+        }
+    }
+
+    &__title {
+        color: $c-secondary;
+        text-align: center;
+
+        &--subscribe {
+            padding-bottom: 32px;
+            @include font-style-24($fw-bold);
+            @include desktop {
+                @include font-style-48($fw-bold);
+            }
+        }
+
+        &--detail {
+            padding-bottom: 22px;
+            @include font-style-20($fw-bold);
+            @include desktop {
+                @include font-style-28($fw-bold);
+            }
+        }
+    }
+
+    &__text {
+        color: $c-gray;
+        @include font-style-16;
+        @include desktop {
+            @include font-style-18;
+        }
+
+        b {
+            color: $c-light;
+        }
+
+        span {
+            color: $c-light;
+        }
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        padding-top: 12px;
+        color: $c-secondary;
+        text-decoration: underline;
+        @include font-style-16;
+
+        span {
+            padding-right: 4px;
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-image: url('#{$path-image}/ico/ico_right-circle.png');
+            @include background-cover;
+            @include desktop {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    &__button {
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        display: inline-block;
+        width: 36px;
+    }
+}
+
+.popup__sns {
+    padding: 28px 0 24px;
+    @include flex-center;
+
+    &-item {
+        & + & {
+            margin-left: 24px;
+        }
+    }
+
+    &-link {
+        display: inline-block;
+        width: 32px;
+        @include desktop {
+            width: 50px;
+        }
+    }
+
+    // AR
+    .ar &-item {
+        &:not(:last-child) {
+            margin-left: 24px;
+        }
+    }
+}
+
+.popup__list {
+    &-item {
+        @include desktop {
+            margin-left: 2em;
+        }
+
+        &:not(:last-child) {
+            list-style-type: decimal;
+            list-style-position: inside;
+            margin-bottom: 30px;
+            color: $c-light;
+            @include font-style-16($fw-bold);
+            @include desktop {
+                list-style-position: outside;
+            }
+        }
+    }
+
+    p {
+        display: inline;
+    }
+
+    small {
+        color: $c-light;
+        @include font-style-14;
+    }
+}
