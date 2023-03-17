@@ -1,0 +1,40 @@
+@use "../helpers/" as *;
+
+.project {
+    @include section;
+
+    &__container {
+        @include container;
+    }
+
+    &__title {
+        @include title;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2%;
+        @include custom(1400px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @include custom(768px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @include custom(480px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__item {
+        border: 1px solid $c-gray;
+        border-radius: 16px;
+        overflow: hidden;
+        transition: $transition;
+
+        &:hover {
+            box-shadow: 0 0 8px $c-gray;
+            transform: translateY(-8px);
+        }
+    }
+}

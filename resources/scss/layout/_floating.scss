@@ -1,0 +1,30 @@
+@use "../helpers/" as *;
+
+.floating {
+    position: sticky;
+    top: 0;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    @include mobile {
+        display: none;
+    }
+}
+
+.pagination {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__button {
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $c-gray;
+
+        &.-active {
+            background-color: $c-primary;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@use "./mediaQueries" as *;
+@use "./variables" as *;
+@use "./function" as *;
+
+@mixin section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: rem(32px);
+    @include mobile {
+        padding: rem(16px);
+    }
+}
+
+@mixin container {
+    width: 100%;
+    padding: rem(120px) 0;
+}
+
+@mixin title($section: section) {
+    font-size: rem(40px);
+    padding-bottom: rem(28px);
+    font-weight: $fw-bold;
+    @if ($section == about) {
+        font-size: rem(76px);
+        padding-bottom: rem(8px);
+    }
+}
