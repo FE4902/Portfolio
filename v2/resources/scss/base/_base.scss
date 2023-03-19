@@ -3,3 +3,25 @@ body {
         "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
+
+.cursor {
+    position: fixed;
+    left: -6px;
+    top: -6px;
+    z-index: 10000;
+    width: 12px;
+    height: 12px;
+    background-color: #f0f0f0;
+    mix-blend-mode: exclusion;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 0.1s;
+
+    &.hover {
+        left: -32px;
+        top: -32px;
+        width: 64px;
+        height: 64px;
+        opacity: 0.25;
+    }
+}
