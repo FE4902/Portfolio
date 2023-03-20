@@ -21,9 +21,23 @@
         font-weight: 700;
     }
 
-    &__image {
+    &__link {
+        display: flex;
+        align-items: center;
         width: 200px;
         height: 200px;
-        background-color: green;
+        border: 2px solid black;
+
+        // [피드백] background-color or border
+        // background-color: black;
+
+        &--after {
+            background-color: white;
+            // border-color: transparent;
+        }
+    }
+
+    &__image {
+        pointer-events: none;
     }
 }
