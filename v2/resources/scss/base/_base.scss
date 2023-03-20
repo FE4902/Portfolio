@@ -5,6 +5,11 @@ body {
     background-color: #fff;
 }
 
+section {
+    position: relative;
+    min-height: 100vh;
+}
+
 .cursor {
     position: fixed;
     left: -6px;
