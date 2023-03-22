@@ -1,0 +1,33 @@
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    overflow: hidden;
+    text-align: center;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: repeat(3, 200px);
+        gap: 8px;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__link {
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__image {
+        pointer-events: none;
+    }
+}
