@@ -20,7 +20,7 @@ elements.forEach((element) => {
         scrollTrigger: {
             trigger: ".project",
             scrub: 1,
-            start: "0",
+            start: "-10%",
             end: "0",
         },
         left: left,
@@ -28,4 +28,26 @@ elements.forEach((element) => {
         opacity: 0,
         ease: "none",
     });
+});
+
+gsap.to(".scroll__line--top", {
+    scrollTrigger: {
+        trigger: ".project",
+        scrub: 1,
+        start: "50%",
+        end: "+=100%",
+    },
+    x: -window.innerWidth,
+    ease: "none",
+});
+
+gsap.from(".scroll__line--bottom", {
+    scrollTrigger: {
+        trigger: ".project",
+        scrub: 1,
+        start: "50%",
+        end: "+=100%",
+    },
+    x: -window.innerWidth,
+    ease: "none",
 });
