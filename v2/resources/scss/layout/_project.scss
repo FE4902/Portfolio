@@ -25,6 +25,10 @@
         height: 200px;
         border-radius: 50%;
         overflow: hidden;
+
+        &:not(a) {
+            background-color: #000;
+        }
     }
 
     &__image {
