@@ -14,6 +14,7 @@ const introAnimation = () => {
     });
 
     tl.to(".intro__title", {
+        opacity: 1,
         duration: 1.5,
         y: 0,
         autoAlpha: 1,
