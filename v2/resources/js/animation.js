@@ -108,3 +108,47 @@ gsap.from(".scroll__line--bottom", {
     x: -window.innerWidth,
     ease: "none",
 });
+
+// FOOTER
+gsap.from(".footer__container", {
+    scrollTrigger: {
+        trigger: ".footer",
+        scrub: 1,
+        start: "-50%",
+        end: "0",
+    },
+    yPercent: 10,
+    ease: "none",
+});
+
+const spans = document.querySelectorAll(".footer__logo span");
+const buttons = document.querySelectorAll(".footer__button-link");
+const tl = gsap.timeline();
+
+spans.forEach((span, i) => {
+    gsap.from(span, {
+        scrollTrigger: {
+            trigger: ".project",
+            scrub: 1,
+            start: `-${20 - i * 3}%`,
+            end: `+=${70 + i * 3}%`,
+        },
+        y: -300,
+        ease: "none",
+    });
+});
+
+buttons.forEach((button, i) => {
+    gsap.from(button, {
+        scrollTrigger: {
+            trigger: ".project",
+            delay: 0.25 * i,
+            scrub: 1,
+            start: `-${20 - i * 3}%`,
+            end: `+=${70 + i * 3}%`,
+        },
+        y: 50,
+        opacity: 1,
+        ease: "none",
+    });
+});
