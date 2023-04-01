@@ -1,0 +1,10 @@
+.visual {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    span {
+        display: block;
+        font-size: 24px;
+    }
+}
