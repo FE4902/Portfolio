@@ -1,10 +1,44 @@
 .visual {
     display: flex;
-    flex-direction: column;
-    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 0 16px;
 
-    span {
-        display: block;
+    &__body {
+        display: grid;
+        gap: 20px;
+        padding-left: 24px;
+        border-left: 5px solid black;
+    }
+
+    &__title {
+        font-size: 60px;
+        font-weight: 900;
+    }
+
+    &__text {
+        line-height: 1.5;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        width: 200px;
+        height: 48px;
         font-size: 24px;
+        border-radius: 100px;
+        font-weight: 700;
+    }
+
+    &__aside {
+        width: 320px;
+        transition: all 0.8s ease-out;
+        border: 1px solid #eee;
+        box-shadow: -5px 13px 12px 5px rgba(0, 0, 0, 0.2);
     }
 }
