@@ -21,7 +21,7 @@ h2 {
     width: 12px;
     height: 12px;
     background-color: #fff;
-    mix-blend-mode: exclusion;
+    mix-blend-mode: difference;
     border-radius: 50%;
     pointer-events: none;
     transition: 0.1s;

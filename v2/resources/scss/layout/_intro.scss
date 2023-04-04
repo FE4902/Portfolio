@@ -8,13 +8,13 @@
     z-index: 100;
 
     &__title {
-        color: white;
         max-width: 45%;
         text-align: center;
-        mix-blend-mode: difference;
+        mix-blend-mode: exclusion;
         z-index: 1;
         transform: translateY(40px);
         opacity: 0;
+        color: white;
     }
 
     &__background {
