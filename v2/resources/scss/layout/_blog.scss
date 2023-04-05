@@ -1,0 +1,78 @@
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 16px;
+    gap: 32px;
+
+    &__title {
+        font-size: 48px;
+        font-weight: 800;
+    }
+
+    &__list {
+        width: 100%;
+    }
+}
+
+.post {
+    border-top: 1px solid black;
+
+    &:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    &__body {
+        position: relative;
+        display: grid;
+        grid-template-areas:
+            "title arrow"
+            "date arrow";
+        grid-template-columns: 1fr auto;
+        padding: 24px 16px 24px 16px;
+        transition: 0.3s;
+        text-decoration: none;
+        color: black;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            display: block;
+            width: 0%;
+            height: 100%;
+            background-color: white;
+            transition: 0.3s;
+            mix-blend-mode: difference;
+        }
+
+        &::after {
+            content: "➝";
+            grid-area: arrow;
+            align-self: center;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        grid-area: title;
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 4px;
+    }
+
+    &__date {
+        grid-area: date;
+        color: gray;
+        font-size: 14px;
+    }
+}

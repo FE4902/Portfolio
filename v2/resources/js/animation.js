@@ -128,7 +128,7 @@ const tl = gsap.timeline();
 spans.forEach((span, i) => {
     gsap.from(span, {
         scrollTrigger: {
-            trigger: ".project",
+            trigger: ".blog",
             scrub: 1,
             start: `-${20 - i * 3}%`,
             end: `+=${70 + i * 3}%`,
@@ -141,7 +141,7 @@ spans.forEach((span, i) => {
 buttons.forEach((button, i) => {
     gsap.from(button, {
         scrollTrigger: {
-            trigger: ".project",
+            trigger: ".blog",
             delay: 0.25 * i,
             scrub: 1,
             start: `-${20 - i * 3}%`,
