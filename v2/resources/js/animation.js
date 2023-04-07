@@ -89,7 +89,7 @@ elements.forEach((element) => {
 // SCROLL
 gsap.to(".scroll__line--top", {
     scrollTrigger: {
-        trigger: ".project",
+        trigger: ".company",
         scrub: 1,
         start: "50%",
         end: "+=100%",
@@ -100,7 +100,7 @@ gsap.to(".scroll__line--top", {
 
 gsap.from(".scroll__line--bottom", {
     scrollTrigger: {
-        trigger: ".project",
+        trigger: ".company",
         scrub: 1,
         start: "50%",
         end: "+=100%",
