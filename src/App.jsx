@@ -1,6 +1,7 @@
 import classNames from "classnames";
 
 import Header from "@layouts/Header/Header";
+import FloatMenu from "@layouts/FloatMenu/FloatMenu";
 
 import Main from "@articles/Main/Main";
 
@@ -15,6 +16,7 @@ const App = () => {
             <main>
                 <Main />
             </main>
+            <FloatMenu />
         </div>
     );
 };
