@@ -1,0 +1,32 @@
+.floatMenu {
+    position: fixed;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    backdrop-filter: blur(8px);
+}
+
+.list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px 16px;
+    background-color: var(--black);
+    border-radius: 8px;
+    gap: 8px;
+}
+
+.item {
+    opacity: 0.5;
+
+    &.active {
+        opacity: 1;
+    }
+}
+
+.link {
+    padding: 8px 16px;
+    background-color: var(--white);
+    border-radius: 8px;
+    font-weight: 600;
+}
