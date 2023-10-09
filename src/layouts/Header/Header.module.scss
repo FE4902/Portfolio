@@ -1,0 +1,39 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    padding: 0 24px;
+    background-color: var(--header-background);
+}
+
+.container {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--black);
+    padding: 12px 0;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu {
+    &__list {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        display: flex;
+        width: 24px;
+        height: 24px;
+    }
+}
