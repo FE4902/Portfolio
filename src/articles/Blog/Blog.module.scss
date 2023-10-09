@@ -1,0 +1,40 @@
+.blog {
+    padding: 80px 16px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+
+.post {
+    &__list {
+    }
+
+    &__item {
+        border-top: 1px solid var(--black);
+        padding: 16px;
+
+        &:last-child {
+            border-bottom: 1px solid var(--black);
+        }
+
+        &:hover {
+            mix-blend-mode: difference;
+            background-color: var(--white);
+        }
+    }
+
+    &__link {
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 8px;
+    }
+
+    &__desc {
+    }
+}
