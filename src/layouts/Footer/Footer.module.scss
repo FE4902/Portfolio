@@ -7,10 +7,27 @@
 }
 
 .copyright {
+    position: relative;
     display: flex;
     height: 60px;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid var(--black);
     padding: 12px 0;
+
+    &::before {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: var(--black);
+        transition: 0.3s;
+        transform: translateX(-50%);
+        content: "";
+    }
+
+    .active &::before {
+        width: 100%;
+    }
 }

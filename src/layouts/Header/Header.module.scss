@@ -1,25 +1,26 @@
 .header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    backdrop-filter: blur(4px);
-    padding: 0 24px;
-    background-color: var(--header-background);
+    position: sticky;
+    left: 16px;
+    top: 16px;
+    width: calc(100% - 32px);
+    mix-blend-mode: difference;
+    backdrop-filter: blur(8px);
 }
 
 .container {
+    position: relative;
     display: flex;
-    height: 60px;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--black);
-    padding: 12px 0;
+    padding: 16px;
+    background-color: var(--white);
+    border-radius: 8px;
 }
 
 .logo {
     font-size: 20px;
     font-weight: 600;
+    line-height: normal;
 }
 
 .menu {
@@ -33,7 +34,7 @@
 
     &__link {
         display: flex;
-        width: 24px;
-        height: 24px;
+        width: 32px;
+        height: 32px;
     }
 }

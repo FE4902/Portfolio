@@ -6,7 +6,7 @@ const c = classNames.bind(styles);
 
 const Footer = () => {
     return (
-        <footer className={c("footer")}>
+        <footer className={c("footer", "active")}>
             <address className={c("copyright")}>
                 &copy; 2023 An-Ju-Hong. All Rights Reserved.
             </address>
