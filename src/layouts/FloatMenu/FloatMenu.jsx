@@ -7,33 +7,35 @@ const c = classNames.bind(styles);
 const FloatMenu = () => {
     return (
         <div className={c("floatMenu")}>
-            <ul className={c("list")}>
-                <li className={c("item", "active")}>
-                    <a className={c("link")} href="#Main">
-                        Main
-                    </a>
-                </li>
-                <li className={c("item")}>
-                    <a className={c("link")} href="#About">
-                        About
-                    </a>
-                </li>
-                <li className={c("item")}>
-                    <a className={c("link")} href="#Work">
-                        Work
-                    </a>
-                </li>
-                <li className={c("item")}>
-                    <a className={c("link")} href="#Blog">
-                        Blog
-                    </a>
-                </li>
-                <li className={c("item")}>
-                    <a className={c("link")} href="#Contact">
-                        Contact
-                    </a>
-                </li>
-            </ul>
+            <div className={c("container")}>
+                <ul className={c("menu__list")}>
+                    <li className={c("menu__item", "active")}>
+                        <a className={c("menu__link")} href="#main">
+                            Main
+                        </a>
+                    </li>
+                    <li className={c("menu__item")}>
+                        <a className={c("menu__link")} href="#about">
+                            About
+                        </a>
+                    </li>
+                    <li className={c("menu__item")}>
+                        <a className={c("menu__link")} href="#work">
+                            Work
+                        </a>
+                    </li>
+                    <li className={c("menu__item")}>
+                        <a className={c("menu__link")} href="#blog">
+                            Blog
+                        </a>
+                    </li>
+                    <li className={c("menu__item")}>
+                        <a className={c("menu__link")} href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     );
 };

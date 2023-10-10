@@ -25,7 +25,7 @@ const Blog = () => {
             <div className={c("container")}>
                 <h2 className={c("title")}>BLOG</h2>
                 <ul className={c("post__list")}>
-                    {posts.slice(0, 5).map((post, i) => (
+                    {posts.slice(0, 8).map((post, i) => (
                         <li key={i} className={c("post__item")}>
                             <a className={c("post__link")} href={post.postUrl}>
                                 <h4 className={c("post__title")}>

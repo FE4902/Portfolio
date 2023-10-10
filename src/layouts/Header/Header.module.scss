@@ -1,7 +1,8 @@
 .header {
-    position: sticky;
+    position: fixed;
     left: 16px;
     top: 16px;
+    z-index: var(--z-header);
     width: calc(100% - 32px);
 }
 
@@ -11,8 +12,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background-color: var(--black);
+    background-color: var(--c-header);
     border-radius: 8px;
+    border: 1px solid rgba(#fff, 0.15);
+    backdrop-filter: blur(8px);
 }
 
 .logo {
