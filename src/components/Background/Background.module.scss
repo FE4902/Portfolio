@@ -1,0 +1,16 @@
+.background {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    aspect-ratio: 1 / 1;
+    background-color: var(--black);
+}
