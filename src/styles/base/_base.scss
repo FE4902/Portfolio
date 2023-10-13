@@ -10,6 +10,10 @@ body {
     background-color: var(--white);
 }
 
+::selection {
+    background-color: var(--primary);
+}
+
 article {
     min-height: 100dvh;
 }
