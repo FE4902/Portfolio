@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <header className={c("header", "active")}>
             <div className={c("container")}>
-                <h1 className={c("logo")}>퍼블리셔 안주홍</h1>
+                <h1 className={c("logo")}>ANJUHONG</h1>
                 <ul className={c("menu__list")}>
                     <li className={c("menu__item")}>
                         <a
