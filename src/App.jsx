@@ -1,9 +1,10 @@
-import classNames from "classnames";
+import classNames from "classnames/bind";
 
 import Header from "@layouts/Header/Header";
-import FloatMenu from "@layouts/FloatMenu/FloatMenu";
+// import FloatMenu from "@layouts/FloatMenu/FloatMenu";
 
 import Main from "@articles/Main/Main";
+import About from "@articles/About/About";
 import Work from "@articles/Work/Work";
 import Blog from "@articles/Blog/Blog";
 import Contact from "@articles/Contact/Contact";
@@ -17,14 +18,16 @@ const App = () => {
     return (
         <div className={c("wrap")}>
             <Header />
+            <Background />
             <main>
-                <Background />
                 <Main />
                 <Work />
+                <About />
                 <Blog />
                 <Contact />
             </main>
-            <FloatMenu />
+
+            {/* <FloatMenu /> */}
         </div>
     );
 };
