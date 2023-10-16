@@ -1,0 +1,19 @@
+.about {
+    background-color: var(--black);
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.title {
+}
+
+.desc {
+    color: var(--white);
+    font-size: 2vw;
+    font-weight: 700;
+}
