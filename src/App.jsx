@@ -1,7 +1,6 @@
 import classNames from "classnames/bind";
 
 import Header from "@layouts/Header/Header";
-// import FloatMenu from "@layouts/FloatMenu/FloatMenu";
 
 import Main from "@articles/Main/Main";
 import About from "@articles/About/About";
@@ -21,13 +20,11 @@ const App = () => {
             <Background />
             <main>
                 <Main />
-                <Work />
                 <About />
+                <Work />
                 <Blog />
                 <Contact />
             </main>
-
-            {/* <FloatMenu /> */}
         </div>
     );
 };
