@@ -1,16 +1,54 @@
 .main {
-    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    padding: 72px 32px;
     color: var(--white);
-    text-align: center;
-    line-height: normal;
+    background-color: var(--black);
+}
 
-    h2 {
-        font-size: 12vw;
-        font-weight: 700;
+.container {
+    position: relative;
+}
+
+.title {
+    width: 100%;
+    display: grid;
+    font-size: 10vw;
+    font-weight: 700;
+    line-height: 1;
+    padding-bottom: 40px;
+
+    div {
+        display: flex;
+
+        &:last-child {
+            justify-content: flex-end;
+        }
+    }
+}
+
+.bracket {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: clamp(16px, 2vw, 32px);
+
+    svg {
+        width: 0.75em;
+        height: 4em;
     }
 
-    p {
-        font-size: 8vw;
-        font-weight: 600;
+    span {
+        white-space: nowrap;
     }
+}
+
+.button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: clamp(12px, 1.5vw, 24px);
+    padding: 0.5em 1em;
+    border: 1px solid var(--white);
 }
