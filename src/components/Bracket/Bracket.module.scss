@@ -1,0 +1,15 @@
+.bracket {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: clamp(16px, 2vw, 32px);
+
+    svg {
+        width: 0.75em;
+        height: 4em;
+    }
+
+    span {
+        white-space: nowrap;
+    }
+}

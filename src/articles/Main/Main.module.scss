@@ -14,7 +14,7 @@
 .title {
     width: 100%;
     display: grid;
-    font-size: 10vw;
+    font-size: clamp(48px, 10vw, 300px);
     font-weight: 700;
     line-height: 1;
     padding-bottom: 40px;
@@ -25,22 +25,6 @@
         &:last-child {
             justify-content: flex-end;
         }
-    }
-}
-
-.bracket {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    font-size: clamp(16px, 2vw, 32px);
-
-    svg {
-        width: 0.75em;
-        height: 4em;
-    }
-
-    span {
-        white-space: nowrap;
     }
 }
 
