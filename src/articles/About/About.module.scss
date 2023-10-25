@@ -1,19 +1,18 @@
 .about {
-    background-color: var(--black);
     display: grid;
     place-content: center;
-    text-align: center;
+    padding: 72px 32px;
+    background-color: var(--black);
 }
 
 .container {
-    display: flex;
-}
-
-.title {
 }
 
 .desc {
     color: var(--white);
-    font-size: 2vw;
-    font-weight: 700;
+    font-size: clamp(24px, 3vw, 48px);
+
+    span {
+        display: inline-flex;
+    }
 }
