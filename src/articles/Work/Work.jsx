@@ -1,14 +1,20 @@
 import classNames from "classnames/bind";
 
 import * as styles from "./Work.module.scss";
+// import Bracket from "../../components/Bracket/Bracket";
 
 const c = classNames.bind(styles);
 
 const Work = () => {
     return (
-        <article id="work" className={c("work")}>
+        <article className={c("work")}>
             <div className={c("container")}>
-                <h2 className={c("title")}>WORK</h2>
+                {/* <div className={c("title")}>
+                    <Bracket>WORK</Bracket>
+                    <p className={c("sub-title")}>
+                        현재까지 했던 일
+                    </p>
+                </div> */}
                 <ul className={c("work__list")}>
                     {WorkArray.map((v, i) => (
                         <li className={c("work__item")} key={i}>
