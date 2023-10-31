@@ -7,7 +7,6 @@ import About from "@articles/About/About";
 import Work from "@articles/Work/Work";
 import Blog from "@articles/Blog/Blog";
 import Contact from "@articles/Contact/Contact";
-import Background from "@components/Background/Background";
 
 import * as styles from "./App.module.scss";
 
@@ -17,8 +16,7 @@ const App = () => {
     return (
         <div className={c("wrap")}>
             <Header />
-            <Background />
-            <main>
+            <main className={c("main")}>
                 <Main />
                 <About />
                 <Work />

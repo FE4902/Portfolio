@@ -2,17 +2,35 @@
     display: grid;
     place-content: center;
     padding: 72px 32px;
+    color: var(--white);
     background-color: var(--black);
 }
 
 .container {
+    width: 100%;
 }
 
 .desc {
-    color: var(--white);
-    font-size: clamp(24px, 3vw, 48px);
+    margin-bottom: 32px;
+    font-size: clamp(20px, 2.5vw, 40px);
 
     span {
         display: inline-flex;
+    }
+}
+
+.list {
+    display: flex;
+}
+
+.button {
+    padding: 0.35em 0.7em;
+    font-size: clamp(16px, 2vw, 32px);
+    border: 1px solid var(--white);
+    transition: color 0.3s, background-color 0.3s;
+
+    &:hover {
+        color: var(--black);
+        background-color: var(--white);
     }
 }

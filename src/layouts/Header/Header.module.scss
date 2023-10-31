@@ -5,7 +5,7 @@
     z-index: var(--z-header);
     width: 100%;
     padding: 0 24px;
-    background-color: var(--black);
+    color: var(--white);
 }
 
 .container {
@@ -14,33 +14,17 @@
     justify-content: space-between;
     align-items: center;
     height: 72px;
-    border-bottom: 1px solid var(--white);
 }
 
 .logo {
-    color: var(--white);
-    font-size: 20px;
-    font-weight: 900;
     line-height: 1;
-}
+    font-family: var(--key-font);
+    font-size: 32px;
+    font-variation-settings: "HGHT" 700, "wdth" 400;
+    transition: font-variation-settings 0.3s;
 
-.menu {
-    &__list {
-        display: flex;
-        gap: 8px;
-    }
-
-    &__item {
-        opacity: 0.5;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
-
-    &__link {
-        display: flex;
-        width: 32px;
-        height: 32px;
+    &:hover {
+        color: var(--primary);
+        font-variation-settings: "HGHT" 700, "wdth" 700;
     }
 }

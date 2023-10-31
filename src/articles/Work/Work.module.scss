@@ -1,34 +1,52 @@
 .work {
+    z-index: 0;
     padding: 72px 32px;
 }
 
-// .title {
-//     position: fixed;
-//     left: 0;
-//     top: 20%;
-//     color: var(--white);
-//     opacity: 0.3;
-//     text-align: center;
-//     width: 100%;
-//     font-size: 8vw;
-//     font-weight: 700;
-// }
+.title {
+    position: fixed;
+    left: 0;
+    top: 20%;
+    color: var(--white);
+    opacity: 0.3;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.01em;
+    font-family: var(--key-font), sans-serif;
+    font-size: clamp(128px, 8vw, 256px);
+    font-variation-settings: "HGHT" 1000, "wdth" 400;
+    pointer-events: none;
+}
 
 .work {
     &__list {
         display: flex;
         flex-direction: column;
+        align-items: center;
         max-width: 1200px;
         width: 90%;
+        gap: 12px;
         margin: 0 auto;
     }
 
     &__item {
         position: relative;
-        width: 240px;
+        width: clamp(160px, 20vw, 320px);
 
-        &:nth-child(2n) {
-            align-self: flex-end;
+        &:nth-child(4n + 1) {
+            left: max(-13.375vw, -214px);
+        }
+
+        &:nth-child(4n + 2) {
+            left: min(23.125vw, 370px);
+        }
+
+        &:nth-child(4n + 3) {
+            left: max(-23.625vw, -378px);
+        }
+
+        &:nth-child(4n + 4) {
+            left: min(18vw, 288px);
         }
 
         &::before {
@@ -44,16 +62,6 @@
             left: 24px;
             top: 24px;
         }
-
-        // &::before {
-        //     left: 48px;
-        //     top: 24px;
-        // }
-
-        // &::after {
-        //     left: 24px;
-        //     top: -24px;
-        // }
     }
 
     &__link {
@@ -70,11 +78,13 @@
     }
 
     &__title {
+        padding: 0 8px 8px;
         font-size: clamp(16px, 2vw, 32px);
         font-weight: 700;
     }
 
-    &__desc {
-        font-size: clamp(12px, 1.5vw, 24px);
+    &__category {
+        padding: 0 8px 8px;
+        font-size: clamp(10px, 1.25vw, 20px);
     }
 }

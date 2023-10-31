@@ -1,3 +1,33 @@
 .contact {
+    display: grid;
+    align-items: center;
+    padding: 72px 32px;
+    color: var(--white);
     background-color: var(--black);
+}
+
+.container {
+    width: 100%;
+}
+
+.desc {
+    margin-bottom: 32px;
+    font-size: clamp(20px, 2.5vw, 40px);
+}
+
+.list {
+    display: flex;
+    gap: 12px;
+}
+
+.button {
+    padding: 0.35em 0.7em;
+    font-size: clamp(16px, 2vw, 32px);
+    border: 1px solid var(--white);
+    transition: color 0.3s, background-color 0.3s;
+
+    &:hover {
+        color: var(--black);
+        background-color: var(--white);
+    }
 }

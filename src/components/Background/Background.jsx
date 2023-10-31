@@ -1,4 +1,3 @@
-import { useState } from "react";
 import classNames from "classnames/bind";
 import { motion } from "framer-motion";
 
@@ -8,21 +7,19 @@ const c = classNames.bind(styles);
 
 const ani = {
     initial: {
-        opacity: 0,
+        opacity: 1,
     },
     active: (i) => ({
-        opacity: 1,
-        transition: { duration: 0, delay: 0.02 * i },
+        opacity: 0,
+        transition: { duration: 0, delay: 0.05 * i },
     }),
     inactive: (i) => ({
-        opacity: 0,
-        transition: { duration: 0, delay: 0.02 * i },
+        opacity: 1,
+        transition: { duration: 0, delay: 0.05 * i },
     }),
 };
 
-const Background = () => {
-    const [isActive, setIsActive] = useState(true);
-
+const Background = ({ isActive }) => {
     /**
      * Shuffles array in place (Fisher–Yates shuffle).
      * @param {Array} a items An array containing the items.
@@ -52,6 +49,7 @@ const Background = () => {
                     key={i}
                     className={c("block")}
                     variants={ani}
+                    initial={"initial"}
                     animate={isActive ? "active" : "inactive"}
                     custom={randomIndex}
                 ></motion.div>

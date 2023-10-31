@@ -1,15 +1,26 @@
 .bracket {
     display: flex;
     align-items: center;
-    gap: 24px;
-    font-size: clamp(16px, 2vw, 32px);
-
-    svg {
-        width: 0.75em;
-        height: 4em;
-    }
+    padding-bottom: 20px;
+    gap: 12px;
+    color: var(--white);
+    font-family: var(--key-font), sans-serif;
+    font-size: clamp(20px, 2.5vw, 40px);
+    font-variation-settings: "HGHT" 1000, "wdth" 400;
+    overflow: hidden;
+    letter-spacing: 0.02em;
 
     span {
         white-space: nowrap;
+        transition: font-variation-settings 0.3s;
+
+        &:hover {
+            font-variation-settings: "HGHT" 1000, "wdth" 700;
+        }
+    }
+
+    svg {
+        width: 0.4em;
+        height: 2em;
     }
 }

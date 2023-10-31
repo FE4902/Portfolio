@@ -1,6 +1,12 @@
 .blog {
+    display: flex;
+    align-items: center;
     padding: 72px 32px;
     background-color: var(--black);
+}
+
+.container {
+    width: 100%;
 }
 
 .post {

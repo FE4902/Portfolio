@@ -5,7 +5,12 @@ import * as styles from "./Bracket.module.scss";
 
 const c = classNames.bind(styles);
 
-const Bracket = ({ children, containerDelay, textDelay }) => {
+const Bracket = ({
+    children,
+    containerDelay = 0,
+    textDelay = 0.3,
+    className,
+}) => {
     const container = {
         inactive: {
             opacity: 0,
@@ -21,7 +26,7 @@ const Bracket = ({ children, containerDelay, textDelay }) => {
 
     const text = {
         inactive: {
-            width: 50,
+            width: 30,
             opacity: 0,
         },
         active: {
@@ -36,7 +41,7 @@ const Bracket = ({ children, containerDelay, textDelay }) => {
 
     return (
         <motion.div
-            className={c("bracket")}
+            className={c("bracket", className)}
             variants={container}
             initial="inactive"
             whileInView="active"
