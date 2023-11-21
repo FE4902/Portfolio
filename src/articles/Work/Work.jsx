@@ -19,7 +19,10 @@ const Work = () => {
                                 rel="noreferrer"
                             >
                                 <figure className={c("work__image")}>
-                                    <img src={`/work/${v.thumb}.png`} alt="" />
+                                    <img
+                                        src={`/image/work/${v.thumb}.png`}
+                                        alt=""
+                                    />
                                 </figure>
                                 <h4 className={c("work__title")}>{v.title}</h4>
                                 <div className={c("work__category")}>
