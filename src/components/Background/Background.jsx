@@ -19,7 +19,7 @@ const ani = {
     }),
 };
 
-const Background = ({ isActive }) => {
+const Background = () => {
     /**
      * Shuffles array in place (Fisher–Yates shuffle).
      * @param {Array} a items An array containing the items.
@@ -50,7 +50,7 @@ const Background = ({ isActive }) => {
                     className={c("block")}
                     variants={ani}
                     initial={"initial"}
-                    animate={isActive ? "active" : "inactive"}
+                    whileInView={"active"}
                     custom={randomIndex}
                 ></motion.div>
             );
@@ -63,6 +63,7 @@ const Background = ({ isActive }) => {
                 return (
                     <div className={c("column")} key={i}>
                         {getBlocks()}
+                        <span className={c("percent")}>100%</span>
                     </div>
                 );
             })}

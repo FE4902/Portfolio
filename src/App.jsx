@@ -1,6 +1,7 @@
 import classNames from "classnames/bind";
 
 import Header from "@layouts/Header/Header";
+import Background from "./components/Background/Background";
 
 import Main from "@articles/Main/Main";
 import About from "@articles/About/About";
@@ -23,6 +24,7 @@ const App = () => {
                 <Blog />
                 <Contact />
             </main>
+            <Background />
         </div>
     );
 };

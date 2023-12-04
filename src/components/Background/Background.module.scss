@@ -17,5 +17,13 @@
 
 .block {
     aspect-ratio: 1 / 1;
-    background-color: var(--white);
+    background-color: var(--primary);
+}
+
+.percent {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    color: black;
+    font-size: 60px;
 }
