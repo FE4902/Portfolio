@@ -14,7 +14,7 @@ const Work = () => {
                         <li className={c("work__item")} key={i}>
                             <a
                                 className={c("work__link")}
-                                href={v.href}
+                                href={`https://www.notion.so/fe4902/${v.href}`}
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -44,42 +44,42 @@ const WorkArray = [
         thumb: "Punkland",
         title: "펑크랜드 랜딩페이지",
         category: "슈퍼캣",
-        href: "https://www.notion.so/fe4902/4a029907e4ce4bb7a8738229f6d3fc85?pvs=4",
+        href: "4a029907e4ce4bb7a8738229f6d3fc85?pvs=4",
     },
     {
         thumb: "Punkland",
         title: "펑크랜드",
         category: "슈퍼캣",
-        href: "https://www.notion.so/fe4902/4a029907e4ce4bb7a8738229f6d3fc85?pvs=4",
+        href: "48d248a320394726b91a7416e8dad899",
     },
     {
         thumb: "Community",
         title: "커뮤니티",
         category: "게임덱스",
-        href: "https://www.notion.so/fe4902/12e0770d3e404cee8a251845b00de1aa?pvs=4",
+        href: "8b60e3d82306491ab89abcc7bb57a08a",
     },
     {
         thumb: "Company",
         title: "기업 공식홈페이지",
         category: "게임덱스",
-        href: "https://www.notion.so/fe4902/155339625bd9463f9772f9b7f57929aa?pvs=4",
+        href: "4ccede1d41e4405d8d66492a6e4fe3c9",
     },
     {
         thumb: "Game",
         title: "게임 공식홈페이지",
         category: "게임덱스",
-        href: "https://www.notion.so/fe4902/a1cea3f35ff540bc9e76f1d515dbe1d9?pvs=4",
+        href: "bc19c4c888544b4dba03f26e9fa08bd2",
     },
     {
         thumb: "Event",
         title: "이벤트 페이지",
         category: "게임덱스",
-        href: "https://www.notion.so/fe4902/a46b2848143b44bda68a3e97c9b4bc76?pvs=4",
+        href: "adcbbf17fd844ed783f9c6036e4dcfb1",
     },
     {
         thumb: "GameDex",
         title: "인트라넷",
         category: "게임덱스",
-        href: "https://www.notion.so/fe4902/996e72a68fe24752a402b493991bad0f?pvs=4",
+        href: "627dae3bf1044e0cae589527684886b3",
     },
 ];
