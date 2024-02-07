@@ -1,35 +1,28 @@
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import classNames from "classnames/bind";
+
+import WorkCard from "@components/WorkCard/WorkCard";
 
 import * as styles from "./Work.module.scss";
 
 const c = classNames.bind(styles);
 
 const Work = () => {
+    const ref = useRef(null);
+    const { scrollYProgress } = useScroll({target: ref});
+
+    const y = useTransform(scrollYProgress, [0, 1], [0, 40]);
+
     return (
         <article className={c("work")}>
             <div className={c("container")}>
                 <div className={c("title")}>WORKS</div>
                 <ul className={c("work__list")}>
                     {WorkArray.map((v, i) => (
-                        <li className={c("work__item")} key={i}>
-                            <a
-                                className={c("work__link")}
-                                href={`https://www.notion.so/fe4902/${v.href}`}
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <figure className={c("work__image")}>
-                                    <img
-                                        src={`/image/work/${v.thumb}.png`}
-                                        alt=""
-                                    />
-                                </figure>
-                                <h4 className={c("work__title")}>{v.title}</h4>
-                                <div className={c("work__category")}>
-                                    {v.category}
-                                </div>
-                            </a>
-                        </li>
+                        <motion.li className={c("work__item")} ref={ref} style={{y}} key={i}>
+                            <WorkCard {...v} />
+                        </motion.li>
                     ))}
                 </ul>
             </div>
