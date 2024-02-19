@@ -1,20 +1,55 @@
+@use '@styles/helpers' as *;
+
 .work {
     z-index: 0;
-    padding: 72px 32px;
+    position: relative;
+    padding: rem-convert(144) rem-convert(32);
+
+    &::after,
+    &::before {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: rem-convert(96);
+        content: "";
+    }
+
+    &::before{
+        top: 0;
+        background: linear-gradient(
+            0,
+            rgba(#0a0a0a, 0),
+            rgba(#0a0a0a, 0.4) 40%,
+            rgba(#0a0a0a, 0.9) 80%,
+            var(--color-black)
+        );
+    }
+
+    &::after{
+        bottom: 0;
+        background: linear-gradient(
+            180deg,
+            rgba(#0a0a0a, 0),
+            rgba(#0a0a0a, 0.4) 40%,
+            rgba(#0a0a0a, 0.9) 80%,
+            var(--color-black)
+        );
+    }
 }
 
 .title {
     position: fixed;
     left: 0;
     top: 20%;
-    color: var(--white);
     opacity: 0.3;
     text-align: center;
     width: 100%;
-    letter-spacing: 0.01em;
     font-family: var(--key-font), sans-serif;
-    font-size: clamp(128px, 8vw, 256px);
+    font-size: rem-convert(240);
     font-variation-settings: "HGHT" 1000, "wdth" 400;
+    letter-spacing: 0.01em;
     pointer-events: none;
 }
 
@@ -25,42 +60,13 @@
         align-items: center;
         max-width: 1200px;
         width: 90%;
-        gap: 12px;
+        gap: rem-convert(12);
         margin: 0 auto;
-    }
 
-    &__item {
-        position: relative;
-        width: clamp(160px, 20vw, 320px);
-
-        &:nth-child(4n + 1) {
-            left: max(-13.375vw, -214px);
-        }
-
-        &:nth-child(4n + 2) {
-            left: min(23.125vw, 370px);
-        }
-
-        &:nth-child(4n + 3) {
-            left: max(-23.625vw, -378px);
-        }
-
-        &:nth-child(4n + 4) {
-            left: min(18vw, 288px);
-        }
-
-        &::before {
-            position: absolute;
-            display: block;
-            width: 100%;
-            height: 100%;
-            background-color: var(--gray);
-            content: "";
-        }
-
-        &::before {
-            left: 24px;
-            top: 24px;
+        @include mq_mobile{
+            width: 75%;
+            gap: rem-convert(48);
+            align-items: flex-start;
         }
     }
 }

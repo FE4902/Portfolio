@@ -1,8 +1,8 @@
 import classNames from "classnames/bind";
 import { motion } from "framer-motion";
 
-import Bracket from "../../components/Bracket/Bracket";
-import Magnetic from "../../components/Magnetic/Magnetic";
+import Bracket from "@components/Bracket/Bracket";
+import Button from "@components/Button/Button";
 
 import * as styles from "./Contact.module.scss";
 
@@ -21,42 +21,23 @@ const Contact = () => {
                     neque reprehenderit accusamus dignissimos, ex officia
                     repudiandae alias culpa, autem,
                 </div>
-                <motion.div
-                    className={c("list")}
-                    initial="inactive"
-                    whileInView="active"
-                >
-                    <Magnetic>
-                        <a
-                            className={c("button")}
-                            href="https://open.kakao.com/o/sJvCYbcf"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
+                <div className={c("list")}>
+                    {/* <motion.div
+                        className={c("list")}
+                        initial="inactive"
+                        whileInView="active"
+                    > */}
+                        <Button href='https://open.kakao.com/o/sJvCYbcf'>
                             KAKAOTALK
-                        </a>
-                    </Magnetic>
-                    <Magnetic>
-                        <a
-                            className={c("button")}
-                            href="https://github.com/FE4902"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
+                        </Button>
+                        <Button href='https://github.com/FE4902'>
                             GITHUB
-                        </a>
-                    </Magnetic>
-                    <Magnetic>
-                        <a
-                            className={c("button")}
-                            href="https://fe4902.tistory.com/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            TISTORY
-                        </a>
-                    </Magnetic>
-                </motion.div>
+                        </Button>
+                        <Button href='https://fe4902.tistory.com/'>
+                            BLOG
+                        </Button>
+                    {/* </motion.div> */}
+                </div>
             </div>
         </motion.article>
     );

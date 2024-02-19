@@ -1,11 +1,13 @@
+@use '@styles/helpers' as *;
+
 .header {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: var(--z-header);
+    z-index: var(--zIndex-header);
     width: 100%;
-    padding: 0 24px;
-    color: var(--white);
+    padding: 0 rem-convert(24);
+    pointer-events: none;
 }
 
 .container {
@@ -13,18 +15,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 72px;
+    height: rem-convert(72);
 }
 
 .logo {
     line-height: 1;
     font-family: var(--key-font);
-    font-size: 32px;
+    font-size: rem-convert(32);
     font-variation-settings: "HGHT" 700, "wdth" 400;
     transition: font-variation-settings 0.3s;
+    pointer-events: auto;
+    mix-blend-mode: difference;
 
     &:hover {
-        color: var(--primary);
+        color: var(--color-primary);
         font-variation-settings: "HGHT" 700, "wdth" 700;
     }
 }

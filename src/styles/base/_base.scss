@@ -1,25 +1,26 @@
-html {
-    scroll-behavior: smooth;
-}
+@use "@styles/helpers" as *;
 
-body {
+html {
+    color: var(--color-white);
+    background-color: var(--color-black);
+    font-size: 16px;
     font-family: var(--base-font), sans-serif;
-    background-color: var(--black);
+    scroll-behavior: smooth;
+
+    @include mq_desktop {
+        font-size: clamp(10px, 1.25vw, 16px);
+    }
 }
 
 ::selection {
-    color: var(--white);
-    background-color: var(--primary);
+    color: var(--color-white);
+    background-color: var(--color-primary);
 }
 
 article {
     position: relative;
     z-index: 1;
     min-height: 100dvh;
-}
-
-.hidden {
-    display: none;
 }
 
 @font-face {

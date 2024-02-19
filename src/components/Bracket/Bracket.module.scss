@@ -1,16 +1,17 @@
+@use '@styles/helpers' as *;
+
 .bracket {
     display: flex;
     align-items: center;
-    padding-bottom: 20px;
-    gap: 12px;
-    color: var(--white);
+    padding-bottom: rem-convert(20);
+    gap: rem-convert(12);
     font-family: var(--key-font), sans-serif;
-    font-size: clamp(20px, 2.5vw, 40px);
+    font-size: rem-convert(40);
     font-variation-settings: "HGHT" 1000, "wdth" 400;
+    letter-spacing: 0.01em;
     overflow: hidden;
-    letter-spacing: 0.02em;
 
-    span {
+    h2 {
         white-space: nowrap;
         transition: font-variation-settings 0.3s;
 

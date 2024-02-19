@@ -1,8 +1,8 @@
-.background {
+.intro {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: var(--z-background);
+    z-index: var(--zIndex-background);
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     width: 100%;
@@ -17,13 +17,13 @@
 
 .block {
     aspect-ratio: 1 / 1;
-    background-color: var(--primary);
+    background-color: var(--color-primary);
 }
 
-.percent {
-    position: absolute;
-    left: 50%;
-    bottom: 100px;
-    color: black;
-    font-size: 60px;
-}
+// .percent {
+//     position: absolute;
+//     left: 50%;
+//     bottom: 100px;
+//     color: black;
+//     font-size: 60px;
+// }

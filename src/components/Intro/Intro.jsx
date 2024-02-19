@@ -1,25 +1,25 @@
 import classNames from "classnames/bind";
 import { motion } from "framer-motion";
 
-import * as styles from "./Background.module.scss";
+import * as styles from "./Intro.module.scss";
 
 const c = classNames.bind(styles);
 
-const ani = {
-    initial: {
-        opacity: 1,
-    },
-    active: (i) => ({
-        opacity: 0,
-        transition: { duration: 0, delay: 0.05 * i },
-    }),
-    inactive: (i) => ({
-        opacity: 1,
-        transition: { duration: 0, delay: 0.05 * i },
-    }),
-};
+const Intro = () => {
+    const ani = {
+        initial: {
+            opacity: 1,
+        },
+        active: (i) => ({
+            opacity: 0,
+            transition: { duration: 0, delay: 0.05 * i },
+        }),
+        inactive: (i) => ({
+            opacity: 1,
+            transition: { duration: 0, delay: 0.05 * i },
+        }),
+    };
 
-const Background = () => {
     /**
      * Shuffles array in place (Fisher–Yates shuffle).
      * @param {Array} a items An array containing the items.
@@ -49,8 +49,8 @@ const Background = () => {
                     key={i}
                     className={c("block")}
                     variants={ani}
-                    initial={"initial"}
-                    whileInView={"active"}
+                    initial="initial"
+                    whileInView="active"
                     custom={randomIndex}
                 ></motion.div>
             );
@@ -58,12 +58,12 @@ const Background = () => {
     };
 
     return (
-        <div className={c("background")}>
+        <div className={c("intro")}>
             {[...Array(20)].map((_, i) => {
                 return (
                     <div className={c("column")} key={i}>
                         {getBlocks()}
-                        <span className={c("percent")}>100%</span>
+                        {/* <span className={c("percent")}>100%</span> */}
                     </div>
                 );
             })}
@@ -71,4 +71,4 @@ const Background = () => {
     );
 };
 
-export default Background;
+export default Intro;

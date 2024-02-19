@@ -1,30 +1,23 @@
-import classNames from "classnames/bind";
-
 import Header from "@layouts/Header/Header";
-import Background from "./components/Background/Background";
-
 import Main from "@articles/Main/Main";
 import About from "@articles/About/About";
 import Work from "@articles/Work/Work";
 import Blog from "@articles/Blog/Blog";
 import Contact from "@articles/Contact/Contact";
-
-import * as styles from "./App.module.scss";
-
-const c = classNames.bind(styles);
+// import Intro from "@components/Intro/Intro";
 
 const App = () => {
     return (
-        <div className={c("wrap")}>
+        <div>
             <Header />
-            <main className={c("main")}>
+            <main>
                 <Main />
                 <About />
                 <Work />
                 <Blog />
                 <Contact />
             </main>
-            <Background />
+            {/* <Intro /> */}
         </div>
     );
 };

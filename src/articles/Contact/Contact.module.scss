@@ -1,9 +1,10 @@
+@use '@styles/helpers' as *;
+
 .contact {
     display: grid;
     align-items: center;
-    padding: 72px 32px;
-    color: var(--white);
-    background-color: var(--black);
+    padding: rem-convert(72) rem-convert(32);
+    background-color: var(--color-black);
 }
 
 .container {
@@ -11,23 +12,11 @@
 }
 
 .desc {
-    margin-bottom: 32px;
-    font-size: clamp(20px, 2.5vw, 40px);
+    margin-bottom: rem-convert(32);
+    font-size: rem-convert(40);
 }
 
 .list {
     display: flex;
-    gap: 12px;
-}
-
-.button {
-    padding: 0.35em 0.7em;
-    font-size: clamp(16px, 2vw, 32px);
-    border: 1px solid var(--white);
-    transition: color 0.3s, background-color 0.3s;
-
-    &:hover {
-        color: var(--black);
-        background-color: var(--white);
-    }
+    gap: rem-convert(12);
 }

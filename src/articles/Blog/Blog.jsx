@@ -2,14 +2,29 @@ import { useEffect, useState } from "react";
 import classNames from "classnames/bind";
 import { motion } from "framer-motion";
 
+import Bracket from "@components/Bracket/Bracket";
+
 import * as styles from "./Blog.module.scss";
-import Bracket from "../../components/Bracket/Bracket";
 
 const c = classNames.bind(styles);
 
 const Blog = () => {
     const { VITE_API_KEY } = import.meta.env;
     const [posts, setPosts] = useState([]);
+
+    const item = {
+        inactive: {
+            opacity: 0,
+            y: 30,
+        },
+        active: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.3,
+            },
+        },
+    };
 
     async function fetchPost() {
         const response = await fetch(VITE_API_KEY);
@@ -31,14 +46,9 @@ const Blog = () => {
                         <motion.li
                             key={i}
                             className={c("post__item")}
-                            initial={{
-                                opacity: 0,
-                                y: 30,
-                            }}
-                            whileInView={{
-                                opacity: 1,
-                                y: 0,
-                            }}
+                            variants={item}
+                            initial="inactive"
+                            whileInView="active"
                         >
                             <a className={c("post__link")} href={post.postUrl}>
                                 <h4 className={c("post__title")}>

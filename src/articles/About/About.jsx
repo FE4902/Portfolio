@@ -1,8 +1,8 @@
 import classNames from "classnames/bind";
 import { motion } from "framer-motion";
 
-import Bracket from "../../components/Bracket/Bracket";
-import Magnetic from "../../components/Magnetic/Magnetic";
+import Bracket from "@components/Bracket/Bracket";
+import Button from "@components/Button/Button";
 
 import * as styles from "./About.module.scss";
 
@@ -86,16 +86,9 @@ const About = () => {
                     })}
                 </motion.div>
                 <div className={c("list")}>
-                    <Magnetic>
-                        <a
-                            className={c("button")}
-                            href="https://open.kakao.com/o/sJvCYbcf"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            더 보기
-                        </a>
-                    </Magnetic>
+                    <Button href='https://open.kakao.com/o/sJvCYbcf'>
+                        더 보기
+                    </Button>
                 </div>
             </div>
         </article>

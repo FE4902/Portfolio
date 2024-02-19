@@ -1,9 +1,7 @@
-import { useState } from "react";
 import classNames from "classnames/bind";
 import { motion } from "framer-motion";
 
-import Background from "../../components/Background/Background";
-import Bracket from "../../components/Bracket/Bracket";
+import Bracket from "@components/Bracket/Bracket";
 
 import * as styles from "./Main.module.scss";
 

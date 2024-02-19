@@ -1,6 +1,6 @@
 import classNames from "classnames/bind";
 
-import Magnetic from "../../components/Magnetic/Magnetic";
+import Magnetic from "@components/Magnetic/Magnetic";
 
 import * as styles from "./Header.module.scss";
 
@@ -11,7 +11,7 @@ const Header = () => {
         <header className={c("header")}>
             <div className={c("container")}>
                 <Magnetic>
-                    <h1 className={c("logo")}>ANJUHONG</h1>
+                    <h1 className={c("logo")}><a href="#">ANJUHONG</a></h1>
                 </Magnetic>
             </div>
         </header>

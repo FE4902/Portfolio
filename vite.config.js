@@ -5,9 +5,11 @@ export default defineConfig({
     plugins: [react()],
     resolve: {
         alias: [
-            { find: "@components", replacement: "./components" },
-            { find: "@layouts", replacement: "./layouts" },
-            { find: "@articles", replacement: "./articles" },
+            { find: "@components", replacement: "/src/components" },
+            { find: "@layouts", replacement: "/src/layouts" },
+            { find: "@articles", replacement: "/src/articles" },
+            { find: "@styles", replacement: "/src/styles" },
+            { find: "@db", replacement: "/src/db" },
         ],
-    },
+    }
 });

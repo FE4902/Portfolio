@@ -58,7 +58,7 @@ const Bracket = ({
                     fill="#fff"
                 />
             </svg>
-            <motion.span variants={text}>{children}</motion.span>
+            <motion.h2 variants={text}>{children}</motion.h2>
             <svg
                 width="16"
                 height="80"
