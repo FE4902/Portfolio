@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-const Magnetic = ({ children }) => {
+const Magnetic = ({ className, children }) => {
     const ref = useRef(null);
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -22,6 +22,7 @@ const Magnetic = ({ children }) => {
 
     return (
         <motion.div
+            className={className}
             style={{ position: "relative" }}
             ref={ref}
             onMouseMove={mouseMove}

@@ -11,38 +11,39 @@ const Bracket = ({
     textDelay = 0.3,
     className,
 }) => {
-    const container = {
-        inactive: {
-            opacity: 0,
-        },
-        active: {
-            opacity: 1,
-            transition: {
-                delay: containerDelay,
-                duration: 0.3,
+    const animation = {
+        container: {
+            inactive: {
+                opacity: 0,
+            },
+            active: {
+                opacity: 1,
+                transition: {
+                    delay: containerDelay,
+                    duration: 0.3,
+                },
             },
         },
-    };
-
-    const text = {
-        inactive: {
-            width: 30,
-            opacity: 0,
-        },
-        active: {
-            width: "auto",
-            opacity: 1,
-            transition: {
-                delay: textDelay,
-                duration: 0.3,
+        fadeIn: {
+            inactive: {
+                width: 30,
+                opacity: 0,
             },
-        },
-    };
+            active: {
+                width: "auto",
+                opacity: 1,
+                transition: {
+                    delay: textDelay,
+                    duration: 0.3,
+                },
+            },
+        }
+    }
 
     return (
         <motion.div
             className={c("bracket", className)}
-            variants={container}
+            variants={animation.container}
             initial="inactive"
             whileInView="active"
         >
@@ -58,7 +59,7 @@ const Bracket = ({
                     fill="#fff"
                 />
             </svg>
-            <motion.h2 variants={text}>{children}</motion.h2>
+            <motion.h2 variants={animation.fadeIn}>{children}</motion.h2>
             <svg
                 width="16"
                 height="80"

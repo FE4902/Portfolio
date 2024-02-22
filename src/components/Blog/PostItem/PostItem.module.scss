@@ -1,0 +1,47 @@
+@use "@styles/helpers" as *;
+
+.postItem {
+    padding: rem-convert(16);
+    border-top: 1px solid var(--color-white);
+    transition: color 0.3s, background-color 0.3s;
+
+    &:last-child {
+        border-bottom: 1px solid var(--color-white);
+    }
+
+    &:hover {
+        color: var(--color-black);
+        background-color: var(--color-white);
+    }
+}
+
+.link {
+    display: grid;
+    grid-template-areas:
+        "title icon"
+        "date icon";
+    grid-template-columns: 1fr rem-convert(48);
+    align-items: center;
+}
+
+.title {
+    grid-area: title;
+    padding-bottom: rem-convert(4);
+    font-size: rem-convert(24);
+    font-weight: var(--weight-semibold);
+    @include ellipsis;
+}
+
+.date {
+    grid-area: date;
+    font-size: rem-convert(20);
+}
+
+.icon {
+    grid-area: icon;
+    width: rem-convert(48);
+    height: rem-convert(48);
+    transform: rotate(45deg);
+    fill: var(--color-white);
+    mix-blend-mode: difference;
+}

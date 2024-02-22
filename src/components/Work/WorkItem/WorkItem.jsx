@@ -6,14 +6,14 @@ import * as styles from "./WorkItem.module.scss";
 const c = classNames.bind(styles);
 
 const WorkItem = ({ thumb, title, category, href }) => {
-    const item = {
+    const fadeInUp = {
         inactive: {
-            y: 30,
             opacity: 0,
+            y: 30,
         },
         active: {
-            y: 0,
             opacity: 1,
+            y: 0,
             transition: {
                 duration: 0.3,
             },
@@ -21,26 +21,26 @@ const WorkItem = ({ thumb, title, category, href }) => {
     };
 
     return (
-        <motion.li className={c("work__item")} variants={item} initial="inactive" whileInView="active">
+        <motion.li
+            className={c("workItem")}
+            variants={fadeInUp}
+            initial="inactive"
+            whileInView="active"
+        >
             <a
-                className={c("work__link")}
+                className={c("link")}
                 href={`https://www.notion.so/fe4902/${href}`}
                 target="_blank"
                 rel="noreferrer"
             >
-                <figure className={c("work__image")}>
-                    <img
-                        src={`/image/work/${thumb}.png`}
-                        alt=""
-                    />
+                <figure className={c("image")}>
+                    <img src={`/image/work/${thumb}.png`} alt="work thumbnail" loading="lazy"/>
                 </figure>
-                <h4 className={c("work__title")}>{title}</h4>
-                <div className={c("work__category")}>
-                    {category}
-                </div>
+                <div className={c("title")}>{title}</div>
+                <p className={c("category")}>{category}</p>
             </a>
         </motion.li>
     );
-}
+};
 
 export default WorkItem;

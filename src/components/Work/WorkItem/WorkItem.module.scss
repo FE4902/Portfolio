@@ -1,70 +1,68 @@
-@use '@styles/helpers' as *;
+@use "@styles/helpers" as *;
 
-.work{
-    &__item {
-        position: relative;
-        width: rem-convert(264);
-        // width: clamp(160px, 20vw, 320px);
+.workItem {
+    position: relative;
+    width: rem-convert(264);
 
-        $left: -208, 340, -380, 280;
-        @each $value in $left {
-            $index: index($left, $value);
-            &:nth-child(4n + #{$index}) {
-                left: rem-convert($value);
+    $left: -208, 340, -380, 280;
+    @each $value in $left {
+        $index: index($left, $value);
+        &:nth-child(4n + #{$index}) {
+            left: rem-convert($value);
 
-                @include mq_mobile{
-                    width: 70%;
-                    left: 0;
-                }
+            @include mq_mobile {
+                width: 70%;
+                left: 0;
             }
-        }
-
-        &:nth-of-type(odd) {
-            @include mq_mobile{
-                margin-left: auto;
-            }
-        }
-        
-        &::before {
-            position: absolute;
-            left: rem-convert(24);
-            top: rem-convert(24);
-            display: block;
-            width: 100%;
-            height: 100%;
-            background-color: var(--color-gray);
-            opacity: 0.5;
-            transition: 0.3s;
-            content: "";
-        }
-
-        &:hover::before{
-            opacity: 1;
         }
     }
-    
-    &__link {
-        position: relative;
+
+    &:nth-of-type(odd) {
+        @include mq_mobile {
+            margin-left: auto;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        left: rem-convert(24);
+        top: rem-convert(24);
         display: block;
-        padding: rem-convert(8);
-        color: var(--color-black);
-        background-color: var(--color-white);
-        line-height: normal;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-gray);
+        opacity: 0.5;
+        transition: 0.3s;
+        content: "";
     }
 
-    &__image {
-        padding: rem-convert(8);
-        aspect-ratio: 1 / 1;
+    &:hover::before {
+        opacity: 1;
     }
+}
 
-    &__title {
-        padding: 0 rem-convert(8) rem-convert(8);
-        font-size: rem-convert(32);
-        font-weight: var(--weight-bold);
-    }
+.link {
+    position: relative;
+    display: block;
+    padding: rem-convert(8);
+    color: var(--color-black);
+    background-color: var(--color-white);
+    line-height: normal;
+}
 
-    &__category {
-        padding: 0 rem-convert(8) rem-convert(8);
-        font-size: rem-convert(20);
-    }
+.image {
+    padding: rem-convert(8);
+    aspect-ratio: 1 / 1;
+}
+
+.title {
+    padding: 0 rem-convert(8) rem-convert(8);
+    font-size: rem-convert(24);
+    font-weight: var(--weight-bold);
+}
+
+.category {
+    padding: 0 rem-convert(8) rem-convert(8);
+    color: var(--color-gray);
+    font-size: rem-convert(20);
 }

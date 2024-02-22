@@ -1,4 +1,4 @@
-@use '@styles/helpers' as *;
+@use "@styles/helpers" as *;
 
 .work {
     z-index: 0;
@@ -16,7 +16,7 @@
         content: "";
     }
 
-    &::before{
+    &::before {
         top: 0;
         background: linear-gradient(
             0,
@@ -27,7 +27,7 @@
         );
     }
 
-    &::after{
+    &::after {
         bottom: 0;
         background: linear-gradient(
             180deg,
@@ -47,26 +47,50 @@
     text-align: center;
     width: 100%;
     font-family: var(--key-font), sans-serif;
-    font-size: rem-convert(240);
-    font-variation-settings: "HGHT" 1000, "wdth" 400;
-    letter-spacing: 0.01em;
+    font-size: rem-convert(144);
     pointer-events: none;
 }
 
-.work {
-    &__list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 1200px;
-        width: 90%;
-        gap: rem-convert(12);
-        margin: 0 auto;
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    gap: rem-convert(12);
+    margin: 0 auto;
 
-        @include mq_mobile{
-            width: 75%;
-            gap: rem-convert(48);
-            align-items: flex-start;
-        }
+    @include mq_mobile {
+        width: 75%;
+        gap: rem-convert(48);
+        align-items: flex-start;
+    }
+}
+
+.marquee {
+    position: fixed;
+    left: 50%;
+    top: calc(20% - rem-convert(36));
+    max-width: 2560px;
+    width: 100%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    opacity: 0.1;
+    font-family: var(--key-font), sans-serif;
+    font-size: rem-convert(108);
+    pointer-events: none;
+
+    &__track {
+        display: flex;
+    }
+
+    &__item {
+        animation: marquee 3s linear infinite;
+    }
+}
+
+@keyframes marquee {
+    100% {
+        transform: translateX(-100%);
     }
 }

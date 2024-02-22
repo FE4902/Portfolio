@@ -1,34 +1,35 @@
-@use '@styles/helpers' as *;
+@use "@styles/helpers" as *;
 
-.header {
+.button {
+    z-index: 100;
     position: fixed;
-    left: 0;
-    top: 0;
-    z-index: var(--zIndex-header);
-    width: 100%;
-    padding: 0 rem-convert(24);
-    pointer-events: none;
-}
-
-.container {
-    position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: rem-convert(72);
-}
-
-.logo {
     line-height: 1;
     font-family: var(--key-font);
     font-size: rem-convert(32);
-    font-variation-settings: "HGHT" 700, "wdth" 400;
-    transition: font-variation-settings 0.3s;
-    pointer-events: auto;
     mix-blend-mode: difference;
 
     &:hover {
         color: var(--color-primary);
-        font-variation-settings: "HGHT" 700, "wdth" 700;
     }
+}
+
+.logo {
+    @extend .button;
+    left: rem-convert(24);
+    top: rem-convert(24);
+}
+
+.github {
+    @extend .button;
+    right: rem-convert(24);
+    top: rem-convert(24);
+    writing-mode: vertical-lr;
+}
+
+.resume {
+    @extend .button;
+    right: rem-convert(24);
+    bottom: rem-convert(24);
+    writing-mode: vertical-lr;
 }

@@ -1,0 +1,49 @@
+@use "@styles/helpers" as *;
+
+.introduce {
+    display: grid;
+    align-items: center;
+    padding: rem-convert(72) rem-convert(32);
+    background-color: var(--color-black);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.role {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: rem-convert(8) 0;
+    line-height: 1;
+    font-family: var(--key-font), sans-serif;
+    font-size: min-convert(8);
+    font-weight: var(--weight-bold);
+    color: var(--color-black);
+    text-shadow: -1px 0px var(--color-white), 0px 1px var(--color-white),
+        1px 0px var(--color-white), 0px -1px var(--color-white);
+
+    span {
+        &:nth-child(2) {
+            text-align: right;
+        }
+    }
+}
+
+.text {
+    font-size: rem-convert(24);
+
+    &:nth-child(3) {
+        text-align: right;
+    }
+}
+
+.name {
+    text-align: center;
+    font-size: min-convert(4);
+    font-weight: var(--weight-bold);
+}

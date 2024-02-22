@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import classNames from "classnames/bind";
 import { motion } from "framer-motion";
 
@@ -5,17 +6,17 @@ import * as styles from "./Intro.module.scss";
 
 const c = classNames.bind(styles);
 
-const Intro = () => {
-    const ani = {
+const Intro = ({ setIntroCompleted }) => {
+    const fadeOut = {
         initial: {
             opacity: 1,
         },
-        active: (i) => ({
-            opacity: 0,
-            transition: { duration: 0, delay: 0.05 * i },
-        }),
         inactive: (i) => ({
             opacity: 1,
+            transition: { duration: 0, delay: 0.05 * i },
+        }),
+        active: (i) => ({
+            opacity: 0,
             transition: { duration: 0, delay: 0.05 * i },
         }),
     };
@@ -43,27 +44,34 @@ const Intro = () => {
         const amount = Math.ceil(innerHeight / size);
         const shuffledIndex = shuffle([...Array(amount)].map((_, i) => i));
 
-        return shuffledIndex.map((randomIndex, i) => {
+        return shuffledIndex.map((randomIndex, index) => {
             return (
                 <motion.div
-                    key={i}
+                    key={index}
                     className={c("block")}
-                    variants={ani}
-                    initial="initial"
-                    whileInView="active"
+                    variants={fadeOut}
+                    initial="inactive"
+                    animate="active"
                     custom={randomIndex}
                 ></motion.div>
             );
         });
     };
 
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIntroCompleted(true);
+        }, 1100);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <div className={c("intro")}>
-            {[...Array(20)].map((_, i) => {
+            {[...Array(20)].map((_, index) => {
                 return (
-                    <div className={c("column")} key={i}>
+                    <div className={c("column")} key={index}>
                         {getBlocks()}
-                        {/* <span className={c("percent")}>100%</span> */}
                     </div>
                 );
             })}

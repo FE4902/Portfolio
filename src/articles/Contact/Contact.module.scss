@@ -1,4 +1,4 @@
-@use '@styles/helpers' as *;
+@use "@styles/helpers" as *;
 
 .contact {
     display: grid;
@@ -8,15 +8,23 @@
 }
 
 .container {
+    max-width: 1920px;
     width: 100%;
+    margin: 0 auto;
+}
+
+.inner {
+    position: relative;
+    background-color: var(--color-black);
+    mix-blend-mode: difference;
 }
 
 .desc {
     margin-bottom: rem-convert(32);
-    font-size: rem-convert(40);
+    font-size: rem-convert(36);
 }
 
-.list {
+.button {
     display: flex;
     gap: rem-convert(12);
 }

@@ -4,25 +4,25 @@ $tablet: 1024;
 $mobile: 640;
 
 @mixin mq_desktop {
-  @media (max-width: #{$desktop}px) {
-    @content;
-  }
+    @media (max-width: #{$desktop}px) {
+        @content;
+    }
 }
 
 @mixin mq_laptop {
-  @media (max-width: #{$laptop}px) {
-    @content;
-  }
+    @media (max-width: #{$laptop}px) {
+        @content;
+    }
 }
 
 @mixin mq_tablet {
-  @media (max-width: #{$tablet}px) {
-    @content;
-  }
+    @media (max-width: #{$tablet}px) {
+        @content;
+    }
 }
 
 @mixin mq_mobile {
-  @media (max-width: #{$mobile}px) {
-    @content;
-  }
+    @media (max-width: #{$mobile}px) {
+        @content;
+    }
 }

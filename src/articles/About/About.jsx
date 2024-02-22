@@ -9,48 +9,48 @@ import * as styles from "./About.module.scss";
 const c = classNames.bind(styles);
 
 const About = () => {
-    const container = {
-        inactive: {},
-        active: {
-            transition: {
-                delayChildren: 0.6,
-                duration: 0.05,
-                staggerChildren: 0.05,
+    const animation = {
+        container: {
+            inactive: {},
+            active: {
+                transition: {
+                    delayChildren: 0.6,
+                    duration: 0.05,
+                    staggerChildren: 0.05,
+                },
             },
         },
-    };
-
-    const textColor = {
-        inactive: {
-            color: "rgba(255, 255, 255, 1)",
+        textColor: {
+            inactive: {
+                color: "rgba(255, 255, 255, 1)",
+            },
+            active: {
+                color: [
+                    "rgba(255, 255, 255, 1)",
+                    "rgba(254, 73, 2, 1)",
+                    "rgba(254, 73, 2, 1)",
+                    "rgba(255, 255, 255, 1)",
+                ],
+            },
         },
-        active: {
-            color: [
-                "rgba(255, 255, 255, 1)",
-                "rgba(254, 73, 2, 1)",
-                "rgba(254, 73, 2, 1)",
-                "rgba(255, 255, 255, 1)",
-            ],
-        },
-    };
-
-    const textY = {
-        inactive: {
-            opacity: 0,
-            color: "rgba(255, 255, 255, 1)",
-            y: 30,
-        },
-        active: {
-            opacity: [0, 1, 1, 1],
-            color: [
-                "rgba(255, 255, 255, 1)",
-                "rgba(254, 73, 2, 1)",
-                "rgba(254, 73, 2, 1)",
-                "rgba(255, 255, 255, 1)",
-            ],
-            y: [30, 0, 0, 0],
-        },
-    };
+        textColorFadeInUp: {
+            inactive: {
+                opacity: 0,
+                color: "rgba(255, 255, 255, 1)",
+                y: 30,
+            },
+            active: {
+                opacity: [0, 1, 1, 1],
+                color: [
+                    "rgba(255, 255, 255, 1)",
+                    "rgba(254, 73, 2, 1)",
+                    "rgba(254, 73, 2, 1)",
+                    "rgba(255, 255, 255, 1)",
+                ],
+                y: [30, 0, 0, 0],
+            },
+        }
+    }
 
     return (
         <article className={c("about")}>
@@ -58,16 +58,16 @@ const About = () => {
                 <Bracket>ABOUT</Bracket>
                 <motion.div
                     className={c("desc")}
-                    variants={container}
+                    variants={animation.container}
                     initial="inactive"
-                    whileInView={["visible", "active"]}
+                    whileInView="active"
                 >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Autem animi minus totam eligendi in
-                    {[..."facilis quam blanditiis"].map((v, i) => {
+                    {[..."facilis quam blanditiis"].map((value, index) => {
                         return (
-                            <motion.span key={i} variants={textColor}>
-                                {v}
+                            <motion.span key={index} variants={animation.textColor}>
+                                {value}
                             </motion.span>
                         );
                     })}
@@ -77,17 +77,17 @@ const About = () => {
                     asperiores aliquam! Labore possimus exercitationem omnis sed
                     neque reprehenderit accusamus dignissimos, ex officia
                     repudiandae alias culpa, autem,
-                    {[..."commodi debitis illo voluptatibus!"].map((v, i) => {
+                    {[..."commodi debitis illo voluptatibus!"].map((value, index) => {
                         return (
-                            <motion.span key={i} variants={textY}>
-                                {v}
+                            <motion.span key={index} variants={animation.textColorFadeInUp}>
+                                {value}
                             </motion.span>
                         );
                     })}
                 </motion.div>
-                <div className={c("list")}>
-                    <Button href='https://open.kakao.com/o/sJvCYbcf'>
-                        더 보기
+                <div className={c("button")}>
+                    <Button href="https://open.kakao.com/o/sJvCYbcf">
+                        이력서 보러가기
                     </Button>
                 </div>
             </div>

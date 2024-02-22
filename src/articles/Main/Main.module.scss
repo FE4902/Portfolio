@@ -1,37 +1,57 @@
-@use '@styles/helpers' as *;
+@use "@styles/helpers" as *;
 
 .main {
     display: grid;
     align-items: center;
     padding: rem-convert(72) rem-convert(32);
     background-color: var(--color-black);
+    overflow: hidden;
 }
 
 .container {
-    display: grid;
-    place-content: center;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .title {
     width: 100%;
-    display: flex;
-    padding-bottom: rem-convert(20);
-    line-height: 1;
-    font-family: var(--key-font);
-    font-size: clamp(72px, 20vw, 400px);
-    font-variation-settings: "HGHT" 1000, "wdth" 400;
-    letter-spacing: 0.01em;
+    font-family: var(--key-font), sans-serif;
+    font-size: min-convert(8);
+    font-weight: var(--weight-bold);
+    text-shadow: 0.125em 0 0 var(--color-primary),
+        -0.125em 0 0 var(--color-primary), 0 0.125em 0 var(--color-primary),
+        0 -0.125em 0 var(--color-primary),
+        0.125em 0.125em 0 var(--color-primary),
+        -0.125em -0.125em 0 var(--color-primary),
+        0.125em -0.125em 0 var(--color-primary),
+        -0.125em 0.125em 0 var(--color-primary),
+        0 0.125em 0 var(--color-primary),
+        -0.125em 0.125em 0 var(--color-primary),
+        0.125em 0.125em 0 var(--color-primary);
+    line-height: 1.25;
 
-    span {
-        transition: font-variation-settings 0.3s;
+    // &:hover {
+    //     text-shadow: 0.125em 0 0 var(--color-primary),
+    //         -0.125em 0 0 var(--color-primary), 0 0.125em 0 var(--color-primary),
+    //         0 -0.125em 0 var(--color-primary),
+    //         0.125em 0.125em 0 var(--color-primary),
+    //         -0.125em -0.125em 0 var(--color-primary),
+    //         0.125em -0.125em 0 var(--color-primary),
+    //         -0.125em 0.125em 0 var(--color-primary),
+    //         0 0.25em 0 var(--color-primary),
+    //         -0.125em 0.25em 0 var(--color-primary),
+    //         0.125em 0.25em 0 var(--color-primary);
+    //     transform: translateY(-0.125em);
+    // }
 
-        &:hover {
-            font-variation-settings: "HGHT" 400, "wdth" 400;
-        }
+    &:nth-child(2) {
+        text-align: right;
+        align-self: flex-end;
     }
-}
 
-.bracket {
-    justify-content: flex-end;
-    padding-bottom: 0;
+    &:nth-child(3) {
+        text-align: center;
+        align-self: center;
+    }
 }

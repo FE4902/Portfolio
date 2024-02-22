@@ -1,24 +1,34 @@
+import { useState } from "react";
+
+import Intro from "@components/Intro/Intro";
 import Header from "@layouts/Header/Header";
 import Main from "@articles/Main/Main";
+import Introduce from "@articles/Introduce/Introduce";
 import About from "@articles/About/About";
 import Work from "@articles/Work/Work";
 import Blog from "@articles/Blog/Blog";
 import Contact from "@articles/Contact/Contact";
-// import Intro from "@components/Intro/Intro";
 
 const App = () => {
+    const [introCompleted, setIntroCompleted] = useState(false);
+
     return (
-        <div>
-            <Header />
-            <main>
-                <Main />
-                <About />
-                <Work />
-                <Blog />
-                <Contact />
-            </main>
-            {/* <Intro /> */}
-        </div>
+        <>
+            <Intro introCompleted={introCompleted} setIntroCompleted={setIntroCompleted} />
+            {introCompleted && (
+                <>
+                    <Header />
+                    <main>
+                        <Main />
+                        <Introduce />
+                        <About />
+                        <Work />
+                        <Blog />
+                        <Contact />
+                    </main>
+                </>
+            )}
+        </>
     );
 };
 
