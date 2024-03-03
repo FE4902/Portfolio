@@ -34,7 +34,11 @@ const WorkItem = ({ thumb, title, category, href }) => {
                 rel="noreferrer"
             >
                 <figure className={c("image")}>
-                    <img src={`/image/work/${thumb}.png`} alt="work thumbnail" loading="lazy"/>
+                    <img
+                        src={`/image/work/${thumb}.png`}
+                        alt="work thumbnail"
+                        loading="lazy"
+                    />
                 </figure>
                 <div className={c("title")}>{title}</div>
                 <p className={c("category")}>{category}</p>

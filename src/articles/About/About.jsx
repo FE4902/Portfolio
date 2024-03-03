@@ -49,8 +49,8 @@ const About = () => {
                 ],
                 y: [30, 0, 0, 0],
             },
-        }
-    }
+        },
+    };
 
     return (
         <article className={c("about")}>
@@ -66,7 +66,10 @@ const About = () => {
                     Autem animi minus totam eligendi in
                     {[..."facilis quam blanditiis"].map((value, index) => {
                         return (
-                            <motion.span key={index} variants={animation.textColor}>
+                            <motion.span
+                                key={index}
+                                variants={animation.textColor}
+                            >
                                 {value}
                             </motion.span>
                         );
@@ -77,13 +80,18 @@ const About = () => {
                     asperiores aliquam! Labore possimus exercitationem omnis sed
                     neque reprehenderit accusamus dignissimos, ex officia
                     repudiandae alias culpa, autem,
-                    {[..."commodi debitis illo voluptatibus!"].map((value, index) => {
-                        return (
-                            <motion.span key={index} variants={animation.textColorFadeInUp}>
-                                {value}
-                            </motion.span>
-                        );
-                    })}
+                    {[..."commodi debitis illo voluptatibus!"].map(
+                        (value, index) => {
+                            return (
+                                <motion.span
+                                    key={index}
+                                    variants={animation.textColorFadeInUp}
+                                >
+                                    {value}
+                                </motion.span>
+                            );
+                        }
+                    )}
                 </motion.div>
                 <div className={c("button")}>
                     <Button href="https://open.kakao.com/o/sJvCYbcf">

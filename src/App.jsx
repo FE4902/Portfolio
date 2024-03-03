@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import lenis from "@utils/lenis";
 
 import Intro from "@components/Intro/Intro";
 import Header from "@layouts/Header/Header";
@@ -12,9 +13,16 @@ import Contact from "@articles/Contact/Contact";
 const App = () => {
     const [introCompleted, setIntroCompleted] = useState(false);
 
+    useEffect(() => {
+        lenis();
+    }, []);
+
     return (
         <>
-            <Intro introCompleted={introCompleted} setIntroCompleted={setIntroCompleted} />
+            <Intro
+                introCompleted={introCompleted}
+                setIntroCompleted={setIntroCompleted}
+            />
             {introCompleted && (
                 <>
                     <Header />

@@ -29,7 +29,15 @@ const Header = () => {
                 whileInView="active"
             >
                 <Magnetic>
-                    <a href="#">ANJUHONG</a>
+                    <a
+                        href="#"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                        }}
+                    >
+                        ANJUHONG
+                    </a>
                 </Magnetic>
             </motion.h1>
             <motion.span

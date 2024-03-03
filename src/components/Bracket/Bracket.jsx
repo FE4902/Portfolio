@@ -37,8 +37,8 @@ const Bracket = ({
                     duration: 0.3,
                 },
             },
-        }
-    }
+        },
+    };
 
     return (
         <motion.div

@@ -9,6 +9,7 @@ export default defineConfig({
             { find: "@layouts", replacement: "/src/layouts" },
             { find: "@articles", replacement: "/src/articles" },
             { find: "@styles", replacement: "/src/styles" },
+            { find: "@utils", replacement: "/src/utils" },
             { find: "@db", replacement: "/src/db" },
         ],
     }
