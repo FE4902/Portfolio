@@ -12,5 +12,5 @@ export default defineConfig({
             { find: "@utils", replacement: "/src/utils" },
             { find: "@db", replacement: "/src/db" },
         ],
-    }
+    },
 });

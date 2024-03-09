@@ -5,7 +5,7 @@ import * as styles from "./PostItem.module.scss";
 
 const c = classNames.bind(styles);
 
-const PostItem = ({ postUrl, title, date }) => {
+const PostItem = ({ title, pubDate, link }) => {
     const fadeInUp = {
         inactive: {
             opacity: 0,
@@ -19,17 +19,9 @@ const PostItem = ({ postUrl, title, date }) => {
 
     return (
         <motion.li className={c("postItem")} variants={fadeInUp}>
-            <a className={c("link")} href={postUrl}>
-                {/* <div className={c("inner")}>
-                    <div className={c("title")}>
-                        {title}
-                    </div>
-                    <p className={c("date")}>
-                        {date}
-                    </p>    
-                </div> */}
+            <a className={c("link")} href={link}>
                 <div className={c("title")}>{title}</div>
-                <p className={c("date")}>{date}</p>
+                <p className={c("date")}>{pubDate}</p>
                 <svg
                     className={c("icon")}
                     xmlns="http://www.w3.org/2000/svg"

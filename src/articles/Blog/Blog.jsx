@@ -11,7 +11,7 @@ import * as styles from "./Blog.module.scss";
 const c = classNames.bind(styles);
 
 const Blog = () => {
-    const { VITE_API_KEY } = import.meta.env;
+    const { VITE_BLOG_DATA } = import.meta.env;
     const [posts, setPosts] = useState([]);
 
     const container = {
@@ -28,10 +28,10 @@ const Blog = () => {
     };
 
     async function fetchPost() {
-        const response = await fetch(VITE_API_KEY);
+        const response = await fetch(VITE_BLOG_DATA);
         const data = await response.json();
 
-        setPosts(data.tistory.item.posts);
+        setPosts(data.items);
     }
 
     useEffect(() => {
