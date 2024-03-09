@@ -21,13 +21,13 @@ const PostItem = ({ postUrl, title, date }) => {
         <motion.li className={c("postItem")} variants={fadeInUp}>
             <a className={c("link")} href={postUrl}>
                 {/* <div className={c("inner")}>
-                <div className={c("title")}>
-                    {title}
-                </div>
-                <p className={c("date")}>
-                    {date}
-                </p>    
-            </div> */}
+                    <div className={c("title")}>
+                        {title}
+                    </div>
+                    <p className={c("date")}>
+                        {date}
+                    </p>    
+                </div> */}
                 <div className={c("title")}>{title}</div>
                 <p className={c("date")}>{date}</p>
                 <svg

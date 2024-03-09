@@ -10,7 +10,6 @@ import Blog from "@articles/Blog/Blog";
 import Contact from "@articles/Contact/Contact";
 
 const App = () => {
-
     useEffect(() => {
         lenis();
     }, []);

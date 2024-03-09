@@ -1,4 +1,4 @@
-import Lenis from '@studio-freight/lenis';
+import Lenis from "@studio-freight/lenis";
 
 const useLenis = () => {
     const lenis = new Lenis();
@@ -9,6 +9,6 @@ const useLenis = () => {
     }
 
     requestAnimationFrame(raf);
-}
+};
 
 export default useLenis;
