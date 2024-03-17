@@ -17,8 +17,13 @@
     margin-bottom: rem-convert(32);
     font-size: rem-convert(36);
 
+    div + div {
+        padding-top: rem-convert(8);
+    }
+
     span {
         display: inline-flex;
+        min-width: rem-convert(12);
     }
 }
 

@@ -15,12 +15,11 @@ const Contact = () => {
                 <div className={c("inner")}>
                     <Bracket>CONTACT</Bracket>
                     <div className={c("desc")}>
-                        enim nesciunt porro. Minima dicta facere accusantium
-                        quaerat. Praesentium at modi facere architecto! Lorem,
-                        ipsum dolor sit amet consectetur adipisicing elit.
-                        Sapiente, asperiores aliquam! Labore possimus
-                        exercitationem omnis sed neque reprehenderit accusamus
-                        dignissimos, ex officia repudiandae alias culpa, autem,
+                        마크업 및 UI 개발 관련 이야기, 포트폴리오 피드백 등
+                        <br />
+                        개발 이야기가 아니더라도 이야기를 나누고 싶으시다면
+                        <br />
+                        편하게 연락주세요.
                     </div>
                     <div className={c("button")}>
                         <Button href="https://open.kakao.com/o/sJvCYbcf">

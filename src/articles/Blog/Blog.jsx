@@ -44,7 +44,7 @@ const Blog = () => {
                 <motion.div className={c("inner")}>
                     <Bracket>BLOG</Bracket>
                     <div className={c("desc")}>
-                        블로그를 통해 기록을 남기고
+                        블로그를 통해 기록하고,
                         <br /> 인사이트를 공유하고 있습니다.
                     </div>
                     <div className={c("button")}>

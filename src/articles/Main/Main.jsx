@@ -10,8 +10,8 @@ const Main = () => {
             <div className={c("container")}>
                 <h2 className={c("title")}>ANJUHONG</h2>
                 <div className={c("text")}>
-                    <span>안정적인 UI, 인상적인 UX를 만드는</span>
-                    <span>어디서나 잘 녹아드는 웹 퍼블리셔</span>
+                    <span>안정적인 UI, 인상적인 UX</span>
+                    <span>성장하는, 기록하는</span>
                 </div>
             </div>
         </article>
